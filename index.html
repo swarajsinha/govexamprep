@@ -1,0 +1,1722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--verify--><!--/verify-->
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Govexamprep – Free Competitive Exam Preparation & Mock Tests</title>
+<meta name="description" content="Prepare for SSC, Banking, Railway and other government exams with Govexamprep. Practice free mock tests, quizzes, short notes and topic-wise questions online.">
+<link rel="canonical" href="https://govexamprep.org/">
+<link rel="icon" type="image/png" href="assets/favicon-64.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#1B3567">
+<link rel="manifest" href="manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Govexamprep">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Govexamprep">
+<meta property="og:url" content="https://govexamprep.org/">
+<meta property="og:title" content="Govexamprep – Free Competitive Exam Preparation & Mock Tests">
+<meta property="og:description" content="Free practice for SSC, Banking, Railway and other government exams: topic-wise questions in Hindi and English, quizzes, mock tests and short notes.">
+<meta property="og:image" content="https://govexamprep.org/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://govexamprep.org/assets/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "WebSite", "name": "Govexamprep", "url": "https://govexamprep.org/", "inLanguage": ["en", "hi"], "description": "Free competitive exam practice for SSC, Banking, Railway and other government exams."}, {"@context": "https://schema.org", "@type": "Organization", "name": "Govexamprep", "url": "https://govexamprep.org/", "logo": "https://govexamprep.org/assets/logo-icon-192.png"}]</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Mukta:wght@400;500;600;700;800&family=Oswald:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F5F8; --card:#FFFFFF; --ink:#1C335C; --on-ink:#FFFFFF; --ink-soft:#E3E8F2; --gold:#C29A3E; --gold-soft:#F6EED9;
+  --note-soft:#F1ECF7; --note-line:#B9A6D6;
+  --gold-ink:#8A6416; --paper-card:#FFFFFF; --soft-line:#E6E1F2;
+  --rose:#C42A52; --rose-soft:#FBE4EA; --ok:#0E7A53; --ok-soft:#DCF2E8;
+  --text:#1A2030; --muted:#566079; --line:#D5DCEB;
+  --r-s:6px; --r-m:12px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#10162A; --card:#18203A; --ink:#B5C7F2; --on-ink:#0F1328; --ink-soft:#24305A; --gold:#E2C075; --gold-soft:#3A3220;
+  --note-soft:#29233C; --note-line:#6E5C96;
+  --gold-ink:#E9C77B; --paper-card:#161D36; --soft-line:#323A63;
+    --rose:#FF7C9C; --rose-soft:#3B1F2E; --ok:#56D3A4; --ok-soft:#163A2F;
+    --text:#E7EAF4; --muted:#A1A9C3; --line:#2D3558;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#10162A; --card:#18203A; --ink:#B5C7F2; --on-ink:#0F1328; --ink-soft:#24305A; --gold:#E2C075; --gold-soft:#3A3220;
+  --note-soft:#29233C; --note-line:#6E5C96;
+  --gold-ink:#E9C77B; --paper-card:#161D36; --soft-line:#323A63;
+  --rose:#FF7C9C; --rose-soft:#3B1F2E; --ok:#56D3A4; --ok-soft:#163A2F;
+  --text:#E7EAF4; --muted:#A1A9C3; --line:#2D3558;
+}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--paper);color:var(--text);
+  font-family:"Mukta","Noto Sans Devanagari","Nirmala UI",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.55;-webkit-text-size-adjust:100%}
+a{color:var(--ink)}
+img{max-width:100%}
+:focus-visible{outline:3px solid var(--rose);outline-offset:2px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 18px}
+
+/* header */
+.top{background:var(--card);border-bottom:3px solid var(--gold);position:sticky;top:env(safe-area-inset-top,0px);z-index:10}
+.top .row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 4px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink)}
+.brand img{width:40px;height:40px;border-radius:50%;background:#fff;padding:2px;flex:none}
+.wordmark{font-family:"Oswald","Arial Narrow","Roboto Condensed",sans-serif;font-weight:600;font-size:21px;letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.hero-brand{display:flex;align-items:center;gap:14px;margin:4px 0 18px}
+.hero-brand img{width:84px;height:84px;border-radius:50%;background:#fff;padding:3px;box-shadow:0 0 0 2px var(--gold)}
+.hero-brand .wordmark{font-size:30px;color:var(--ink)}
+.subh{font-size:19px;font-weight:700;color:var(--ink);margin:-4px 0 10px}
+.lang{display:flex;border:1.5px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;color:var(--ink);font:inherit;font-size:15px;font-weight:600;padding:4px 12px;cursor:pointer;min-height:34px}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+nav.main{display:flex;gap:4px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{white-space:nowrap;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px;padding:6px 10px;border-radius:999px}
+nav.main a.on{color:var(--ink);background:var(--ink-soft)}
+
+main{padding:22px 0 40px}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(28px,6vw,42px);font-weight:800}
+h2{font-size:23px;font-weight:800;margin-top:1.6em}
+h3{font-size:18px;font-weight:700}
+p{margin:0 0 1em;max-width:68ch}
+.muted{color:var(--muted)}
+.small{font-size:14.5px}
+.crumbs{font-size:14.5px;color:var(--muted);margin-bottom:10px}
+.crumbs a{color:var(--muted)}
+
+/* hero */
+.hero{padding:10px 0 6px}
+.hero h1{max-width:18ch}
+.hero .lead{font-size:19px;color:var(--muted);max-width:52ch}
+.sheet{display:flex;align-items:center;gap:10px;margin:22px 0;font-weight:600;color:var(--muted);font-size:15px}
+.sheet .b{width:30px;height:30px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;color:var(--ink);font-size:14px}
+.sheet .b.f{background:var(--gold);border-color:var(--gold);color:#fff}
+@media (prefers-reduced-motion:no-preference){
+  .sheet .b.f{animation:fill .5s .4s both}
+  @keyframes fill{from{background:transparent;color:var(--ink)}to{background:var(--gold);color:#fff}}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 18px;border-radius:var(--r-s);
+  background:var(--ink);color:var(--on-ink);border:2px solid var(--ink);font:inherit;font-weight:700;font-size:16px;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+
+/* steps */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:var(--card)}
+.steps li{padding:12px 14px;box-shadow:0 0 0 .5px var(--line)}
+.steps b{display:block;color:var(--ink)}
+.steps span{font-size:14.5px;color:var(--muted)}
+
+/* lists of subjects / topics */
+.list{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden}
+.list li+li{border-top:1px solid var(--line)}
+.list a.item{display:flex;align-items:center;gap:14px;padding:14px 16px;text-decoration:none;color:var(--text)}
+.list a.item:hover{background:var(--ink-soft)}
+.item .name{flex:1;font-weight:600}
+.item .meta{font-size:14px;color:var(--muted);white-space:nowrap;text-align:right}
+.bar{display:block;height:5px;width:70px;border-radius:3px;background:var(--line);margin-top:4px;margin-left:auto;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--ok)}
+.group-note{font-size:15px;color:var(--muted);margin:-.3em 0 .8em}
+
+/* tabs */
+.tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:2px solid var(--line);margin:14px 0 18px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{white-space:nowrap;padding:9px 13px;text-decoration:none;color:var(--muted);font-weight:600;border-bottom:3px solid transparent;margin-bottom:-2px}
+.tabs a.on{color:var(--ink);border-color:var(--gold)}
+
+/* boxes */
+.box{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:18px}
+.box+.box{margin-top:14px}
+.note{border-left:4px solid var(--rose);background:var(--rose-soft);padding:12px 14px;border-radius:0 var(--r-s) var(--r-s) 0;font-size:15.5px;margin:14px 0}
+.note.info{border-color:var(--ink);background:var(--ink-soft)}
+.empty{text-align:center;padding:30px 18px}
+.empty p{margin:0 auto 1em}
+.notes h3{margin-top:1.2em;color:var(--ink)}
+.notes h3:first-child{margin-top:0}
+.notes ul{padding-left:1.2em;margin:0 0 1em}
+.notes li{margin:.25em 0}
+
+/* question */
+.qmeta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:var(--muted);margin-bottom:10px}
+.qmeta .count{font-weight:700;color:var(--text);margin-right:auto}
+.chip{border:1px solid var(--line);border-radius:999px;padding:1px 9px;font-size:13px;color:var(--muted)}
+.chip.pyq{border-color:var(--rose);color:var(--rose);font-weight:600}
+.loadbox{text-align:center;padding:34px 18px}.spin{width:42px;height:42px;margin:0 auto 14px;border-radius:50%;border:4px solid var(--c1s);border-top-color:var(--c1);animation:gspin .9s linear infinite}@keyframes gspin{to{transform:rotate(360deg)}}
+.privlist{margin:0;padding-left:1.2em;line-height:1.7}.privlist li{margin:.35em 0}
+.qtext{font-size:18.5px;font-weight:600;white-space:pre-line;margin-bottom:16px}
+.ditab{display:table;border-collapse:collapse;margin:8px 0 10px;font-size:.92em;font-weight:500}.ditab .dr{display:table-row}.ditab .dr>span{display:table-cell;border:1px solid var(--line,#d9d4ef);padding:5px 14px;text-align:center}.ditab .dh>span{background:var(--c1s,#eef0ff);font-weight:700}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:center;gap:14px;text-align:left;width:100%;min-height:52px;padding:8px 14px;background:var(--card);border:1.5px solid var(--line);border-radius:var(--r-s);font:inherit;color:var(--text);cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt:disabled{cursor:default}
+.bub{flex:none;width:32px;height:32px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:700;font-size:15px;color:var(--ink);transition:background .15s}
+.opt.sel .bub{background:var(--ink);color:var(--on-ink)}
+.opt.sel{border-color:var(--ink)}
+.opt.ok{border-color:var(--ok);background:var(--ok-soft)}
+.opt.ok .bub{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad{border-color:var(--rose);background:var(--rose-soft)}
+.opt.bad .bub{background:var(--rose);border-color:var(--rose);color:#fff}
+.exp{margin-top:14px;padding:12px 14px;border-radius:var(--r-s);background:var(--ink-soft)}
+.exp strong{display:block}
+.exp.good strong{color:var(--ok)} .exp.miss strong{color:var(--rose)}
+.exp p{margin:.3em 0 0;white-space:pre-line}
+.qnav{display:flex;justify-content:space-between;gap:10px;margin-top:18px}
+.timer{font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums}
+.timer.low{color:var(--rose)}
+.palette{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.palette button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);color:var(--text);font:inherit;font-size:14px;cursor:pointer}
+.palette button.done{border-color:var(--ink);background:var(--ink-soft)}
+.palette button.cur{border-color:var(--rose);border-width:2.5px}
+.score{font-size:46px;font-weight:800;color:var(--ink);line-height:1}
+.stats{display:flex;flex-wrap:wrap;gap:18px;margin:12px 0 18px;font-size:15.5px}
+.stats b{font-size:20px;display:block}
+.review{margin-top:18px}
+.review .box{padding:14px}
+.rev-a{font-size:15.5px;margin-top:6px}
+.rev-a .c{color:var(--ok);font-weight:700}
+.rev-a .w{color:var(--rose);font-weight:700}
+details.rv summary{cursor:pointer;color:var(--ink);font-weight:600;margin-top:8px}
+
+/* forms */
+label.ck{display:flex;align-items:center;gap:10px;padding:8px 0;font-weight:600}
+label.ck input{width:20px;height:20px;accent-color:var(--ink)}
+select{font:inherit;padding:8px 10px;border-radius:var(--r-s);border:1.5px solid var(--line);background:var(--card);color:var(--text);min-height:44px}
+
+/* exam detail */
+.facts{display:grid;grid-template-columns:max-content 1fr;gap:10px 18px;margin:0}
+.facts dt{font-weight:700;color:var(--muted);font-size:15px}
+.facts dd{margin:0}
+@media (max-width:560px){.facts{grid-template-columns:1fr;gap:2px}.facts dd{margin-bottom:12px}}
+.pending{color:var(--rose);font-weight:600}
+
+/* bank */
+details.bank{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);margin-bottom:10px}
+details.bank summary{padding:14px 16px;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:10px}
+.tbl-wrap{overflow-x:auto;padding:0 16px 14px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:7px 8px;border-top:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+
+.trow{padding:14px 16px}
+.trow .th{display:flex;gap:12px;align-items:baseline;justify-content:space-between}
+.trow .tname{font-weight:600;color:var(--text);text-decoration:none}
+.trow .tname:hover{text-decoration:underline}
+.trow .meta{white-space:nowrap;font-size:14px;color:var(--muted);text-align:right}
+.qb{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.qb a{display:inline-flex;align-items:center;min-height:36px;padding:3px 11px;border:1.5px solid var(--ink);border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;color:var(--ink)}
+.qb a.p{background:var(--ink);color:var(--on-ink)}
+.soon{font-size:14px;color:var(--muted);margin-top:6px}
+.report{display:inline-block;margin-top:8px;font-size:14.5px;color:var(--muted)}
+.fld{display:block;font-weight:600;margin:14px 0 5px}
+.inp{width:100%;font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:var(--r-s);background:var(--card);color:var(--text)}
+textarea.inp{min-height:120px;resize:vertical}
+.rate{display:flex;gap:8px;flex-wrap:wrap}
+.rate label{position:relative}
+.rate input{position:absolute;opacity:0;width:1px;height:1px}
+.rate span{width:42px;height:42px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:700;color:var(--ink);cursor:pointer}
+.rate input:checked+span{background:var(--ink);color:var(--on-ink)}
+.rate input:focus-visible+span{outline:3px solid var(--rose);outline-offset:2px}
+.hp{position:absolute;left:-9999px}
+.qfig{margin:-4px 0 16px;color:var(--text)}
+.qfig svg{display:block;width:100%;max-width:280px;height:auto}
+.qfig svg[viewBox^="0 0 548"]{max-width:440px}
+.ofig{display:block;width:96px;color:var(--text)}
+.ofig svg{display:block;width:100%;height:auto}
+.rev-fig{width:70px;display:inline-block;vertical-align:middle;color:var(--ok)}
+.rev-fig svg{width:100%;height:auto;display:block}
+
+.hb-text{display:flex;flex-direction:column;gap:4px}
+.tagline{font-weight:700;font-size:15px;letter-spacing:.04em;color:var(--gold);text-transform:uppercase}
+.bless{margin:26px 0 6px;padding:20px 18px;border-radius:var(--r-m);background:var(--gold-soft);border:1px solid var(--gold);text-align:center}
+.bless-q{margin:0 auto 6px;font-weight:800;font-size:19px}
+.bless-s{margin:0 auto 14px;font-size:15.5px;color:var(--muted);max-width:44ch}
+.thought{margin:14px 0 4px;padding:10px 14px;border-left:4px solid var(--gold);background:var(--gold-soft);border-radius:0 var(--r-s) var(--r-s) 0;font-size:15.5px}
+.bless-btn{font:inherit;font-weight:800;font-size:18px;min-height:52px;padding:10px 26px;border-radius:999px;border:0;background:var(--gold);color:#fff;cursor:pointer;box-shadow:0 2px 0 rgba(0,0,0,.12)}
+.bless-btn:disabled{background:var(--ok);cursor:default}
+.bless-k{margin:4px auto 4px;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.bless-t{margin:0 auto 16px;font-size:17px;font-style:italic;max-width:46ch;line-height:1.5}
+.bless-n{margin:10px auto 0;font-size:15px;color:var(--muted);min-height:1.2em}
+.gratitude{border-left:4px solid var(--gold);padding:4px 0 4px 16px}
+.gratitude p{font-size:17.5px}
+
+.sets{margin:0 0 16px}
+.sets-h{margin:0 0 8px;font-weight:700;font-size:15px;color:var(--muted)}
+.setbtns{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.setbtn{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1.5px solid var(--line);border-radius:var(--r-s);background:var(--card);text-decoration:none;color:var(--text);font-size:14px}
+.setbtn b{font-size:16px;color:var(--ink)}
+.setbtn.on{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold-soft)}
+.setbtn .best{color:var(--ok);font-weight:700;font-size:13px}
+
+.bm{margin-left:4px;border:0;background:none;font-size:22px;line-height:1;color:var(--gold);cursor:pointer;padding:2px 4px;min-width:36px;min-height:36px}
+.daily{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin-top:16px;padding:14px 16px;border-radius:var(--r-m);background:var(--ink);color:var(--on-ink);text-decoration:none}
+.daily-t{font-weight:800;font-size:17px;flex:1 1 100%}
+.daily-s{font-size:15px;opacity:.9}
+.daily-f{font-weight:800;color:var(--gold)}
+.streak{font-weight:800;color:var(--gold);font-size:18px}
+.mecards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:10px 0 4px}
+.mecard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);padding:12px 14px}
+.mecard b{display:block;font-size:24px;color:var(--ink)}
+.mecard span{font-size:14px;color:var(--muted)}
+.reslinks{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 4px}
+.reslink{display:inline-flex;align-items:center;min-height:42px;padding:6px 14px;border:1.5px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:700;font-size:15px}
+
+.nextstep{margin-top:18px;padding:16px;border-radius:var(--r-m);background:var(--gold-soft);border:1px solid var(--gold)}
+.ns-t{margin:0 0 10px;font-weight:800;font-size:17px}
+.readfirst{display:block;margin:0 0 14px;padding:10px 14px;border-radius:var(--r-s);background:var(--ink-soft);color:var(--ink);font-weight:700;text-decoration:none;font-size:15px}
+footer{border-top:3px solid var(--gold);padding:22px 0 30px;color:var(--muted);font-size:14px}
+footer p{max-width:none}
+.link-btn{background:none;border:0;padding:0;font:inherit;color:var(--ink);text-decoration:underline;cursor:pointer}
+.hi2{display:block;color:var(--ink);font-size:.92em;margin-top:2px}
+.personal-card{background:var(--gold-soft);border:2px solid var(--gold);border-radius:var(--r-m);padding:18px 20px;margin:14px 0 22px}
+.personal-card .pen{margin:0 0 10px;font-size:17.5px;line-height:1.6;font-style:italic;font-weight:600;color:var(--text)}
+.personal-card .phi{margin:0 0 10px;font-size:17px;line-height:1.7;font-weight:600;color:var(--text)}
+.personal-card .sign{margin:0;text-align:right;font-weight:700;color:var(--gold-ink,var(--ink));font-size:15px}
+.personal-card .sign span{font-weight:600;font-size:14px;color:var(--muted)}
+#support{margin-top:1.8em}
+#support:empty{display:none}
+.about-head{text-align:center}.about-head h1{margin-bottom:0}.about-head .hi2{font-size:20px;font-weight:700}
+.sup-head{text-align:center;margin-bottom:14px}
+.sup-head h2{margin:0;font-size:24px}
+.sup-head .hi2{font-weight:700;font-size:17px}
+.sup-head .for{margin:6px 0 0;color:var(--muted);font-size:14.5px;font-weight:600}
+.why{background:var(--note-soft);border:2px solid var(--note-line);border-radius:var(--r-m);padding:18px 20px}
+.why h3{margin:0;font-size:19px}
+.why .hi2{font-weight:700}
+.why .ten{margin:10px 0 8px;color:var(--text);font-size:16.5px;line-height:1.65}
+.why .thi{margin:0;color:var(--ink);font-size:16px;line-height:1.75}
+.helps-h{text-align:center;font-weight:800;margin:20px 0 10px;font-size:16.5px}
+.helps-h span{font-weight:600}
+.helps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.help{background:var(--card);border:2px solid var(--line);border-radius:var(--r-m);padding:14px 10px;text-align:center;font-weight:700;font-size:15.5px;min-width:0}
+.help .ic{display:block;font-size:24px;margin-bottom:4px}
+.help .hi2{font-weight:600;font-size:14px}
+.any{text-align:center;color:var(--muted);margin:16px 0;font-size:15.5px}
+.any b{color:var(--text)}
+.pay{display:grid;grid-template-columns:200px minmax(0,1fr);gap:20px;align-items:start}
+.pay .qr{width:200px;height:200px;border:3px dashed var(--note-line);border-radius:var(--r-m);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:14px;font-weight:600;color:var(--muted);background:var(--paper);padding:10px}
+.pay .qr .box{width:34px;height:34px;border:4px solid var(--note-line);border-radius:6px;margin-bottom:10px}
+.pay .qr.has-img{border-style:solid;padding:6px;background:#fff}
+.pay .qr img{width:100%;height:100%;object-fit:contain}
+.pay .lbl{font-weight:800;margin:0 0 6px}
+.pay .upi-id{display:inline-block;background:var(--note-soft);border:2px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:800;font-size:17px;color:var(--text);overflow-wrap:anywhere;user-select:all}
+.pay .btns{margin:12px 0}
+.pay .how{color:var(--muted);font-size:14.5px;line-height:1.6;margin:0}
+.pay .legal{border-top:1px dashed var(--line);margin-top:14px;padding-top:12px;color:var(--muted);font-size:13.5px;line-height:1.6}
+.thanks-card{background:var(--gold-soft);border:2px solid var(--gold);border-radius:var(--r-m);padding:14px 18px;margin-top:16px;font-weight:700;color:var(--text);line-height:1.6}
+.thanks-card .hi2{color:var(--text);font-weight:600}
+@media (max-width:640px){.helps{grid-template-columns:1fr}.pay{grid-template-columns:1fr}.pay .qr{justify-self:center}.pay>div:last-child{text-align:center}.pay .btns{justify-content:center}}
+@media print{.personal-card{display:none!important}}
+/* ---- About & Support: paper-card look ---- */
+.about-paper{background:var(--paper-card);border:1px solid var(--soft-line);border-radius:28px;padding:30px 26px 34px;margin:6px auto 30px;max-width:960px;box-shadow:0 10px 30px rgba(28,51,92,.07)}
+.about-paper,.about-paper .btn{font-family:"Mukta","Noto Sans Devanagari",system-ui,sans-serif}
+.about-head h1{font-family:"Mukta",sans-serif;font-weight:800;font-size:clamp(34px,7vw,46px);color:var(--ink);letter-spacing:0;line-height:1.05}
+.about-head .hi2{font-size:21px;font-weight:700;color:var(--ink);opacity:.85;margin-top:4px}
+.personal-card{background:var(--gold-soft);border:2px solid color-mix(in srgb,var(--gold) 55%,transparent);border-radius:24px;padding:20px 24px;margin:18px 0 30px}
+.personal-card .pen{font-size:18px;font-weight:600;font-style:italic;line-height:1.55;color:var(--text);margin-bottom:12px}
+.personal-card .phi{font-size:17.5px;font-weight:600;line-height:1.65;color:var(--gold-ink);margin-bottom:12px}
+.personal-card .sign{color:var(--gold-ink);font-weight:700;font-size:15.5px}
+.personal-card .sign span{color:var(--gold-ink);opacity:.85;font-weight:600}
+.sup-head h2{font-family:"Mukta",sans-serif;font-weight:800;font-size:clamp(26px,5vw,32px);color:var(--text);line-height:1.1}
+.sup-head .hi2{font-size:18px;color:var(--ink)}
+.sup-head .for{font-size:15px}
+.why{background:var(--note-soft);border:2px solid var(--soft-line);border-radius:24px;padding:22px 24px;margin-top:18px}
+.why h3{font-family:"Mukta",sans-serif;font-weight:800;font-size:21px;color:var(--text)}
+.why h3 .hi2{font-size:17px;color:var(--ink)}
+.why .ten{font-size:17px;font-weight:500;color:var(--muted);margin-top:12px}
+.why .thi{font-size:16.5px;font-weight:600;color:var(--ink)}
+.helps-h{font-size:17.5px;margin-top:26px}
+.helps{gap:12px}
+.help{border:2px solid var(--soft-line);border-radius:20px;padding:16px 12px;font-size:16px;background:var(--paper-card)}
+.help .ic{font-size:28px}
+.help .hi2{color:var(--ink);font-size:14.5px}
+.any{font-size:16px;margin:20px 0 22px}
+.pay .qr{border:3px dashed var(--note-line);border-radius:22px;background:var(--paper-card)}
+.pay .lbl{font-weight:800;font-size:17px}
+.pay .upi-id{border-radius:14px;border:2px solid var(--soft-line);background:var(--note-soft);font-size:18px;padding:8px 18px}
+.pay #supCopy{border-radius:999px;border:2px solid var(--soft-line);background:var(--paper-card);color:var(--text);box-shadow:0 4px 0 var(--soft-line);font-weight:700}
+.pay #supCopy:active{transform:translateY(2px);box-shadow:0 2px 0 var(--soft-line)}
+.pay .how{font-size:15px}
+.pay .legal{font-size:14px}
+.thanks-card{border:2px solid color-mix(in srgb,var(--gold) 55%,transparent);border-radius:22px;padding:16px 20px;font-size:17px;color:var(--gold-ink)}
+.thanks-card .hi2{color:var(--gold-ink);font-size:16px}
+@media (max-width:640px){.about-paper{padding:22px 16px 26px;border-radius:22px}.personal-card,.why{padding:18px 16px}}
+
+/* ===== About page: lively look ===== */
+.about-paper{--hero1:#1C335C;--hero2:#5B3E96;--sky:#E3F0FF;--sky-b:#9CC3F5;--mint:#E2F6EA;--mint-b:#8ED3A8;--peach:#FFEBDD;--peach-b:#F4B48A;--lav:#EEE7FA;--lav-b:#B9A6D6;--sun:#FFF4D6;--sun-b:#E8B94A;--paperline:#D9E6F7;--margin:#F2A7A7;--hand:"Kalam","Mukta",cursive;
+ background:var(--paper-card);border:0;border-radius:30px;padding:0 0 30px;overflow:hidden;box-shadow:0 14px 40px rgba(28,51,92,.12)}
+.about-paper>*:not(.about-hero){margin-left:26px;margin-right:26px}
+.about-hero{position:relative;background:linear-gradient(135deg,var(--hero1) 0%,var(--hero2) 60%,#B07A2A 130%);color:#fff;text-align:center;padding:42px 22px 46px;margin:0 0 6px;overflow:hidden}
+.about-hero:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:28px;background:var(--paper-card);border-radius:50% 50% 0 0/100% 100% 0 0}
+.about-hero .kick{display:inline-block;margin:0 0 10px;padding:4px 14px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);font-weight:700;font-size:14px;letter-spacing:.3px}
+.about-hero h1{margin:0;color:#fff;font-family:var(--hand);font-weight:700;font-size:clamp(38px,8vw,56px);line-height:1.05;text-shadow:0 3px 0 rgba(0,0,0,.15)}
+.about-hero h1 .hi2{display:block;color:#FFD877;font-size:clamp(24px,5vw,32px);margin-top:6px}
+.about-hero .tag{margin:12px auto 0;max-width:520px;padding:0 30px;font-size:16.5px;font-weight:600;color:rgba(255,255,255,.92)}
+.about-hero .dd{position:absolute;font-size:30px;opacity:.9;animation:ddfloat 5s ease-in-out infinite}
+.about-hero .d1{left:6%;top:18%}.about-hero .d2{right:7%;top:16%;animation-delay:-1s}.about-hero .d3{left:5%;bottom:24%;font-size:22px;animation-delay:-2s}.about-hero .d4{right:5%;bottom:26%;font-size:24px;animation-delay:-3s}.about-hero .d5{left:48%;top:6%;font-size:20px;animation-delay:-4s;opacity:.6}
+@keyframes ddfloat{0%,100%{transform:translateY(0) rotate(-6deg)}50%{transform:translateY(-10px) rotate(6deg)}}
+/* letter on notebook paper */
+.about-paper .personal-card{position:relative;background-color:#FFFDF6;background-image:linear-gradient(90deg,transparent 46px,var(--margin) 46px,var(--margin) 48px,transparent 48px),repeating-linear-gradient(180deg,transparent 0,transparent 33px,var(--paperline) 33px,var(--paperline) 34px);border:0;border-radius:6px 6px 22px 22px;padding:30px 24px 22px 64px;margin:10px 26px 34px;box-shadow:0 10px 24px rgba(28,51,92,.12);transform:rotate(-.6deg)}
+.about-paper .personal-card .tape{position:absolute;top:-12px;left:50%;width:110px;height:26px;margin-left:-55px;background:rgba(232,185,74,.55);transform:rotate(-3deg);border-radius:3px}
+.about-paper .personal-card .stamp{position:absolute;right:-10px;top:-14px;width:52px;height:52px;border-radius:50%;background:#FFE8A3;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 4px 10px rgba(0,0,0,.12);transform:rotate(12deg)}
+.about-paper .personal-card .pen,.about-paper .personal-card .phi{font-family:var(--hand);font-style:normal;font-weight:400;font-size:20px;line-height:34px;margin:0 0 12px;color:#23305A}
+.about-paper .personal-card .phi{color:#8A4B12}
+.about-paper .personal-card .sign{font-family:var(--hand);font-weight:700;font-size:19px;color:#5B3E96;line-height:34px}
+.about-paper .personal-card .sign span{color:#8A4B12;opacity:1}
+/* section heading */
+.about-paper .sup-head h2{font-family:var(--hand);font-weight:700;font-size:clamp(30px,6vw,40px);background:linear-gradient(90deg,var(--hero1),var(--hero2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.about-paper .sup-head h2 .hi2{display:block;-webkit-text-fill-color:#B07A2A;color:#B07A2A;font-size:22px;margin-top:2px}
+.about-paper .sup-head .for{display:inline-block;background:var(--sun);border-radius:999px;padding:5px 14px;color:#6B4A0E}
+/* why card */
+.about-paper .why{position:relative;background:var(--lav);border:0;border-left:8px solid var(--hero2);border-radius:22px;padding:24px 24px 22px 28px}
+.about-paper .why:before{content:"❝";position:absolute;right:16px;top:-6px;font-size:76px;line-height:1;color:var(--lav-b);opacity:.7}
+.about-paper .why h3{font-family:var(--hand);font-size:25px;color:var(--hero2)}
+.about-paper .why h3 .hi2{display:block;color:#B07A2A;font-size:19px}
+.about-paper .why .ten{color:#33415F}
+.about-paper .why .thi{color:#1C335C}
+/* help tiles */
+.about-paper .helps-h{font-family:var(--hand);font-size:23px;color:var(--hero1)}
+.about-paper .helps-h span{color:#B07A2A}
+.about-paper .help{border:2px solid;border-radius:22px;padding:20px 12px 18px;transition:transform .2s,box-shadow .2s;color:#1C2440}
+.about-paper .help:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 12px 22px rgba(28,51,92,.14)}
+.about-paper .help .ic{width:58px;height:58px;margin:0 auto 10px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;background:#fff;box-shadow:0 4px 0 rgba(0,0,0,.06)}
+.about-paper .help .hi2{display:block;color:#5B4A2A;margin-top:4px}
+.about-paper .help.c1{background:var(--sky);border-color:var(--sky-b)}.about-paper .help.c2{background:var(--mint);border-color:var(--mint-b)}.about-paper .help.c3{background:var(--peach);border-color:var(--peach-b)}
+/* any amount ribbon */
+.about-paper .any{background:var(--sun);border:2px dashed var(--sun-b);border-radius:18px;padding:14px 18px;color:#5B4A2A}
+.about-paper .any b{display:block;font-family:var(--hand);font-size:22px;color:#8A4B12}
+/* pay */
+.about-paper .pay{background:linear-gradient(var(--paper-card),var(--paper-card)) padding-box,linear-gradient(135deg,var(--hero2),var(--sun-b)) border-box;border:3px solid transparent;border-radius:26px;padding:22px}
+.about-paper .pay .qr{border-color:var(--lav-b);background:var(--lav)}
+.about-paper .pay .upi-id{background:var(--sky);border-color:var(--sky-b);color:#1C335C}
+.about-paper .pay #supCopy{background:linear-gradient(180deg,#F2C14E,#E0A526);border:0;color:#2A1C00;box-shadow:0 5px 0 #B9851A;font-size:16px;padding:10px 20px}
+.about-paper .pay #supCopy:active{box-shadow:0 2px 0 #B9851A}
+.about-paper .thanks-card{background:#FFF4D6 radial-gradient(circle,#F6D27A 1.5px,transparent 2px) 0 0/18px 18px;border:2px solid var(--sun-b);color:#6B3F0A;font-family:var(--hand);font-size:19px;font-weight:700}
+.about-paper .thanks-card .hi2{display:block;color:#5B3E96;font-size:18px}
+/* entrance animation */
+.about-paper>*,.about-paper #support>*{animation:aupop .6s ease both}
+.about-paper #support>*:nth-child(2){animation-delay:.08s}.about-paper #support>*:nth-child(4){animation-delay:.16s}.about-paper #support>*:nth-child(6){animation-delay:.24s}
+.about-paper .personal-card{animation-name:aupopr}
+@keyframes aupop{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes aupopr{from{opacity:0;transform:translateY(16px) rotate(-.6deg)}to{opacity:1;transform:rotate(-.6deg)}}
+@media (prefers-reduced-motion:reduce){.about-paper *,.about-paper{animation:none!important;transition:none!important}}
+@media (max-width:640px){.about-paper>*:not(.about-hero){margin-left:14px;margin-right:14px}.about-paper .personal-card{margin:10px 14px 30px;padding:28px 16px 18px 50px;background-image:linear-gradient(90deg,transparent 34px,var(--margin) 34px,var(--margin) 36px,transparent 36px),repeating-linear-gradient(180deg,transparent 0,transparent 33px,var(--paperline) 33px,var(--paperline) 34px)}.about-paper .personal-card .stamp{right:-4px}.about-paper .pay{padding:16px}.about-hero .dd{font-size:22px}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-paper{--sky:#1C2D4A;--sky-b:#3E6AA8;--mint:#173A2A;--mint-b:#3E8A5E;--peach:#3D2A1E;--peach-b:#A8683E;--lav:#29233C;--lav-b:#6E5C96;--sun:#3A2F14;--sun-b:#A8822A}}
+:root[data-theme="dark"] .about-paper{--sky:#1C2D4A;--sky-b:#3E6AA8;--mint:#173A2A;--mint-b:#3E8A5E;--peach:#3D2A1E;--peach-b:#A8683E;--lav:#29233C;--lav-b:#6E5C96;--sun:#3A2F14;--sun-b:#A8822A}
+
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .about-paper .help,:root:not([data-theme="light"]) .about-paper .why .ten,:root:not([data-theme="light"]) .about-paper .any{color:#E6E9F5}:root:not([data-theme="light"]) .about-paper .why .thi,:root:not([data-theme="light"]) .about-paper .help .hi2,:root:not([data-theme="light"]) .about-paper .any b,:root:not([data-theme="light"]) .about-paper .sup-head .for{color:#F2CF7E}:root:not([data-theme="light"]) .about-paper .why h3,:root:not([data-theme="light"]) .about-paper .helps-h{color:#C9B6F2}:root:not([data-theme="light"]) .about-paper .sup-head h2{background:linear-gradient(90deg,#BFD3FF,#D9C6FF);-webkit-background-clip:text;background-clip:text}:root:not([data-theme="light"]) .about-paper .pay .upi-id{color:#E6E9F5}}
+:root[data-theme="dark"] .about-paper .help,:root[data-theme="dark"] .about-paper .why .ten,:root[data-theme="dark"] .about-paper .any{color:#E6E9F5}:root[data-theme="dark"] .about-paper .why .thi,:root[data-theme="dark"] .about-paper .help .hi2,:root[data-theme="dark"] .about-paper .any b,:root[data-theme="dark"] .about-paper .sup-head .for{color:#F2CF7E}:root[data-theme="dark"] .about-paper .why h3,:root[data-theme="dark"] .about-paper .helps-h{color:#C9B6F2}:root[data-theme="dark"] .about-paper .sup-head h2{background:linear-gradient(90deg,#BFD3FF,#D9C6FF);-webkit-background-clip:text;background-clip:text}:root[data-theme="dark"] .about-paper .pay .upi-id{color:#E6E9F5}
+
+@media print{#support{display:none!important}}
+footer .credit{display:grid;grid-template-columns:24px auto;gap:2px 8px;align-items:center;justify-content:start;margin-top:6px}footer .credit img{width:24px;height:24px;border-radius:6px;flex:none}footer .credit a{grid-column:2;overflow-wrap:anywhere}
+.addhome{position:relative;margin:16px 0;padding:14px 16px 12px;border:1px solid var(--line,#d9dce3);border-left:5px solid var(--gold);border-radius:var(--r-m);background:var(--card,#fff)}
+.addhome h2{margin:0 0 6px;font-size:17px;padding-right:28px}
+.addhome p{margin:4px 0 8px}
+.addhome ol{margin:4px 0 6px 20px;padding:0}
+.addhome li{margin:3px 0}
+.addhome .ah-os{font-weight:700;margin-top:8px}
+.addhome .ah-x{position:absolute;top:6px;right:8px;border:0;background:transparent;font-size:22px;line-height:1;cursor:pointer;color:inherit;padding:6px}
+/* theme toggle (light/dark) */
+.top .tools{display:flex;align-items:center;gap:6px;flex:none}
+.themebtn{border:1.5px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;width:36px;height:36px;padding:0;font-size:17px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none}
+.themebtn:hover{background:var(--ink-soft)}
+@media (max-width:400px){.top .wordmark{font-size:18px}.lang button{padding:4px 9px}.brand img{width:36px;height:36px}}
+@media (max-width:360px){.top .wordmark{display:none}.hero-brand img{width:64px;height:64px}.hero-brand .wordmark{font-size:24px}.hb-text{min-width:0}}
+/* print / save as PDF (watermarked) */
+.printbar{display:flex;justify-content:flex-end;margin:0 0 12px}
+.printbar.mid{justify-content:flex-start;margin:4px 0 14px}
+.printbtn{min-height:40px;font-size:15px;padding:8px 14px}
+.printnote{font-size:13px;color:var(--muted);margin:4px 0 0}
+#printArea{display:none}
+@media print{
+  @page{size:A4;margin:12mm 12mm 10mm}
+  html,body{background:#fff!important;color:#000!important}
+  body.printing>*:not(#printArea){display:none!important}
+  body.printing #printArea{display:block!important}
+  body:not(.printing) #printArea{display:none!important}
+  #printArea{color:#000;font-size:12.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  #printArea .pwm{position:fixed;top:42%;left:0;right:0;text-align:center;transform:rotate(-32deg);font-family:"Oswald","Arial Narrow",sans-serif;font-size:58pt;font-weight:600;letter-spacing:.05em;color:rgba(28,51,92,.08);z-index:0;pointer-events:none;white-space:nowrap}
+  #printArea .pfoot{position:fixed;bottom:0;left:0;right:0;border-top:1px solid #999;padding-top:3pt;font-size:9pt;color:#444;text-align:center}
+  #printArea table.pwrap{width:100%;border-collapse:collapse;position:relative;z-index:1}
+  #printArea table.pwrap td{padding:0}
+  #printArea .pfspace{height:14mm}
+  #printArea .phead{display:flex;align-items:center;gap:8pt;border-bottom:2px solid #C29A3E;padding-bottom:5pt;margin-bottom:8pt}
+  #printArea .phead img{width:34pt;height:34pt}
+  #printArea .phead b{display:block;font-family:"Oswald","Arial Narrow",sans-serif;font-size:15pt;letter-spacing:.04em;text-transform:uppercase;color:#1C335C}
+  #printArea .phead span{font-size:10pt;color:#444}
+  #printArea h1{font-size:17pt;margin:4pt 0 6pt;color:#000}
+  #printArea h2{font-size:14pt;margin:10pt 0 6pt;color:#000;border-bottom:1px solid #bbb;padding-bottom:2pt}
+  #printArea h3{font-size:13pt;margin:10pt 0 3pt;color:#1C335C;break-after:avoid}
+  #printArea ul{margin:0 0 6pt;padding-left:16pt}
+  #printArea li{margin:1.5pt 0}
+  #printArea .pinfo{display:flex;flex-wrap:wrap;gap:4pt 18pt;font-size:11pt;margin:2pt 0 8pt}
+  #printArea .pinst{font-size:10.5pt;color:#333;margin:0 0 8pt}
+  #printArea .pq{break-inside:avoid;page-break-inside:avoid;margin:0 0 9pt}
+  #printArea .pq .qt{font-weight:600}
+  #printArea .pq .qt b{display:inline-block;min-width:24pt;margin-right:4pt}
+  #printArea .popts{display:grid;grid-template-columns:1fr 1fr;gap:2pt 14pt;margin:3pt 0 0 28pt}
+  #printArea .popts.one{grid-template-columns:1fr}
+  #printArea .qfig{margin:4pt 0 4pt 28pt;color:#000}
+  #printArea .qfig svg{max-width:220px}
+  #printArea .ofig{display:inline-block;width:52px;vertical-align:middle;color:#000}
+  #printArea .ofig svg{width:100%;height:auto}
+  #printArea .popts>div{break-inside:avoid}
+  #printArea .pbreak{break-before:page;page-break-before:always}
+  #printArea .pkey{display:grid;grid-template-columns:repeat(10,1fr);gap:3pt;font-size:11pt;margin:0 0 10pt}
+  #printArea .pkey span{border:1px solid #bbb;padding:2pt 3pt;text-align:center}
+  #printArea .pex{break-inside:avoid;page-break-inside:avoid;margin:0 0 6pt;font-size:11pt}
+}
+
+/* ===== Mature theme: navy + gold (from the Govexamprep logo) ===== */
+:root{--navy:#1B3567;--navy-d:#10244A;--navy-s:#E9EEF7;--gold:#C29A3E;--gold-d:#93701F;--gold-s:#F7F0DE;
+ --c1:#1B3567;--c1s:#E9EEF7;--c2:#3C5A8C;--c2s:#EBF0F8;--c3:#2E6B52;--c3s:#E6F1EC;--c4:#93701F;--c4s:#F7F0DE;--c5:#8A3A49;--c5s:#F6E9EC;--c6:#4A5873;--c6s:#ECEFF4;
+ --grad:linear-gradient(135deg,#10244A 0%,#1B3567 70%,#2A4A84 100%);--bgtint:#F5F6F9;--hfont:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;--shadow:0 2px 10px rgba(16,36,74,.07)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#9DB5E8;--navy-d:#0B1530;--navy-s:#1A2647;--gold:#E2C075;--gold-d:#E2C075;--gold-s:#2E2716;--c1:#9DB5E8;--c1s:#1A2647;--c2:#A9BCE0;--c2s:#1C2848;--c3:#7FC4A6;--c3s:#14302A;--c4:#E2C075;--c4s:#2E2716;--c5:#E3A1AE;--c5s:#33202A;--c6:#B4BDD0;--c6s:#20283C;--bgtint:#0E1428;--grad:linear-gradient(135deg,#0B1530 0%,#18295A 100%);--shadow:0 2px 12px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--navy:#9DB5E8;--navy-d:#0B1530;--navy-s:#1A2647;--gold:#E2C075;--gold-d:#E2C075;--gold-s:#2E2716;--c1:#9DB5E8;--c1s:#1A2647;--c2:#A9BCE0;--c2s:#1C2848;--c3:#7FC4A6;--c3s:#14302A;--c4:#E2C075;--c4s:#2E2716;--c5:#E3A1AE;--c5s:#33202A;--c6:#B4BDD0;--c6s:#20283C;--bgtint:#0E1428;--grad:linear-gradient(135deg,#0B1530 0%,#18295A 100%);--shadow:0 2px 12px rgba(0,0,0,.35)}
+body{background:var(--bgtint)}
+h1,h2,h3,.btn,.daily-t,.score,.bless-q,.ns-t{font-family:var(--hfont)}
+h1{font-weight:800;color:var(--ink);letter-spacing:-.2px}
+main h2{position:relative;padding-left:14px;color:var(--ink);font-weight:800}
+main h2:before{content:"";position:absolute;left:0;top:.18em;bottom:.18em;width:4px;border-radius:2px;background:var(--gold)}
+.about-hero h1,:root[data-theme="dark"] .about-hero h1{background:none!important;color:#fff;-webkit-text-fill-color:#fff}.about-hero h1 .hi2{-webkit-text-fill-color:#E9CC85}.about-paper h2{padding-left:0}.about-paper h2:before{display:none}
+/* header */
+.top{border-bottom:0;box-shadow:0 1px 0 var(--line),0 4px 14px rgba(16,36,74,.05)}
+.top:after{content:"";display:block;height:3px;background:var(--gold)}
+.brand .wordmark{letter-spacing:.5px}
+nav.main a{border-radius:8px}
+nav.main a:hover{background:var(--navy-s);color:var(--ink)}
+nav.main a.on{background:var(--navy);color:#fff}
+:root[data-theme="dark"] nav.main a.on{background:var(--navy-s);color:var(--gold);box-shadow:inset 0 -2px 0 var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) nav.main a.on{background:var(--navy-s);color:var(--gold);box-shadow:inset 0 -2px 0 var(--gold)}}
+/* buttons */
+.btn{border-radius:10px;background:var(--navy);border:0;color:#fff;box-shadow:0 2px 6px rgba(16,36,74,.18);transition:background .15s,box-shadow .15s}
+.btn:hover:not(:disabled){background:var(--navy-d);box-shadow:0 4px 12px rgba(16,36,74,.22)}
+.btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--ink);box-shadow:none}
+.btn.ghost:hover:not(:disabled){background:var(--navy-s)}
+.btn:disabled{background:var(--line);color:var(--muted);box-shadow:none}
+:root[data-theme="dark"] .btn:not(.ghost){background:var(--gold);color:#1A1405}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn:not(.ghost){background:var(--gold);color:#1A1405}}
+/* home hero: navy banner */
+.hero{position:relative;background:linear-gradient(135deg,#0F2247 0%,#1B3567 62%,#25457F 100%);color:#fff;border-radius:18px;padding:30px 28px 26px;margin-top:6px;overflow:hidden;border:0;box-shadow:0 10px 30px rgba(16,36,74,.22)}
+.hero:before{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;border:38px solid rgba(194,154,62,.12)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#C29A3E,#E6C878,#C29A3E)}
+.hero>*{position:relative}
+.hero h1{color:#fff;font-size:clamp(28px,4.6vw,40px);line-height:1.15;margin:14px 0 8px}
+.hero .hero-brand .wordmark{color:#fff}
+.hero .hero-brand img{background:#fff;border-radius:50%;box-shadow:0 0 0 3px #C29A3E}
+.hero .tagline{color:#E6C878}
+.hero .subh{color:#E6C878;font-weight:700}
+.hero .lead{color:rgba(255,255,255,.88)}
+.hero .sheet{color:rgba(255,255,255,.75)}
+.hero .sheet .b{border-color:rgba(255,255,255,.7);color:#fff}
+.hero .btn{background:#C29A3E;color:#10244A;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+.hero .btn:hover:not(:disabled){background:#D5AE52}
+.hero .btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.75);box-shadow:none}
+.hero .btn.ghost:hover{background:rgba(255,255,255,.1)}
+.daily{background:rgba(255,255,255,.08);border:1px solid rgba(230,200,120,.55);border-radius:14px;box-shadow:none;color:#fff}
+.daily:hover{background:rgba(255,255,255,.13)}
+.daily-f{color:#E6C878}
+:root[data-theme="dark"] .hero{background:linear-gradient(135deg,#0A1430 0%,#132650 100%)}
+/* how-to steps */
+.steps{border:0;background:transparent;gap:10px;overflow:visible}
+.steps li{box-shadow:var(--shadow);border-radius:12px;border-top:3px solid var(--gold);background:var(--card)}
+.steps li b{font-family:var(--hfont);font-size:17px;color:var(--ink)}
+/* lists */
+.list{border:0;background:transparent;overflow:visible;display:grid;gap:8px}
+.list li+li{border-top:0}
+.list>li{--k:var(--navy);--ks:var(--navy-s);background:var(--card);border-radius:12px;border:1px solid var(--line);border-left:4px solid var(--navy);box-shadow:none;overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.list>li:hover{border-left-color:var(--gold);box-shadow:var(--shadow)}
+.list a.item:hover{background:var(--navy-s)}
+.list a.item .name{font-family:var(--hfont);font-size:18px;font-weight:700;color:var(--ink)}
+.sic{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;font-size:22px;background:var(--navy-s)}
+.trow .tname{font-family:var(--hfont);font-size:17.5px;font-weight:700}
+.trow .meta{color:var(--muted);font-weight:600}
+.bar i{background:var(--gold)}
+.qb a{border:1px solid var(--line);background:var(--card);color:var(--ink);box-shadow:none}
+.qb a:hover{border-color:var(--ink);background:var(--navy-s)}
+.qb a.p{background:var(--navy);border-color:var(--navy);color:#fff}
+/* topic page */
+.tabs{border-bottom:0;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:none;width:max-content;max-width:100%}
+.tabs a{border:0;margin:0;border-radius:8px;padding:8px 16px}
+.tabs a:hover{background:var(--navy-s);color:var(--ink)}
+.tabs a.on{background:var(--navy);color:#fff}
+:root[data-theme="dark"] .tabs a.on{background:var(--navy-s);color:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tabs a.on{background:var(--navy-s);color:var(--gold)}}
+.readfirst{background:var(--gold-s);border-left:4px solid var(--gold);border-radius:10px}
+.setbtn{border:1px solid var(--line);border-radius:10px;border-top:3px solid var(--navy);background:var(--card)}
+.setbtn:hover{border-color:var(--ink);border-top-color:var(--gold)}
+.setbtn.on{box-shadow:0 0 0 2px var(--gold);border-top-color:var(--gold)}
+.box{border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.qtext{font-size:19.5px}
+.opt{border-radius:10px;transition:border-color .12s,background .12s}
+.opt:hover:not(:disabled){border-color:var(--ink);background:var(--navy-s)}
+.opt .bub{border-color:var(--ink);color:var(--ink);background:var(--card)}
+.opt.sel .bub{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+.opt.ok .bub{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad .bub{background:var(--rose);border-color:var(--rose);color:#fff}
+.exp{border-radius:10px;background:var(--navy-s);border-left:4px solid var(--gold)}
+.palette button.done{border-color:var(--ink);background:var(--navy-s)}
+.mecard{border:1px solid var(--line);border-radius:12px;border-top:3px solid var(--navy);background:var(--card)}
+.mecard:nth-child(even){border-top-color:var(--gold)}
+.reslink{border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.reslink:hover{border-color:var(--ink);background:var(--navy-s)}
+details.bank{border:1px solid var(--line);border-radius:12px;border-left:4px solid var(--navy);box-shadow:none}
+.note{border-radius:10px}
+.note.info{border-left-color:var(--navy);background:var(--navy-s)}
+.bless{border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);border-radius:16px;background:linear-gradient(135deg,#FBF6E9,#F3E7C8);box-shadow:none}
+:root[data-theme="dark"] .bless{background:linear-gradient(135deg,#2B2414,#1E1A10)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bless{background:linear-gradient(135deg,#2B2414,#1E1A10)}}
+.bless-btn{background:var(--navy);color:#fff;box-shadow:0 3px 8px rgba(16,36,74,.2)}
+.nextstep{border:1px solid var(--line);border-radius:14px;background:var(--card);border-left:4px solid var(--gold)}
+.addhome{border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:12px;background:var(--card)}
+footer{border-top:0;background:var(--navy-s);position:relative}
+footer:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--gold)}
+.ahd summary{cursor:pointer;font-weight:700;color:var(--ink)}.ahd[open] summary{margin-bottom:6px}
+.qtext,.opt,.exp,.pq .qt{overflow-wrap:anywhere}
+.trow .th{flex-wrap:wrap;row-gap:2px}.trow .meta{white-space:normal;text-align:left}
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media (max-width:480px){#ppane table{font-size:13.5px}#ppane th,#ppane td{padding:6px 5px}#ppane .box{padding:12px}}
+.adwrap{margin:22px auto 6px;max-width:760px;text-align:center}.adlbl{margin:0 0 4px;font-size:11px;letter-spacing:.5px;color:var(--muted);text-transform:uppercase}
+.spin{border-color:var(--navy-s);border-top-color:var(--gold)}
+@media (prefers-reduced-motion:no-preference){main#app>*{animation:aupop .35s ease both}}
+@media (prefers-reduced-motion:reduce){.btn,.list>li,.opt,.setbtn,.qb a{transition:none}}
+@media (max-width:640px){.hero{padding:22px 18px 22px;border-radius:14px}.hero:before{width:180px;height:180px;right:-70px;top:-70px;border-width:28px}.hero-brand img{width:60px;height:60px}.hero-brand .wordmark{font-size:24px}.hero-brand{gap:10px}.hb-text{min-width:0}.tabs{width:auto}}
+@media print{body{background:#fff}h1{background:none;color:#000}}
+/* About page: same navy + gold family */
+.about-paper{--hero1:#10244A;--hero2:#1B3567;--sky:#EEF2F9;--sky-b:#C3CFE6;--mint:#F7F0DE;--mint-b:#E2CB8E;--peach:#F1F3F7;--peach-b:#CDD4E2;--lav:#F3F5FA;--lav-b:#C3CFE6;--sun:#F8F1DF;--sun-b:#D7B565;--paperline:#E1E7F1;--margin:#E3C6C6}
+.about-hero{background:linear-gradient(135deg,#0F2247 0%,#1B3567 70%,#25457F 100%)}
+.about-hero .dd{display:none}
+.about-paper .sup-head h2{background:none;color:var(--ink);-webkit-text-fill-color:currentColor}
+.about-paper .sup-head h2 .hi2,.about-paper .why h3 .hi2,.about-hero h1 .hi2{color:#93701F;-webkit-text-fill-color:#93701F}
+.about-hero h1 .hi2{-webkit-text-fill-color:#E6C878;color:#E6C878}
+.about-paper .why{border-left-color:var(--gold)}
+.about-paper .why h3{color:var(--ink)}
+.about-paper .help:hover{transform:translateY(-3px)}
+.about-paper .personal-card .sign{color:#1B3567}
+.about-hero h1,.about-paper .sup-head h2,.about-paper .why h3,.about-paper .helps-h,.about-paper .any b{font-family:var(--hfont);font-weight:800}
+.gratitude+.bless .bless-s{display:none}
+.sectabs{margin-bottom:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}.sectabs .setbtn{padding:8px 10px;font-size:13px}.sectabs .setbtn b{font-size:14px;line-height:1.25}
+@media (max-width:640px){.sectabs{grid-template-columns:1fr 1fr}}
+.fbform .fld{margin-top:14px}.stars{border:0;padding:0;margin:0}.stars legend{padding:0}.stars label{display:inline-block;cursor:pointer}.stars input{position:absolute;opacity:0;width:1px;height:1px}.stars label span{font-size:38px;line-height:1;color:var(--line);padding:0 3px;transition:transform .1s}.stars label:hover span{transform:scale(1.15)}.stars:has(input:checked) label span{color:#F2B630}.stars label:has(input:checked)~label span{color:var(--line)}.stars input:focus-visible+span{outline:3px solid var(--rose);border-radius:6px}.startxt{margin-left:8px;font-weight:700;color:var(--c2)}.sr{position:absolute;left:-9999px}
+</style>
+<script>(function(){var d=document.documentElement,a=/[?&]source=twa(&|$)/.test(location.search)||(document.referrer||'').indexOf('android-app://')===0;try{localStorage.removeItem('gep_app');if(a)sessionStorage.setItem('gep_app','1');if(sessionStorage.getItem('gep_app')==='1')a=true}catch(e){}if(a)d.classList.add('is-app')})()</script>
+<script>(function(){try{var t=JSON.parse(localStorage.getItem('gep_theme'));if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}})()</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="#/" aria-label="Govexamprep home"><img src="assets/logo-icon-192.png" alt="" width="40" height="40"><span class="wordmark">Govexamprep</span></a>
+      <div class="tools">
+      <button type="button" class="themebtn" id="themeBtn" aria-label="Dark / Light mode">🌙</button>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="hi">हिंदी</button>
+      </div>
+      </div>
+    </div>
+    <nav class="main" id="nav" aria-label="Main"></nav>
+  </div>
+</header>
+<main class="wrap" id="app" tabindex="-1"><noscript><h1>Free Competitive Exam Practice for Government Exams</h1><p><a href="/all-topics/">Browse all practice topics</a> · <a href="/ssc-mock-test/">SSC</a> · <a href="/railway-practice-questions/">Railway</a> · <a href="/banking-quiz/">Banking</a></p><p>Free topic-wise MCQ practice in Hindi and English for SSC, Railway, Banking and other government exams. Please turn on JavaScript to use the website.</p></noscript></main>
+<div class="wrap adwrap" id="adbox" hidden></div>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script src="data/settings.js"></script>
+<script src="data/syllabus.js"></script>
+<script src="data/exams.js"></script>
+<script src="data/notes.js"></script>
+<script src="data/current-affairs.js"></script>
+<script src="data/books.js"></script>
+<script src="data/papers.js"></script>
+<script>
+(function(){
+'use strict';
+
+/* ---------- storage (safe) ---------- */
+function load(k,d){try{var v=localStorage.getItem('gep_'+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function save(k,v){try{localStorage.setItem('gep_'+k,JSON.stringify(v))}catch(e){}}
+
+var S={lang:load('lang','en')};
+function T(en,hi){return (S.lang==='hi'&&hi)?hi:en}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+
+/* ---------- data ---------- */
+var SUBJ=(window.SYLLABUS&&window.SYLLABUS.subjects)||[];
+var EXAMS=window.EXAMS||[];
+var NOTES=window.NOTES||{};
+var LET='ABCDEF';
+var BAD=[];
+function ansIdx(q){return LET.indexOf(String(q.answer||'').trim().toUpperCase())}
+function valid(q){
+  return q&&q.id&&q.subject&&q.topic&&q.q_en&&Array.isArray(q.options_en)&&q.options_en.length>=2&&ansIdx(q)>=0&&ansIdx(q)<q.options_en.length;
+}
+function isPub(q){return String(q.status||'published').toLowerCase()==='published'}
+function prep(list,isCA){
+  var out=[],seen={};
+  (list||[]).forEach(function(q){
+    if(isCA&&q){q=Object.assign({},q,{subject:'ca',topic:q.category})}
+    if(!valid(q)){BAD.push(q&&q.id?q.id:'(question without id)');return}
+    if(seen[q.id]){BAD.push(q.id+' (repeated id)');return}
+    seen[q.id]=1;
+    if(isPub(q))out.push(q);
+  });
+  return out;
+}
+var QS=prep(window.QUESTIONS,false);
+var CAQ=prep(window.CA_QUESTIONS,true);
+var HAS_CA=CAQ.length>0;
+if(!HAS_CA)SUBJ=SUBJ.filter(function(x){return x.id!=='ca'});
+var ALL=QS.concat(CAQ);
+/* questions load in the background so the first screen appears quickly */
+var READY=QS.length>0,WAITING=false,BANK_FAIL=false;
+function needsData(f,p){return !(f===''||f==='about'||f==='privacy'||f==='resources'||f==='exams'||f==='papers'||(f==='feedback'&&!p[1]))}
+function loaderHTML(){return '<div class="box loadbox"><div class="spin" aria-hidden="true"></div><p><b>'+(BANK_FAIL?T('Questions could not be loaded.','प्रश्न लोड नहीं हो सके।'):T('Loading questions…','प्रश्न लोड हो रहे हैं…'))+'</b></p><p class="small muted">'+(BANK_FAIL?T('Please check your internet connection and try again.','कृपया इंटरनेट कनेक्शन जाँचें और फिर से कोशिश करें।')+'</p><p><button class="btn" type="button" onclick="location.reload()">'+T('Try again','फिर से कोशिश करें')+'</button>':T('The first visit can take a few seconds. After that the website opens quickly, even offline.','पहली बार में कुछ सेकंड लग सकते हैं। उसके बाद वेबसाइट जल्दी खुलती है, बिना इंटरनेट के भी।'))+'</p></div>'}
+function bankDone(){
+  QS=prep(window.QUESTIONS,false);ALL=QS.concat(CAQ);READY=true;
+  var p=location.hash.replace(/^#\/?/,'').split('/'),f=p[0]||'';
+  if(WAITING||f===''||f==='exams'||f==='papers'){WAITING=false;route(true)}
+}
+function loadBank(){
+  if(READY)return;
+  var files=['data/question-bank-1.js','data/question-bank-2.js','data/questions.js'],left=files.length;
+  files.forEach(function(src){
+    var sc=document.createElement('script');sc.src=src;sc.async=false;
+    sc.onload=function(){if(--left===0)bankDone()};
+    sc.onerror=function(){BANK_FAIL=true;if(WAITING)app.innerHTML=loaderHTML()};
+    document.body.appendChild(sc);
+  });
+}
+
+function subj(id){for(var i=0;i<SUBJ.length;i++)if(SUBJ[i].id===id)return SUBJ[i];return null}
+function topic(s,id){if(!s)return null;for(var i=0;i<s.topics.length;i++)if(s.topics[i].id===id)return s.topics[i];return null}
+function nm(o){return o?T(o.en,o.hi):''}
+function qsFor(sid,tid){return ALL.filter(function(q){return q.subject===sid&&(!tid||q.topic===tid)})}
+function isPYQ(q){return q.pyq===true&&String(q.year||'').trim()&&String(q.source||'').trim()}
+function qText(q){return T(q.q_en,q.q_hi)}
+function qHTML(q){var L=esc(qText(q)).split('\n'),o=[],t=[];function fl(){if(t.length){o.push('<span class="ditab">'+t.map(function(r,i){return '<span class="dr'+(i?'':' dh')+'">'+r.split(' | ').map(function(c){return '<span>'+c+'</span>'}).join('')+'</span>'}).join('')+'</span>');t=[]}}
+L.forEach(function(l){if(l.indexOf(' | ')>0)t.push(l);else{fl();o.push(l)}});fl();return o.join('\n').replace(/\n?(<span class="ditab">)/g,'\n$1').replace(/(<\/span><\/span>)\n/g,'$1')}
+function qOpts(q){return (S.lang==='hi'&&Array.isArray(q.options_hi)&&q.options_hi.length===q.options_en.length&&q.options_hi.every(Boolean))?q.options_hi:q.options_en}
+function qExp(q){return T(q.explanation_en,q.explanation_hi)}
+function qFig(q){return q.figure?'<div class="qfig" role="img" aria-label="'+T('Question figure','प्रश्न आकृति')+'">'+q.figure+'</div>':''}
+function oFig(q,k){return (Array.isArray(q.options_figures)&&q.options_figures[k])?'<span class="ofig">'+q.options_figures[k]+'</span>':''}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a}
+
+/* ---------- progress ---------- */
+function stats(){return load('stats',{})}
+function record(q,chosen){
+  var s=stats(),k=q.subject+'/'+q.topic,o=s[k]||{a:0,c:0},ok=chosen===ansIdx(q);
+  o.a++; if(ok)o.c++; s[k]=o; save('stats',s);
+  var m=load('mist',[]),i=m.indexOf(q.id);
+  if(ok&&i>=0)m.splice(i,1); if(!ok&&i<0)m.push(q.id);
+  save('mist',m);
+}
+function prog(sid,tid){
+  var s=stats(),a=0,c=0;
+  Object.keys(s).forEach(function(k){var p=k.split('/');if(p[0]===sid&&(!tid||p[1]===tid)){a+=s[k].a;c+=s[k].c}});
+  return {a:a,c:c,pct:a?Math.round(c*100/a):0};
+}
+function progMeta(n,p){
+  var t=READY?n+' '+T(n===1?'question':'questions',n===1?'प्रश्न':'प्रश्न'):T('Loading questions…','प्रश्न लोड हो रहे हैं…');
+  if(p.a) t+='<span class="bar" title="'+p.pct+'%"><i style="width:'+p.pct+'%"></i></span>';
+  return t;
+}
+
+/* ---------- shell ---------- */
+var app=document.getElementById('app');
+var timer=null;
+function setLang(l){S.lang=l;save('lang',l);document.documentElement.lang=l;route()}
+document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+function isDark(){var t=document.documentElement.getAttribute('data-theme');if(t)return t==='dark';return !!(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)}
+function paintTheme(){var d=isDark(),b=document.getElementById('themeBtn');if(b){b.textContent=d?'☀️':'🌙';var l=d?T('Switch to light mode','लाइट मोड चालू करें'):T('Switch to dark mode','डार्क मोड चालू करें');b.setAttribute('aria-label',l);b.title=l}
+  var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',d?'#0E1428':'#1B3567')}
+(function(){var b=document.getElementById('themeBtn');if(b)b.addEventListener('click',function(){var t=isDark()?'light':'dark';document.documentElement.setAttribute('data-theme',t);save('theme',t);paintTheme()});
+  if(window.matchMedia){var mq=matchMedia('(prefers-color-scheme: dark)');if(mq.addEventListener)mq.addEventListener('change',paintTheme)}})();
+
+var FB_ON=true; /* feedback page is always available (email-based; Google Form link optional) */
+var NAV=[['',['Home','होम']],['subjects',['Common Studies','कॉमन स्टडीज़']],['exams',['Exam-wise','परीक्षा-वार']],['ca',['Current Affairs','करेंट अफेयर्स']],['me',['My Progress','मेरी प्रगति']],['mixed',['Mock Test','मॉक टेस्ट']],['papers',['Model Papers','मॉडल पेपर']],['resources',['Resources','पढ़ाई के साधन']],['feedback',['Feedback ★','फीडबैक ★']],['about',['About','परिचय']]];
+var APP_HIDE={exams:1,exam:1,resources:1};
+function navItems(){return NAV.filter(function(n){return (n[0]!=='ca'||HAS_CA)&&(n[0]!=='feedback'||FB_ON)&&!(IS_APP&&APP_HIDE[n[0]])})}
+function drawShell(first){
+  document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===S.lang?'true':'false')});
+  paintTheme();
+  document.getElementById('nav').innerHTML=navItems().map(function(n){
+    var on=(first===n[0])||(n[0]==='subjects'&&(first==='s'||first==='t'))||(n[0]==='exams'&&first==='exam');
+    return '<a href="#/'+n[0]+'"'+(on?' class="on" aria-current="page"':'')+'>'+T(n[1][0],n[1][1])+'</a>';
+  }).join('');
+  drawSupport();
+  if(IS_APP){document.getElementById('foot').innerHTML='<p>'+T('PrepFlight by Infinity Digital: practice questions for SSC, Railway and Banking exams. Not affiliated with or endorsed by any government body or exam board.','PrepFlight (Infinity Digital): SSC, रेलवे और बैंकिंग परीक्षाओं के अभ्यास प्रश्न। किसी सरकारी संस्था या परीक्षा बोर्ड से संबद्ध या मान्यता प्राप्त नहीं।')+' <a href="#/about">'+T('About','परिचय')+'</a> · <a href="#/privacy">'+T('Privacy','गोपनीयता')+'</a> · <a href="#/feedback">'+T('Feedback','फीडबैक')+'</a></p><p class="credit"><img src="assets/infinity-digital-logo.png" width="24" height="24" alt="Infinity Digital logo" loading="lazy"><span>'+T('Created by <strong>Infinity Digital</strong>','<strong>Infinity Digital</strong> द्वारा निर्मित')+'</span><a href="mailto:infinitydigital39@gmail.com">infinitydigital39@gmail.com</a></p>';return}
+  document.getElementById('foot').innerHTML='<p>'+(first==='about'?'':T('The topics here are taken from the official syllabi of SSC, Railway, Banking and other exams, but this is not the complete syllabus. Some parts, such as current affairs and exam-specific sections, are not covered. Always check the full syllabus in the latest official notification.','यहाँ के टॉपिक SSC, रेलवे, बैंकिंग और अन्य परीक्षाओं के आधिकारिक पाठ्यक्रम से लिए गए हैं, पर यह पूरा पाठ्यक्रम नहीं है। करेंट अफ़ेयर्स और परीक्षा-विशेष भाग जैसे कुछ हिस्से इसमें शामिल नहीं हैं। पूरा पाठ्यक्रम हमेशा नवीनतम आधिकारिक अधिसूचना में देखें।'))+' <a href="#/about">'+T('Read the full disclaimer','पूर्ण अस्वीकरण पढ़ें')+'</a> · <a href="#/privacy">'+T('Privacy','गोपनीयता')+'</a> · <a href="#/bank">'+T('Question bank','प्रश्न बैंक')+'</a> · <a href="/all-topics/">'+T('All practice topics (A–Z)','सभी अभ्यास टॉपिक (A–Z)')+'</a></p>'+(FB_ON?'<p><a class="btn ghost" href="#/feedback">⭐ '+T('Rate us / give feedback','रेटिंग / फीडबैक दें')+'</a></p><p>'+shareLink()+'</p>':'')+'<p id="visits">'+(visitText?T('Total visits: ','कुल विज़िट: ')+esc(visitText):'')+'</p>'+'<p class="credit"><img src="assets/infinity-digital-logo.png" width="24" height="24" alt="Infinity Digital logo" loading="lazy"><span>'+T('Created by <strong>Infinity Digital</strong>','<strong>Infinity Digital</strong> द्वारा निर्मित')+'</span><a href="mailto:infinitydigital39@gmail.com" aria-label="'+T('Email Infinity Digital','Infinity Digital को ईमेल करें')+': infinitydigital39@gmail.com">infinitydigital39@gmail.com</a></p>';
+}
+
+/* ---------- privacy ---------- */
+function privacyPage(){
+  document.title=T('Privacy','गोपनीयता')+' · '+(IS_APP?'PrepFlight':'Govexamprep');
+  var li=function(en,hi){return '<li>'+T(en,hi)+'</li>'};
+  app.innerHTML='<h1>🔒 '+T('Privacy','गोपनीयता')+'</h1><div class="box"><ul class="privlist">'+
+   li('No sign-up and no account. We do not ask for your name, phone number or email to use this website.','कोई साइन-अप या खाता नहीं। इस वेबसाइट को उपयोग करने के लिए हम आपका नाम, फ़ोन नंबर या ईमेल नहीं माँगते।')+
+   li('Your scores, bookmarks and progress are saved only in this browser on your own device. They are not sent to us.','आपके अंक, बुकमार्क और प्रगति केवल आपके अपने डिवाइस के इसी ब्राउज़र में सहेजे जाते हैं। ये हमें नहीं भेजे जाते।')+
+   (GC?li('We count visits with GoatCounter, which uses no cookies and does not identify you. We see only totals, such as how many times a page was opened.','हम GoatCounter से विज़िट गिनते हैं, जो कोई कुकी नहीं लगाता और आपकी पहचान नहीं करता। हमें केवल कुल संख्या दिखती है, जैसे कोई पेज कितनी बार खुला।'):'')+(!GC&&!ADS_ON?li('This website uses no cookies and no advertising or tracking code.','यह वेबसाइट कोई कुकी, विज्ञापन या ट्रैकिंग कोड उपयोग नहीं करती।'):'')+
+   li('Feedback is sent from your own email app. We receive only what you choose to write.','फीडबैक आपके अपने ईमेल ऐप से भेजा जाता है। हमें केवल वही मिलता है जो आप लिखना चुनते हैं।')+
+   (SUP_ON?li('Voluntary support (if you choose to give) is paid inside your own UPI app. This website never asks for card or bank details.','स्वैच्छिक सहयोग (यदि आप देना चाहें) आपके अपने UPI ऐप में ही होता है। यह वेबसाइट कभी कार्ड या बैंक विवरण नहीं माँगती।'):'')+
+   (ADS_ON?li('A small advertisement is shown at the bottom of pages by Google AdSense. Google and its partners may use cookies or similar technology to show ads based on your visits to this and other websites. You can turn off personalised ads at adssettings.google.com.','पेजों के नीचे Google AdSense द्वारा एक छोटा विज्ञापन दिखाया जाता है। Google और उसके साझेदार इस और अन्य वेबसाइटों पर आपकी विज़िट के आधार पर विज्ञापन दिखाने के लिए कुकी या ऐसी तकनीक का उपयोग कर सकते हैं। आप adssettings.google.com पर व्यक्तिगत विज्ञापन बंद कर सकते हैं।'):'')+
+   li('When you open a business link from our website, your browser tells that business only that the visit came from our website address. We do not share anything else about you.','जब आप हमारी वेबसाइट से किसी व्यवसाय का लिंक खोलते हैं, तो आपका ब्राउज़र उस व्यवसाय को केवल इतना बताता है कि आप हमारी वेबसाइट से आए हैं। हम आपके बारे में और कुछ साझा नहीं करते।')+
+   '</ul></div><p>'+T('Questions, corrections or removal requests: ','प्रश्न, सुधार या हटाने के अनुरोध: ')+'<a href="mailto:infinitydigital39@gmail.com">infinitydigital39@gmail.com</a></p>';
+}
+
+/* ---------- small advertisement at the bottom (Google AdSense, set in data/settings.js) ---------- */
+var IS_APP=document.documentElement.classList.contains('is-app');
+var SITE_HOST='govexamprep.org';
+if(IS_APP){try{var _b=document.querySelector('.brand');_b.setAttribute('aria-label','PrepFlight home');_b.querySelector('.wordmark').textContent='PrepFlight'}catch(e){}}
+var PLAY_URL=String((window.SETTINGS||{}).playStoreUrl||'').trim();if(!/^https:\/\/play\.google\.com\/store\/apps\/details\?id=[\w.]+/.test(PLAY_URL))PLAY_URL='';
+function webNote(){return '<div class="note info xlink">📖 '+T('Want notes, exam guides and study resources too? They are on our website <b>'+SITE_HOST+'</b>. Open it in your phone\'s browser (Chrome).','नोट्स, परीक्षा-गाइड और पढ़ाई के साधन भी चाहिए? वे हमारी वेबसाइट <b>'+SITE_HOST+'</b> पर हैं। उसे अपने फ़ोन के ब्राउज़र (Chrome) में खोलें।')+'</div>'}
+function appNote(){if(IS_APP)return '';return '<div class="note info xlink">📱 '+(PLAY_URL?T('Prefer an app? Practise the same quizzes in our Android app <b>PrepFlight</b>.','ऐप पसंद है? यही क्विज़ हमारे Android ऐप <b>PrepFlight</b> में भी हैं।')+' <a href="'+PLAY_URL+'" target="_blank" rel="noopener">'+T('Get it on Google Play','Google Play से लें')+' ›</a>':T('Our quiz app <b>PrepFlight</b> for Android is coming soon on Google Play, with the same questions as this website.','हमारा क्विज़ ऐप <b>PrepFlight</b> जल्द ही Google Play पर आएगा, इसी वेबसाइट के प्रश्नों के साथ।'))+'</div>'}
+var ADCFG=window.SETTINGS||{};
+var AD_CLIENT=String(ADCFG.adsenseClient||'').trim(),AD_SLOT=String(ADCFG.adsenseSlot||'').trim();
+var ADS_ON=/^ca-pub-\d{10,20}$/.test(AD_CLIENT)&&/^\d{6,12}$/.test(AD_SLOT)&&(IS_APP?ADCFG.adsInApp!==false:ADCFG.adsOnWebsite===true);
+function drawAds(){
+  var el=document.getElementById('adbox');if(!el||!ADS_ON)return;
+  el.hidden=false;
+  el.innerHTML='<p class="adlbl">'+T('Advertisement','विज्ञापन')+'</p><ins class="adsbygoogle" style="display:block" data-ad-client="'+esc(AD_CLIENT)+'" data-ad-slot="'+esc(AD_SLOT)+'" data-ad-format="horizontal" data-full-width-responsive="true"></ins>';
+  var sc=document.createElement('script');sc.async=true;sc.crossOrigin='anonymous';
+  sc.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(AD_CLIENT);
+  sc.onload=function(){try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}};
+  document.head.appendChild(sc);
+}
+/* ---------- support this project (voluntary, set in data/settings.js) ---------- */
+var SUPCFG=window.SETTINGS||{};
+var SUP_ON=SUPCFG.showSupportSection!==false&&!IS_APP;
+function supUpi(){return String(SUPCFG.upiId||'').trim()}
+function supReady(){var u=supUpi();return /^[\w.\-]+@[\w.\-]+$/.test(u)}
+function supLink(){return 'upi://pay?pa='+encodeURIComponent(supUpi())+'&pn='+encodeURIComponent(String(SUPCFG.upiName||'Govexamprep'))+'&cu=INR'}
+function personalNote(){
+  return '<div class="personal-card"><span class="tape" aria-hidden="true"></span><span class="stamp" aria-hidden="true">💛</span><p class="pen">I am a mother and a retired teacher. I started this project with one wish: to keep teaching students for as long as I live. Every student deserves to prepare for a better future, whether or not they can pay.</p>'+
+    '<p class="phi">मैं एक माँ हूँ और एक रिटायर्ड शिक्षिका हूँ। मैंने यह प्रोजेक्ट एक ही इच्छा से शुरू किया है: जब तक साँस है, तब तक विद्यार्थियों को पढ़ाती रहूँ। हर विद्यार्थी को बेहतर भविष्य की तैयारी करने का हक़ है, चाहे वो पैसे दे सके या नहीं।</p>'+
+    '<p class="sign">— A mother &amp; retired teacher, Infinity Digital <span>· एक माँ और रिटायर्ड शिक्षिका</span></p></div>';
+}
+function drawSupport(){
+  var el=document.getElementById('support');if(!el)return;
+  if(!SUP_ON){el.innerHTML='';return}
+  var qr=String(SUPCFG.upiQrImage||'').trim();
+  var qrEmpty='<span class="box" aria-hidden="true"></span>QR code<span class="hi2">यहाँ QR कोड आएगा</span>';
+  var qrHtml=qr?'<div class="qr has-img"><img src="'+esc(qr)+'" alt="UPI QR code" width="200" height="200" loading="lazy" onerror="var q=this.parentNode;q.classList.remove(\'has-img\');q.innerHTML=\''+qrEmpty.replace(/'/g,"\\'")+'\'"></div>'
+               :'<div class="qr">'+qrEmpty+'</div>';
+  el.innerHTML=
+   '<div class="sup-head"><h2 id="supportTitle">Support this project<span class="hi2">इस प्रोजेक्ट का सहयोग करें</span></h2>'+
+   '<p class="for">For students, parents &amp; well-wishers · विद्यार्थियों, अभिभावकों और शुभचिंतकों के लिए</p></div>'+
+   '<div class="why"><h3>Why is everything here free?<span class="hi2">यहाँ सब कुछ मुफ़्त क्यों है?</span></h3>'+
+   '<p class="ten">Coaching and paid courses ask for a fixed, compulsory fee. A student who cannot pay is left behind. We don’t want that. So every note, practice set and mock test here is free for every student, always. Those who can, may give whatever they wish. Those who can’t are just as welcome.</p>'+
+   '<p class="thi">कोचिंग और पेड कोर्स में एक तय और ज़रूरी फ़ीस देनी पड़ती है। जो विद्यार्थी फ़ीस नहीं दे सकता, वह पीछे रह जाता है। हम ऐसा नहीं चाहते। इसलिए यहाँ हर नोट्स, अभ्यास सेट और मॉक टेस्ट हर विद्यार्थी के लिए हमेशा मुफ़्त है। जो दे सकते हैं, वे अपनी मर्ज़ी से जितना चाहें दें। जो नहीं दे सकते, उनका भी उतना ही स्वागत है।</p></div>'+
+   '<p class="helps-h">Your support helps us <span>· आपका सहयोग इनमें काम आता है</span></p>'+
+   '<div class="helps">'+
+     '<div class="help c1"><span class="ic" aria-hidden="true">🌐</span>Keep this website running<span class="hi2">वेबसाइट चलाए रखना</span></div>'+
+     '<div class="help c2"><span class="ic" aria-hidden="true">🧩</span>Build more free learning projects<span class="hi2">और नए मुफ़्त प्रोजेक्ट बनाना</span></div>'+
+     '<div class="help c3"><span class="ic" aria-hidden="true">📚</span>Free offline education for children in need<span class="hi2">ज़रूरतमंद बच्चों को ऑफ़लाइन मुफ़्त पढ़ाई</span></div>'+
+   '</div>'+
+   '<p class="any"><b>Any amount, or nothing at all.</b> Whatever you choose, you can keep using everything here. कितना भी दें, या बिल्कुल न दें। आप जो भी चुनें, यहाँ की हर चीज़ पहले की तरह इस्तेमाल कर सकते हैं।</p>'+
+   '<div class="pay">'+qrHtml+'<div>'+
+     '<p class="lbl">UPI ID · यूपीआई आईडी</p><span class="upi-id" id="supUpiId">'+esc(supUpi())+'</span>'+
+     '<div class="btns"><button type="button" class="btn ghost" id="supCopy">📋 Copy UPI ID · आईडी कॉपी करें</button></div>'+
+     '<p class="how">Scan the QR code, or copy the UPI ID and paste it in any UPI app (Google Pay, PhonePe, Paytm, BHIM). Your UPI app will show the account holder’s own name. QR कोड स्कैन करें, या UPI आईडी कॉपी करके किसी भी UPI ऐप (Google Pay, PhonePe, Paytm, BHIM) में डालें। आपके UPI ऐप में खाते वाले का अपना नाम दिखेगा।</p>'+
+     '<p class="legal">This is a personal project, not a registered charity, NGO or trust. Contributions are not tax-deductible (no 80G receipt) and are not a fee for any service. Please contribute only if you are an Indian citizen. यह एक निजी प्रोजेक्ट है, कोई पंजीकृत चैरिटी, NGO या ट्रस्ट नहीं। इस सहयोग पर आयकर छूट (80G रसीद) नहीं मिलती और यह किसी सेवा का शुल्क नहीं है। कृपया केवल भारतीय नागरिक ही सहयोग करें।</p>'+
+     '<div class="thanks-card" id="supThanks" role="status" aria-live="polite">💛 Thank you for your support! Your help brings free education to more students and children, online and offline.<span class="hi2">आपके सहयोग के लिए धन्यवाद! आपकी मदद से हम और ज़्यादा विद्यार्थियों और बच्चों तक मुफ़्त शिक्षा पहुँचा पाएँगे, ऑनलाइन भी और ऑफ़लाइन भी।</span></div>'+
+   '</div></div>';
+  document.getElementById('supCopy').addEventListener('click',function(){
+    var b=this,txt=supUpi();
+    function done(){b.textContent='✓ Copied · कॉपी हो गया'}
+    function fallback(){try{var r=document.createRange();r.selectNodeContents(document.getElementById('supUpiId'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges();}catch(e){}done()}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,fallback)}else fallback();
+  });
+}
+document.addEventListener('click',function(e){
+  var j=e.target.closest&&e.target.closest('[data-support-jump]');if(!j)return;
+  e.preventDefault();var el=document.getElementById('support');if(!el||!el.firstChild)return;
+  el.scrollIntoView({behavior:'smooth',block:'start'});var h=document.getElementById('supportTitle');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}
+});
+
+function DISC(){return T('Common Studies brings together the topics that are common to the official syllabi of selected competitive exams (SSC, Railway, Banking and others). These topics are taken from the official syllabi, but this is not the complete syllabus of any exam. Some parts are not covered here, such as current affairs, exam-specific subjects and sections, and later selection stages (for example typing or skill tests, physical tests and interviews). Exam patterns, subjects, marks and eligibility may also change. Before applying or finalising your preparation, always check the full syllabus in the latest official notification of your exam, and also study from standard books and previous-year papers. Please do not depend on this website alone.',
+ 'कॉमन स्टडीज़ चुनी हुई प्रतियोगी परीक्षाओं (SSC, रेलवे, बैंकिंग आदि) के आधिकारिक पाठ्यक्रम में साझा टॉपिक को एक जगह लाती है। ये टॉपिक आधिकारिक पाठ्यक्रम से ही लिए गए हैं, पर यह किसी भी परीक्षा का पूरा पाठ्यक्रम नहीं है। कुछ हिस्से यहाँ शामिल नहीं हैं, जैसे करेंट अफ़ेयर्स, परीक्षा-विशेष विषय और भाग, और बाद के चयन चरण (जैसे टाइपिंग या कौशल परीक्षा, शारीरिक परीक्षा और साक्षात्कार)। परीक्षा का पैटर्न, विषय, अंक और पात्रता बदल भी सकते हैं। आवेदन करने या तैयारी तय करने से पहले अपनी परीक्षा की नवीनतम आधिकारिक अधिसूचना में पूरा पाठ्यक्रम ज़रूर देखें, और मानक पुस्तकों व पिछले वर्षों के प्रश्नपत्रों से भी पढ़ें। केवल इसी वेबसाइट पर निर्भर न रहें।')}
+
+function guideNote(){
+  return '<div class="note info"><strong>'+T('Please read: this website is for guidance and practice','कृपया पढ़ें: यह वेबसाइट मार्गदर्शन और अभ्यास के लिए है')+'</strong><br>'+
+  T('We try to cover as many common topics as possible. But your exam may also have other topics, sections and selection stages. Study those separately using the official syllabus, standard books and previous-year papers. Do not depend on this website alone.',
+    'हम अधिक से अधिक साझा टॉपिक कवर करने का प्रयास करते हैं। लेकिन आपकी परीक्षा में अन्य टॉपिक, भाग और चयन चरण भी हो सकते हैं। उन्हें आधिकारिक पाठ्यक्रम, मानक पुस्तकों और पिछले वर्षों के प्रश्नपत्रों से अलग से पढ़ें। केवल इसी वेबसाइट के भरोसे न रहें।')+'</div>';
+}
+/* ---------- visitor counting (GoatCounter) ---------- */
+var SET=window.SETTINGS||{},GC=String(SET.goatcounterCode||'').trim().toLowerCase().replace(/[^a-z0-9-]/g,'');
+var gcReady=false,gcPending=false;
+function countView(){
+  if(!GC)return;
+  if(!gcReady){gcPending=true;return}
+  try{window.goatcounter.count({path:'/'+(location.hash.replace(/^#\/?/,'').split('/').slice(0,3).join('/')||'home')})}catch(e){}
+}
+if(GC&&location.protocol!=='file:'){
+  window.goatcounter={no_onload:true};
+  var gs=document.createElement('script');gs.async=true;gs.src='https://gc.zgo.at/count.js';
+  gs.setAttribute('data-goatcounter','https://'+GC+'.goatcounter.com/count');
+  gs.onload=function(){gcReady=true;if(gcPending){gcPending=false;countView()}};
+  document.head.appendChild(gs);
+}
+var visitText='';
+function loadVisits(){
+  if(!GC||!SET.showVisitorCount||location.protocol==='file:')return;
+  fetch('https://'+GC+'.goatcounter.com/counter/TOTAL.json').then(function(r){if(!r.ok)throw 0;return r.json()})
+   .then(function(d){visitText=d&&d.count?String(d.count):'';var el=document.getElementById('visits');if(el&&visitText)el.textContent=T('Total visits: ','कुल विज़िट: ')+visitText})
+   .catch(function(){});
+}
+loadVisits();
+
+/* ---------- gratitude button (counted with GoatCounter) ---------- */
+var BLESS_PATH='/i-am-grateful',blessCount=null,installEvt=null,blessPending=false;
+function blessBox(){
+  var done=load('grateful',false)===todayKey();
+  return '<div class="bless" id="bless"><p class="bless-q">'+T('You are blessed','आप सौभाग्यशाली हैं')+'</p>'+
+    '<p class="bless-s">'+T('Many people in the world never get the chance to go to school. Today you are studying and preparing for your future. This chance is a blessing from the Universe, reaching you through your parents and teachers.','दुनिया में बहुत से लोगों को स्कूल जाने तक का अवसर नहीं मिलता। आज आप पढ़ रहे हैं और अपने भविष्य की तैयारी कर रहे हैं। यह अवसर ब्रह्मांड का आशीर्वाद है, जो माता-पिता और गुरुजनों के माध्यम से आप तक पहुँचा है।')+'</p>'+
+    '<p class="bless-k">'+T("Today's gratitude thought",'आज का आभार विचार')+'</p><p class="bless-t">“'+esc(dailyThought())+'”</p>'+
+    '<button type="button" class="bless-btn" id="blessBtn"'+(done?' disabled':'')+'>'+(done?T('🙏 You are blessed. Your thank-you has reached the Universe','🙏 आप धन्य हैं। आपका धन्यवाद ब्रह्मांड तक पहुँच गया'):T('🙏 Thank you, Universe','🙏 धन्यवाद यूनिवर्स'))+'</button>'+
+    '<p class="bless-n" id="blessN">'+(blessCount?blessLine():'')+'</p></div>';
+}
+function blessLine(){return T(blessCount+' grateful hearts so far','अब तक '+blessCount+' आभारी मन')}
+function wireBless(){
+  var b=document.getElementById('blessBtn'); if(!b)return;
+  b.onclick=function(){
+    if(load('grateful',false)===todayKey())return;
+    save('grateful',todayKey());
+    if(GC){ if(gcReady){try{window.goatcounter.count({path:BLESS_PATH,title:"I'm grateful"})}catch(e){}} else blessPending=true; }
+    if(blessCount){var n=parseInt(String(blessCount).replace(/\D/g,''),10);if(n>=0)blessCount=(n+1).toLocaleString('en-IN')}
+    b.disabled=true;b.textContent=T('🙏 You are blessed. Your thank-you has reached the Universe','🙏 आप धन्य हैं। आपका धन्यवाद ब्रह्मांड तक पहुँच गया');
+    var el=document.getElementById('blessN'); if(el&&blessCount)el.textContent=blessLine();
+  };
+}
+function loadBless(){
+  if(!GC||location.protocol==='file:')return;
+  fetch('https://'+GC+'.goatcounter.com/counter/'+encodeURIComponent(BLESS_PATH)+'.json').then(function(r){if(!r.ok)throw 0;return r.json()})
+   .then(function(d){if(d&&d.count){blessCount=String(d.count);var el=document.getElementById('blessN');if(el)el.textContent=blessLine()}}).catch(function(){});
+}
+loadBless();
+setInterval(function(){if(blessPending&&gcReady){blessPending=false;try{window.goatcounter.count({path:BLESS_PATH,title:"I'm grateful"})}catch(e){}}},1500);
+/* a quiet gratitude thought, shown after a quiz or test */
+var THOUGHTS=[
+ ['Before the next question, remember someone who taught you your first letter.','अगले प्रश्न से पहले उसे याद कीजिए जिसने आपको पहला अक्षर सिखाया।'],
+ ["Every right answer today began with a teacher's patience.",'आज का हर सही उत्तर किसी गुरु के धैर्य से शुरू हुआ।'],
+ ['Your parents hoped for this chance for you. Make them proud, and thank them today.','आपके माता-पिता ने आपके लिए इस अवसर की आशा की थी। उन्हें गर्व महसूस कराइए, और आज उन्हें धन्यवाद कहिए।'],
+ ['The chance to study is itself a blessing. Use it well.','पढ़ने का अवसर अपने आप में एक आशीर्वाद है। इसका अच्छा उपयोग कीजिए।'],
+ ['A grateful mind learns faster and worries less.','आभारी मन जल्दी सीखता है और कम चिंता करता है।'],
+ ['Mistakes are teachers too. Thank them, then try again.','गलतियाँ भी शिक्षक हैं। उन्हें धन्यवाद दीजिए और फिर प्रयास कीजिए।'],
+ ['Whatever you call it, God, the Universe or good fortune, say thank you for how far you have come.','आप उसे ईश्वर कहें, ब्रह्मांड कहें या सौभाग्य, जहाँ तक पहुँचे हैं उसके लिए धन्यवाद कहिए।'],
+ ['Gratitude turns what we have into enough.','आभार, जो हमारे पास है, उसे पर्याप्त बना देता है।'],
+ ["Thank the effort you put in today. Tomorrow's success is built on it.",'आज की अपनी मेहनत को धन्यवाद दीजिए। कल की सफलता इसी पर बनेगी।'],
+ ['Call a parent today and tell them you are trying your best.','आज माता-पिता से बात कीजिए और बताइए कि आप पूरी कोशिश कर रहे हैं।'],
+ ['What you have today was once a prayer. Honour it with your effort.','आज जो आपके पास है, वह कभी आपकी प्रार्थना थी। अपनी मेहनत से उसका सम्मान कीजिए।'],
+ ["Gratitude turns 'I have to study' into 'I get to study'.","आभार 'मुझे पढ़ना पड़ता है' को 'मुझे पढ़ने का अवसर मिला है' में बदल देता है।"],
+ ['Thank the Universe for a mind that can learn and eyes that can read.','उस ब्रह्मांड का धन्यवाद कीजिए जिसने सीखने वाला मन और पढ़ने वाली आँखें दीं।']
+];
+function todayKey(){var d=new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+function dailyThought(){var d=new Date(),n=Math.floor((d-new Date(d.getFullYear(),0,0))/864e5),t=THOUGHTS[n%THOUGHTS.length];return T(t[0],t[1])}
+function thought(){var t=THOUGHTS[Math.floor(Math.random()*THOUGHTS.length)];return '<p class="thought">🙏 '+esc(T(t[0],t[1]))+'</p>'}
+/* install as app (PWA) */
+window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();installEvt=e;['installBtn','ahInstall'].forEach(function(id){var b=document.getElementById(id);if(b)b.hidden=false});var m=document.getElementById('ahManual');if(m)m.hidden=true;var o=document.getElementById('ahOr');if(o)o.hidden=false});
+window.addEventListener('appinstalled',function(){installEvt=null;var c=document.getElementById('addHome');if(c)c.remove();var b=document.getElementById('installBtn');if(b)b.hidden=true});
+function addHomeCard(){
+  var standalone=(window.matchMedia&&window.matchMedia('(display-mode: standalone)').matches)||window.navigator.standalone===true;
+  if(standalone||load('ahHidden',false))return '';
+  var ua=navigator.userAgent||'',ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  var android='<p class="ah-os">'+T('Android phone (Chrome):','Android फ़ोन (Chrome):')+'</p><ol><li>'+T('Tap the three dots ⋮ at the top right.','ऊपर दाईं ओर तीन बिंदु ⋮ दबाएँ।')+'</li><li>'+T('Tap "Add to Home screen" or "Install app".','"Add to Home screen" या "Install app" दबाएँ।')+'</li><li>'+T('Tap "Add". The Govexamprep icon will appear on your home screen.','"Add" दबाएँ। आपकी होम स्क्रीन पर Govexamprep का आइकन आ जाएगा।')+'</li></ol>';
+  var iphone='<p class="ah-os">'+T('iPhone (Safari):','iPhone (Safari):')+'</p><ol><li>'+T('Tap the Share button (a square with an arrow ↑) at the bottom.','नीचे Share बटन (तीर ↑ वाला चौकोर) दबाएँ।')+'</li><li>'+T('Scroll down and tap "Add to Home Screen".','नीचे स्क्रॉल करके "Add to Home Screen" दबाएँ।')+'</li><li>'+T('Tap "Add" at the top right. Done!','ऊपर दाईं ओर "Add" दबाएँ। बस हो गया!')+'</li></ol>';
+  return '<section class="addhome" id="addHome"><button type="button" class="ah-x" id="ahClose" aria-label="'+T('Close','बंद करें')+'">×</button>'+
+    '<h2>📲 '+T('Keep Govexamprep on your phone like an app','Govexamprep को अपने फ़ोन में ऐप की तरह रखें')+'</h2>'+
+    '<p>'+T('Free, nothing to download from any store. Add it to your home screen once and open it with one tap, like any other app. After your first visit it also works without internet.','मुफ़्त, किसी स्टोर से कुछ डाउनलोड नहीं करना। एक बार होम स्क्रीन पर जोड़ें और दूसरे ऐप की तरह एक टैप में खोलें। पहली बार खोलने के बाद यह बिना इंटरनेट के भी चलता है।')+'</p>'+
+    '<button type="button" class="btn" id="ahInstall"'+(installEvt?'':' hidden')+'>'+T('📲 Add to my phone (one tap)','📲 मेरे फ़ोन में जोड़ें (एक टैप)')+'</button>'+'<p class="muted" id="ahOr"'+(installEvt?'':' hidden')+'><a href="#" id="ahShow">'+T('Button not working? See the manual steps','बटन काम न करे? हाथ से जोड़ने के चरण देखें')+'</a></p>'+(ios?'<p class="muted">'+T('On iPhone, Apple does not allow a one-tap button, so please follow these 3 steps:','iPhone में Apple एक-टैप बटन की अनुमति नहीं देता, इसलिए कृपया ये 3 चरण अपनाएँ:')+'</p>':'')+(installEvt&&!ios?'<div id="ahManual" hidden>'+android+iphone+'</div>':'<details class="ahd"><summary>'+T('How to add it (3 easy steps)','कैसे जोड़ें (3 आसान चरण)')+'</summary><div id="ahManual">'+(ios?iphone+android:android+iphone)+'</div></details>')+'</section>';
+}
+function wireAddHome(){
+  var i=document.getElementById('ahInstall');if(i)i.onclick=function(){if(!installEvt)return;installEvt.prompt();installEvt.userChoice.then(function(r){if(r&&r.outcome==='accepted'){var c=document.getElementById('addHome');if(c)c.remove()}installEvt=null;i.hidden=true;var m=document.getElementById('ahManual');if(m)m.hidden=false})};
+  var sh=document.getElementById('ahShow');if(sh)sh.onclick=function(e){e.preventDefault();var m=document.getElementById('ahManual');if(m)m.hidden=false};
+  var b=document.getElementById('ahClose');if(!b)return;
+  b.onclick=function(){save('ahHidden',true);var c=document.getElementById('addHome');if(c)c.remove()};
+}
+function installBox(){
+  return '<button type="button" class="btn ghost" id="installBtn"'+(installEvt?'':' hidden')+'>'+T('📲 Install Govexamprep app','📲 Govexamprep ऐप इंस्टॉल करें')+'</button>';
+}
+function wireInstall(){
+  var b=document.getElementById('installBtn'); if(!b)return;
+  b.onclick=function(){if(!installEvt)return;installEvt.prompt();installEvt.userChoice.then(function(){installEvt=null;b.hidden=true})};
+}
+function tagline(){
+  var st=window.SETTINGS||{},en=String(st.taglineEn||'').trim(),hi=String(st.taglineHi||'').trim();
+  return en?'<span class="tagline">'+esc(T(en,hi||en))+'</span>':'';
+}
+function route(again){
+  if(timer){clearInterval(timer);timer=null}
+  RKEY=null;
+  if(again!==true)countView();
+  var p=location.hash.replace(/^#\/?/,'').split('/').map(decodeURIComponent);
+  var f=p[0]||'';
+  drawShell(f);
+  document.documentElement.lang=S.lang;
+  var v;
+  if(!READY&&needsData(f,p)){WAITING=true;app.innerHTML=loaderHTML();if(again!==true)window.scrollTo(0,0);return}
+  if(IS_APP&&APP_HIDE[f]){location.replace('#/');return}
+  if(f==='')v=home();
+  else if(f==='subjects')v=subjects();
+  else if(f==='s')v=subjectPage(p[1]);
+  else if(f==='t')v=topicPage(p[1],p[2],p[3]||'',p[4]);
+  else if(f==='exams')v=examsPage();
+  else if(f==='exam')v=examPage(p[1]);
+  else if(f==='ca')v=caPage(p[1],p[2]);
+  else if(f==='mixed')v=mixedPage();
+  else if(f==='papers')v=papersPage();
+  else if(f==='paper')v=paperPage(p[1]);
+  else if(f==='bank')v=bankPage();
+  else if(f==='about')v=aboutPage();
+  else if(f==='privacy')v=privacyPage();
+  else if(f==='feedback')v=feedbackPage(p[1]);
+  else if(f==='st')v=subjectTest(p[1]);
+  else if(f==='me')v=mePage(p[1]);
+  else if(f==='daily')v=dailyPage(p[1]);
+  else if(f==='resources')v=resourcesPage();
+  else v=notFound();
+  try{var h=app.querySelector('h1');if(h){h=h.cloneNode(true);[].forEach.call(h.querySelectorAll('.hi2'),function(x){x.remove()})}document.title=IS_APP?((f===''||!h)?'PrepFlight – Exam Practice Quiz':h.textContent.trim()+' | PrepFlight'):((f===''||!h)?'Govexamprep – Free Competitive Exam Preparation & Mock Tests':h.textContent.trim()+' | Govexamprep')}catch(e){}
+  if(again!==true)window.scrollTo(0,0);
+}
+function notFound(){app.innerHTML='<div class="box empty"><h1>'+T('Page not found','पेज नहीं मिला')+'</h1><p>'+T('This link does not lead anywhere. Go back to the home page.','यह लिंक किसी पेज पर नहीं जाता। होम पेज पर वापस जाएँ।')+'</p><a class="btn" href="#/">'+T('Go to home','होम पर जाएँ')+'</a></div>'}
+
+/* ---------- app home (Android app: quiz only) ---------- */
+function appHome(){
+  var core=SUBJ.filter(function(s){return s.group==='core'}),aw=SUBJ.filter(function(s){return s.group==='awareness'});
+  app.innerHTML=
+  '<section class="hero">'+
+   '<div class="hero-brand"><img src="assets/logo-icon-192.png" alt="" width="84" height="84"><span class="hb-text"><span class="wordmark">PrepFlight</span>'+tagline()+'</span></div>'+
+   '<h1>'+T('Exam Practice Quiz','परीक्षा अभ्यास क्विज़')+'</h1>'+'<p class="subh">'+T('SSC · Railway · Banking: topic quizzes, mock tests and model papers.','SSC · रेलवे · बैंकिंग: टॉपिक क्विज़, मॉक टेस्ट और मॉडल पेपर।')+'</p>'+
+   '<div class="btns"><a class="btn" href="#/subjects">'+T('Start a quiz','क्विज़ शुरू करें')+'</a><a class="btn ghost" href="#/mixed">'+T('Mock test','मॉक टेस्ट')+'</a><a class="btn ghost" href="#/papers">'+T('Model papers','मॉडल पेपर')+'</a></div>'+dailyCard()+
+  '</section>'+
+  '<h2>'+T('Main subjects','मुख्य विषय')+'</h2>'+subjectList(core)+
+  '<h2>'+T('Basic awareness','मूल जागरूकता')+'</h2>'+subjectList(aw)+
+  '<p class="btns" style="margin-top:14px"><a class="btn ghost" href="#/me">'+T('My progress and mistakes','मेरी प्रगति और गलतियाँ')+'</a></p>'+webNote();
+}
+
+/* ---------- home ---------- */
+function home(){
+  if(IS_APP)return appHome();
+  var core=SUBJ.filter(function(s){return s.group==='core'}),aw=SUBJ.filter(function(s){return s.group==='awareness'});
+  app.innerHTML=
+  '<section class="hero">'+
+   '<div class="hero-brand"><img src="assets/logo-icon-192.png" alt="" width="84" height="84"><span class="hb-text"><span class="wordmark">Govexamprep</span>'+tagline()+'</span></div>'+
+   '<h1>'+T('Free Competitive Exam Practice for Government Exams','सरकारी परीक्षाओं के लिए निःशुल्क प्रतियोगी परीक्षा अभ्यास')+'</h1>'+'<p class="subh">'+T('One common study platform. Multiple competitive exams. Clear guidance.','एक साझा अध्ययन मंच। अनेक प्रतियोगी परीक्षाएँ। स्पष्ट मार्गदर्शन।')+'</p>'+
+   '<p class="lead">'+T('Learn the overlapping subjects once, practise them topic by topic, and then add only the exam-specific preparation your target exam needs.','साझा विषयों को एक बार सीखें, उन्हें टॉपिक-वार अभ्यास करें, और फिर केवल वही परीक्षा-विशेष तैयारी जोड़ें जो आपकी लक्ष्य परीक्षा के लिए ज़रूरी है।')+'</p>'+
+   '<div class="sheet" aria-hidden="true"><span>Q1</span><span class="b">A</span><span class="b">B</span><span class="b f">C</span><span class="b">D</span></div>'+
+   '<div class="btns"><a class="btn" href="#/subjects">'+T('Start Common Studies','कॉमन स्टडीज़ शुरू करें')+'</a><a class="btn ghost" href="#/exams">'+T('Choose your exam','अपनी परीक्षा चुनें')+'</a></div>'+dailyCard()+
+  '</section>'+addHomeCard()+
+  '<h2>'+T('How to study each topic','हर टॉपिक कैसे पढ़ें')+'</h2>'+
+  '<ol class="steps">'+[
+    ['Daily Quiz','दैनिक क्विज़','10 new questions every day','हर दिन 10 नए प्रश्न'],
+    ['Practise','अभ्यास','Answer one by one with explanations','व्याख्या के साथ एक-एक प्रश्न'],
+    ['Quiz','क्विज़','10 quick questions','10 त्वरित प्रश्न'],
+    ['Mock test','मॉक टेस्ट','Timed, like the real exam','असली परीक्षा जैसा, समय के साथ'],
+    ['Revise','दोहराएँ','Your mistakes first','पहले आपकी गलतियाँ']
+  ].map(function(x){return '<li><b>'+T(x[0],x[1])+'</b><span>'+T(x[2],x[3])+'</span></li>'}).join('')+'</ol>'+
+  '<h2>'+T('Common core','मुख्य साझा विषय')+'</h2>'+subjectList(core)+
+  '<h2>'+T('Common awareness','सामान्य जागरूकता')+'</h2>'+
+  '<p class="group-note">'+T('Basic level only. Exams that test these areas in depth need separate detailed preparation.','केवल मूल स्तर। जिन परीक्षाओं में ये विषय विस्तार से पूछे जाते हैं, उनके लिए अलग विस्तृत तैयारी चाहिए।')+'</p>'+subjectList(aw)+
+  schoolMap()+'<h2>'+T('Exam-specific add-ons','परीक्षा-विशेष अतिरिक्त तैयारी')+'</h2>'+
+  '<p>'+T('State GK, local language, detailed Computer, detailed Banking / Financial Awareness, typing or skill tests, PET/PST, CBAT and technical subjects are not part of Common Studies. Each exam page lists what you need to add.','राज्य GK, स्थानीय भाषा, विस्तृत कंप्यूटर, विस्तृत बैंकिंग / वित्तीय जागरूकता, टाइपिंग या स्किल टेस्ट, PET/PST, CBAT और तकनीकी विषय कॉमन स्टडीज़ का हिस्सा नहीं हैं। हर परीक्षा पेज पर बताया गया है कि आपको क्या जोड़ना है।')+'</p>'+
+  '<a class="btn ghost" href="#/exams">'+T('See exam-wise guidance','परीक्षा-वार मार्गदर्शन देखें')+'</a>'+appNote()+blessBox()+'<div class="btns" style="margin-top:14px">'+installBox()+'</div>';
+  wireBless();wireInstall();wireAddHome();
+}
+function subjectList(list){
+  return '<ul class="list">'+list.map(function(s){
+    var n=qsFor(s.id).length,p=prog(s.id);
+    var ic={maths:'🧮',reasoning:'🧠',gk:'🌏',science:'🔬',ca:'📰',english:'🔤',hindi:'अ',computer:'💻',banking:'🏦'}[s.id]||'📘';
+    return '<li class="sub-'+s.id+'"><a class="item" href="#/s/'+s.id+'"><span class="sic" aria-hidden="true">'+ic+'</span><span class="name">'+esc(nm(s))+'</span><span class="meta">'+s.topics.length+' '+T('topics','टॉपिक')+'<br>'+progMeta(n,p)+'</span></a></li>';
+  }).join('')+'</ul>';
+}
+
+/* ---------- school subject finder ---------- */
+var SCHOOL=[
+ ['History','इतिहास','gk',['ancient','medieval','modern','art-culture']],
+ ['Geography','भूगोल','gk',['indian-geo','world-geo','parks']],
+ ['Civics / Polity','नागरिक शास्त्र / राजव्यवस्था','gk',['polity']],
+ ['Economics','अर्थशास्त्र','gk',['economy','schemes']],
+ ['Physics','भौतिकी','science',['motion','heat','light','sound','electricity']],
+ ['Chemistry','रसायन','science',['matter','atoms','acids','metals','reactions','everyday-chem']],
+ ['Biology','जीव विज्ञान','science',['cell','human-body','nutrition','blood','respiration','reproduction','plants','environment']]
+];
+function schoolMap(){
+  return '<h2>'+T('Looking for a school subject?','स्कूल का कोई विषय खोज रहे हैं?')+'</h2>'+
+  '<p class="group-note">'+T('History, Geography and Civics are inside General Knowledge. Physics, Chemistry and Biology are inside General Science.','इतिहास, भूगोल और नागरिक शास्त्र सामान्य ज्ञान के अंदर हैं। भौतिकी, रसायन और जीव विज्ञान सामान्य विज्ञान के अंदर हैं।')+'</p>'+
+  '<ul class="list">'+SCHOOL.map(function(x){var s=subj(x[2]);if(!s)return '';
+    return '<li class="trow"><div class="th"><span class="tname">'+T(x[0],x[1])+'</span><span class="meta">'+esc(nm(s))+'</span></div><div class="qb">'+
+      x[3].map(function(id){var t=topic(s,id);return t?'<a href="#/t/'+s.id+'/'+id+'/practice">'+esc(nm(t).replace(/^(Physics|Chemistry|Biology): /,'').replace(/^(भौतिकी|रसायन|जीव विज्ञान): /,''))+'</a>':''}).join('')+'</div></li>';
+  }).join('')+'</ul>';
+}
+
+/* ---------- subjects ---------- */
+function subjects(){
+  app.innerHTML='<h1>'+T('Common Studies','कॉमन स्टडीज़')+'</h1>'+
+  '<p class="muted">'+T('Pick a subject, then a topic. Every topic has practice, quiz, a mock test and revision; many topics also have short notes. Verified previous-year questions appear when they are added.','एक विषय चुनें, फिर एक टॉपिक। हर टॉपिक में अभ्यास, क्विज़, मॉक टेस्ट और रिवीज़न है; कई टॉपिक में संक्षिप्त नोट्स भी हैं। सत्यापित पिछले वर्ष के प्रश्न जुड़ने पर दिखेंगे।')+'</p>'+
+  '<h2>'+T('Common core','मुख्य साझा विषय')+'</h2>'+subjectList(SUBJ.filter(function(s){return s.group==='core'}))+
+  '<h2>'+T('Common awareness','सामान्य जागरूकता')+'</h2>'+
+  '<p class="group-note">'+T('Basic level only, for general awareness and common objective questions.','केवल मूल स्तर, सामान्य जागरूकता और साझा वस्तुनिष्ठ प्रश्नों के लिए।')+'</p>'+
+  subjectList(SUBJ.filter(function(s){return s.group==='awareness'}))+schoolMap();
+}
+function subjectPage(sid){
+  var s=subj(sid); if(!s)return notFound();
+  var total=qsFor(s.id).length;
+  app.innerHTML='<div class="crumbs"><a href="#/subjects">'+T('Common Studies','कॉमन स्टडीज़')+'</a></div>'+
+  '<h1>'+esc(nm(s))+'</h1>'+
+  '<p class="muted">'+T(s.topics.length+' topics. Scroll down, pick a topic and start.',s.topics.length+' टॉपिक। नीचे स्क्रॉल करें, टॉपिक चुनें और शुरू करें।')+'</p>'+
+  (total?'<div class="btns" style="margin-bottom:16px"><a class="btn" href="#/st/'+s.id+'">'+T('Full subject test','पूरे विषय का टेस्ट')+' ('+Math.min(25,total)+')</a></div>':'')+
+  (s.id==='hindi'?'<div class="note info">'+T('For SSC GD candidates who choose Hindi instead of English in the language section. Other SSC exams (MTS, CHSL, CGL, CPO) test English only.','SSC GD में भाषा खंड में अंग्रेज़ी की जगह हिंदी चुनने वाले अभ्यर्थियों के लिए। अन्य SSC परीक्षाओं (MTS, CHSL, CGL, CPO) में केवल अंग्रेज़ी पूछी जाती है।')+'</div>':'')+
+  (s.group==='awareness'?'<div class="note">'+T('This is basic awareness only. It does not replace detailed preparation for exams that specifically test this area.','यह केवल मूल जागरूकता है। जिन परीक्षाओं में यह विषय विशेष रूप से पूछा जाता है, उनकी विस्तृत तैयारी का यह स्थान नहीं लेता।')+'</div>':'')+
+  (s.id==='ca'?'<p><a href="#/ca">'+T('Browse current affairs month by month','करेंट अफेयर्स महीने के अनुसार देखें')+'</a></p>':'')+
+  '<ul class="list">'+s.topics.map(function(t){
+    var n=qsFor(s.id,t.id).length,p=prog(s.id,t.id),base='#/t/'+s.id+'/'+t.id+'/';
+    var first=hasNotes(s.id,t.id)?'learn':'practice';
+    return '<li class="trow"><div class="th"><a class="tname" href="'+base+first+'">'+esc(nm(t))+'</a><span class="meta">'+progMeta(n,p)+'</span></div>'+
+      (n?'<div class="qb">'+(hasNotes(s.id,t.id)?'<a href="'+base+'learn">'+T('Learn','पढ़ें')+'</a>':'')+'<a class="p" href="'+base+'practice">'+T('Practice','अभ्यास')+'</a><a href="'+base+'quiz">'+T('Quiz','क्विज़')+'</a><a href="'+base+'mock">'+T('Test','टेस्ट')+'</a></div>'
+        :'<div class="soon">'+T('Questions coming soon','प्रश्न जल्द आएँगे')+'</div>')+'</li>';
+  }).join('')+'</ul>';
+}
+function subjectTest(sid){
+  var s=subj(sid); if(!s)return notFound();
+  app.innerHTML='<div class="crumbs"><a href="#/s/'+s.id+'">'+esc(nm(s))+'</a></div><h1>'+T('Full subject test','पूरे विषय का टेस्ट')+'</h1><div id="pane"></div>';
+  mockStart(document.getElementById('pane'),shuffle(qsFor(s.id)).slice(0,25),nm(s));
+}
+/* ---------- topic ---------- */
+var TABS=[['learn','Learn','पढ़ें'],['practice','Practice','अभ्यास'],['quiz','Quiz','क्विज़'],['pyq','Previous-year style','पिछले वर्षों की शैली'],['mock','Topic Test','टॉपिक टेस्ट'],['revision','Revision','रिवीज़न']];
+var SET_SIZE=50,RKEY=null;
+function setsOf(list){var out=[];for(var i=0;i<list.length;i+=SET_SIZE)out.push(list.slice(i,i+SET_SIZE));if(out.length>1&&out[out.length-1].length<10){var last=out.pop();out[out.length-1]=out[out.length-1].concat(last)}return out}
+function setPicker(sid,tid,tab,sets,cur){
+  if(sets.length<1)return '';
+  var sc=load('setscore',{});
+  return '<div class="sets"><p class="sets-h">'+T('Choose a set','सेट चुनें')+'</p><div class="setbtns">'+sets.map(function(st,i){
+    var k=sid+'/'+tid+'/'+tab+'/'+(i+1),b=sc[k];
+    return '<a class="setbtn'+(i+1===cur?' on':'')+'" href="#/t/'+sid+'/'+tid+'/'+tab+'/'+(i+1)+'"'+(i+1===cur?' aria-current="true"':'')+'><b>'+T('Set ','सेट ')+(i+1)+'</b><span>'+T('Q ','प्रश्न ')+(i*SET_SIZE+1)+'–'+(i*SET_SIZE+st.length)+'</span>'+(b!=null?'<span class="best">'+(b>=80?'⭐ ':'✓ ')+T('Best ','सर्वश्रेष्ठ ')+b+'%</span>':'')+'</a>';
+  }).join('')+'</div></div>';
+}
+function hasNotes(sid,tid){return !!NOTES[sid+'/'+tid]}
+function topicPage(sid,tid,tab,setNo){
+  var s=subj(sid),t=topic(s,tid); if(!t)return notFound();
+  var list=qsFor(sid,tid);
+  var myTabs=TABS.filter(function(x){return (x[0]!=='learn'||(!IS_APP&&hasNotes(sid,tid)))&&(x[0]!=='pyq'||list.some(function(q){return isPYQ(q)||isStyle(q)}))});
+  if(!tab||!myTabs.some(function(x){return x[0]===tab}))tab=myTabs[0][0];
+  app.innerHTML='<div class="crumbs"><a href="#/subjects">'+T('Common Studies','कॉमन स्टडीज़')+'</a> / <a href="#/s/'+sid+'">'+esc(nm(s))+'</a></div>'+
+  '<h1>'+esc(nm(t))+'</h1>'+
+  '<nav class="tabs" aria-label="'+T('Topic sections','टॉपिक भाग')+'">'+myTabs.map(function(x){
+    return '<a href="#/t/'+sid+'/'+tid+'/'+x[0]+'"'+(x[0]===tab?' class="on" aria-current="page"':'')+'>'+T(x[1],x[2])+'</a>';
+  }).join('')+'</nav>'+
+   (!IS_APP&&hasNotes(sid,tid)&&(tab==='practice'||tab==='quiz'||tab==='mock')?'<a class="readfirst" href="#/t/'+sid+'/'+tid+'/learn">📖 '+T('Read the short notes for this topic first (2–3 minutes)','पहले इस टॉपिक के संक्षिप्त नोट्स पढ़ें (2–3 मिनट)')+' ›</a>':'')+
+   '<div id="pane"></div>';
+  var pane=document.getElementById('pane');
+  if(tab==='learn')return learn(pane,sid,tid,list);
+  if(tab==='practice'||tab==='mock'){
+    var sets=setsOf(list),n=Math.min(Math.max(parseInt(setNo,10)||1,1),Math.max(sets.length,1));
+    pane.innerHTML=setPicker(sid,tid,tab,sets,n)+(sets[n-1]&&sets[n-1].length?'<div class="printbar mid"><div>'+printBtn('prSet',T('Print Set ','सेट ')+n+T(' for offline practice',' प्रिंट करें (ऑफ़लाइन अभ्यास)'))+'<p class="printnote">'+T('Question paper + answer key with explanations. Choose "Save as PDF" in the print window to download.','प्रश्न-पत्र + उत्तर कुंजी व व्याख्या। डाउनलोड के लिए प्रिंट विंडो में "Save as PDF" चुनें।')+'</p></div></div>':'')+'<div id="setpane"></div>';
+    (function(cs,no){var b=document.getElementById('prSet');if(b)b.addEventListener('click',function(){printSet(sid,tid,cs,no)})})(sets[n-1],n);
+    var sp=document.getElementById('setpane'),cur=sets[n-1]||[];
+    RKEY=sid+'/'+tid+'/'+tab+'/'+n;
+    if(tab==='practice')return runner(sp,cur,'practice');
+    return mockStart(sp,shuffle(cur),T('Set ','सेट ')+n+' — '+T('Topic Test','टॉपिक टेस्ट'));
+  }
+  if(tab==='quiz')return runner(pane,shuffle(list).slice(0,10),'quiz');
+  if(tab==='pyq'){
+    var py=list.filter(function(q){return isPYQ(q)||isStyle(q)});
+    if(!py.length){pane.innerHTML=emptyBox(T('No previous-year style questions yet','अभी पिछले वर्षों की शैली के प्रश्न नहीं'),T('Meanwhile, use Practice and Quiz.','तब तक अभ्यास और क्विज़ का उपयोग करें।'),'#/t/'+sid+'/'+tid+'/practice',T('Go to Practice','अभ्यास पर जाएँ'));return}
+    pane.innerHTML='<p class="small muted">'+T('New questions written in the style of questions that are often asked in past papers of SSC, Railway and Banking exams. They are not copied from any real paper.','SSC, रेलवे और बैंकिंग परीक्षाओं के पिछले पेपरों में अक्सर पूछे जाने वाले प्रश्नों की शैली में लिखे गए नए प्रश्न। ये किसी असली पेपर से कॉपी नहीं किए गए हैं।')+'</p><div id="pyqpane"></div>';
+    return runner(document.getElementById('pyqpane'),py,'pyq');
+  }
+  if(tab==='revision')return revision(pane,list);
+  notFound();
+}
+function emptyBox(h,p,href,btn){
+  return '<div class="box empty"><h3>'+h+'</h3><p class="muted">'+p+'</p>'+(href?'<a class="btn ghost" href="'+href+'">'+btn+'</a>':'')+'</div>';
+}
+function md(src){
+  var out=[],inList=false,para=[];
+  function flushP(){if(para.length){out.push('<p>'+para.join('<br>')+'</p>');para=[]}}
+  function inline(s){return esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')}
+  String(src||'').split(/\r?\n/).forEach(function(line){
+    var l=line.trim();
+    if(/^- /.test(l)){flushP();if(!inList){out.push('<ul>');inList=true}out.push('<li>'+inline(l.slice(2))+'</li>');return}
+    if(inList){out.push('</ul>');inList=false}
+    if(/^# /.test(l)){flushP();out.push('<h3>'+inline(l.slice(2))+'</h3>');return}
+    if(!l){flushP();return}
+    para.push(inline(l));
+  });
+  flushP(); if(inList)out.push('</ul>');
+  return out.join('');
+}
+function learn(pane,sid,tid,list){
+  var n=NOTES[sid+'/'+tid];
+  var body=n?md(T(n.en,n.hi)):'';
+  pane.innerHTML=(body?'<div class="printbar">'+printBtn('prNotes',T('Print / Save as PDF','प्रिंट करें / PDF सेव करें'))+'</div><div class="box notes">'+body+'</div>':
+    emptyBox(T('Notes for this topic are being prepared','इस टॉपिक के नोट्स तैयार किए जा रहे हैं'),T('You can start with practice questions in the meantime.','तब तक आप अभ्यास प्रश्नों से शुरुआत कर सकते हैं।'),list.length?'#/t/'+sid+'/'+tid+'/practice':'',T('Start practice','अभ्यास शुरू करें')))+
+    (list.length?(body?'<div class="nextstep"><p class="ns-t">✅ '+T('Read the notes? Now test yourself on this topic','नोट्स पढ़ लिए? अब इसी टॉपिक पर स्वयं को परखिए')+'</p>'+
+      '<div class="btns"><a class="btn" href="#/t/'+sid+'/'+tid+'/quiz">'+T('Quick quiz (10 questions)','त्वरित क्विज़ (10 प्रश्न)')+'</a>'+
+      '<a class="btn ghost" href="#/t/'+sid+'/'+tid+'/practice">'+T('Practise with explanations','व्याख्या के साथ अभ्यास')+'</a>'+
+      '<a class="btn ghost" href="#/t/'+sid+'/'+tid+'/mock">'+T('Timed topic test','समयबद्ध टॉपिक टेस्ट')+'</a></div></div>'
+      :'<div class="btns" style="margin-top:16px"><a class="btn" href="#/t/'+sid+'/'+tid+'/practice">'+T('Practise '+list.length+' questions','अभ्यास करें: '+list.length+' प्रश्न')+'</a></div>'):'');
+  var pb=document.getElementById('prNotes');if(pb)pb.addEventListener('click',function(){printNotes(sid,tid)});
+}
+
+/* ---------- print / save as PDF (watermarked) ---------- */
+var SITE_ADDR=''; /* बाद में डोमेन मिलने पर यहाँ लिखें, जैसे 'govexamprep.in' */
+function printDoc(title,sub,html){
+  var el=document.getElementById('printArea');
+  if(!el){el=document.createElement('div');el.id='printArea';document.body.appendChild(el)}
+  var foot='Govexamprep'+(SITE_ADDR?' · '+SITE_ADDR:'')+' — '+T('Free practice for SSC, Railway & Banking exams','SSC, रेलवे और बैंकिंग परीक्षाओं की निःशुल्क तैयारी');
+  el.innerHTML='<div class="pwm" aria-hidden="true">GOVEXAMPREP</div><div class="pfoot">'+esc(foot)+'</div>'+
+    '<table class="pwrap"><tbody><tr><td>'+
+    '<div class="phead"><img src="assets/logo-icon-192.png" alt=""><div><b>Govexamprep</b><span>'+esc(sub)+'</span></div></div>'+
+    '<h1>'+esc(title)+'</h1>'+html+
+    '</td></tr></tbody><tfoot><tr><td><div class="pfspace"></div></td></tr></tfoot></table>';
+  document.body.classList.add('printing');
+  var img=el.querySelector('.phead img'),done=false;
+  function go(){if(done)return;done=true;setTimeout(function(){window.print()},150)}
+  if(img&&!img.complete){img.onload=go;img.onerror=go;setTimeout(go,1200)}else go();
+}
+window.addEventListener('afterprint',function(){document.body.classList.remove('printing')});
+function printNotes(sid,tid){
+  var s=subj(sid),t=topic(s,tid),n=NOTES[sid+'/'+tid];if(!n)return;
+  printDoc(nm(t)+' — '+T('Short Notes','संक्षिप्त नोट्स'),nm(s),'<div class="notes">'+md(T(n.en,n.hi))+'</div>');
+}
+function printSet(sid,tid,list,no){
+  var s=subj(sid),t=topic(s,tid);if(!list||!list.length)return;
+  var start=(no-1)*SET_SIZE+1,mins=Math.max(10,Math.round(list.length*0.6));
+  var h='<div class="pinfo"><span>'+T('Set ','सेट ')+no+' · '+T('Questions ','प्रश्न ')+start+'–'+(start+list.length-1)+'</span>'+
+    '<span>'+T('Total: ','कुल: ')+list.length+'</span><span>'+T('Suggested time: ','सुझाया समय: ')+mins+T(' minutes',' मिनट')+'</span></div>'+
+    '<div class="pinfo"><span>'+T('Name','नाम')+': ______________________</span><span>'+T('Date','तारीख़')+': ___________</span><span>'+T('Score','अंक')+': ______ / '+list.length+'</span></div>'+
+    '<p class="pinst">'+T('Instructions: Each question has only one correct answer. Mark your answer, then check with the answer key at the end.','निर्देश: हर प्रश्न का केवल एक सही उत्तर है। अपना उत्तर चिह्नित करें, फिर अंत में दी गई उत्तर कुंजी से मिलाएँ।')+'</p>';
+  h+=list.map(function(q,i){
+    var o=qOpts(q),longest=o.reduce(function(m,x){return Math.max(m,String(x).length)},0);
+    return '<div class="pq"><div class="qt"><b>'+(start+i)+'.</b>'+qHTML(q)+'</div>'+qFig(q)+
+      '<div class="popts'+(longest>34?' one':'')+'">'+o.map(function(x,k){return '<div>('+LET[k]+') '+esc(x)+(oFig(q,k)?' '+oFig(q,k):'')+'</div>'}).join('')+'</div></div>';
+  }).join('');
+  h+='<div class="pbreak"></div><h2>'+T('Answer Key','उत्तर कुंजी')+'</h2><div class="pkey">'+list.map(function(q,i){return '<span>'+(start+i)+'-'+LET[ansIdx(q)]+'</span>'}).join('')+'</div>';
+  h+='<h2>'+T('Explanations','व्याख्या')+'</h2>'+list.map(function(q,i){var ci=ansIdx(q),o=qOpts(q),e=qExp(q);
+    return '<div class="pex"><b>'+(start+i)+'. '+LET[ci]+'</b> — '+esc(o[ci])+(e?'. '+esc(e):'')+'</div>'}).join('');
+  printDoc(nm(t)+' — '+T('Practice Paper','अभ्यास प्रश्न-पत्र'),nm(s),h);
+}
+function printBtn(id,label){return '<button type="button" class="btn ghost printbtn" id="'+id+'">🖨️ '+label+'</button>'}
+
+/* ---------- question runner ---------- */
+function chips(q,showSource){
+  var c=[];
+  if(q.difficulty){var dh={easy:'आसान',medium:'मध्यम',hard:'कठिन'}[String(q.difficulty).toLowerCase()];c.push('<span class="chip">'+esc(T(q.difficulty,dh))+'</span>')}
+  if(isPYQ(q))c.push('<span class="chip pyq">PYQ '+esc(q.year)+'</span>');
+  else if(isStyle(q))c.push('<span class="chip pyq">'+T('Previous-year style','पिछले वर्षों की शैली')+'</span>');
+  if(q.month)c.push('<span class="chip">'+esc(monthName(q.month))+'</span>');
+  var h=c.join('');
+  if(showSource&&isPYQ(q))h+='<span class="chip">'+esc(q.source)+'</span>';
+  return h;
+}
+function noQuestions(){
+  return emptyBox(T('No questions here yet','अभी यहाँ कोई प्रश्न नहीं'),T('This question slot is ready. New questions will appear here as soon as they are added.','यह प्रश्न स्थान तैयार है। नए प्रश्न जोड़े जाते ही यहाँ दिखाई देंगे।'),'#/subjects',T('Explore other topics','अन्य टॉपिक देखें'));
+}
+function runner(el,list,mode){
+  if(!list.length){el.innerHTML=noQuestions();return}
+  var st={i:0,ans:list.map(function(){return -1})};
+  function draw(){
+    var q=list[st.i],a=st.ans[st.i],ci=ansIdx(q),o=qOpts(q),last=st.i===list.length-1,e=qExp(q);
+    el.innerHTML='<div class="box">'+
+      '<div class="qmeta"><span class="count">'+T('Question','प्रश्न')+' '+(st.i+1)+' / '+list.length+'</span>'+chips(q,mode==='pyq')+bmBtn(q)+'</div>'+
+      '<p class="qtext">'+qHTML(q)+'</p>'+qFig(q)+
+      '<div class="opts">'+o.map(function(x,k){
+        var c='opt';if(a>=0){if(k===ci)c+=' ok';else if(k===a)c+=' bad'}
+        return '<button type="button" class="'+c+'" data-k="'+k+'"'+(a>=0?' disabled':'')+'><span class="bub">'+LET[k]+'</span>'+(oFig(q,k)||'<span>'+esc(x)+'</span>')+'</button>';
+      }).join('')+'</div>'+
+      (a>=0?'<div class="exp '+(a===ci?'good':'miss')+'" role="status"><strong>'+(a===ci?T('Correct','सही उत्तर'):T('Incorrect. The correct answer is ','गलत। सही उत्तर है ')+LET[ci])+'</strong>'+(e?'<p>'+esc(e)+'</p>':'')+(FB_ON?'<a class="report" href="#/feedback/'+encodeURIComponent(q.id)+'">'+T('Report a mistake in this question','इस प्रश्न में गलती बताएँ')+'</a>':'')+'</div>':'')+
+      '<div class="qnav"><button type="button" class="btn ghost" data-act="prev"'+(st.i===0?' disabled':'')+'>'+T('Previous','पिछला')+'</button>'+
+      '<button type="button" class="btn" data-act="next"'+(a<0?' disabled':'')+'>'+(last?T('See result','परिणाम देखें'):T('Next','अगला'))+'</button></div></div>';
+    el.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){
+      if(st.ans[st.i]>=0)return; var k=+b.dataset.k; st.ans[st.i]=k; record(q,k); draw();
+      var x=el.querySelector('.exp'); if(x&&x.scrollIntoView)x.scrollIntoView({block:'nearest'});
+    }});
+    el.querySelector('[data-act=prev]').onclick=function(){st.i--;draw()};
+    el.querySelector('[data-act=next]').onclick=function(){if(last)result(el,list,st.ans,null,mode);else{st.i++;draw()}};
+  }
+  draw();
+}
+function mockStart(el,list,title){
+  if(!list.length){el.innerHTML=noQuestions();return}
+  el.innerHTML='<div class="box">'+(title?'<h3>'+esc(title)+'</h3>':'')+
+   '<p>'+T(list.length+' questions. '+list.length+' minutes. Answers are shown after you submit.',list.length+' प्रश्न। '+list.length+' मिनट। उत्तर जमा करने के बाद दिखाए जाएँगे।')+'</p>'+
+   '<p class="muted small">'+T('You can change answers and move between questions before submitting. The test submits itself when time runs out.','जमा करने से पहले आप उत्तर बदल सकते हैं और प्रश्नों के बीच जा सकते हैं। समय समाप्त होने पर टेस्ट अपने आप जमा हो जाएगा।')+'</p>'+
+   '<button type="button" class="btn" id="go">'+T('Start test','टेस्ट शुरू करें')+'</button></div>';
+  document.getElementById('go').onclick=function(){mock(el,list)};
+}
+function fmt(s){var m=Math.floor(s/60),x=s%60;return m+':'+(x<10?'0':'')+x}
+function mock(el,list){
+  var st={i:0,ans:list.map(function(){return -1}),left:list.length*60,t0:Date.now()};
+  function submit(){if(timer){clearInterval(timer);timer=null}
+    list.forEach(function(q,k){if(st.ans[k]>=0)record(q,st.ans[k])});
+    result(el,list,st.ans,Math.round((Date.now()-st.t0)/1000),'mock');el.scrollIntoView({block:'start'})}
+  function tick(){st.left--;var t=document.getElementById('tm');if(t){t.textContent=fmt(Math.max(st.left,0));if(st.left<=60)t.classList.add('low')}if(st.left<=0)submit()}
+  function draw(){
+    var q=list[st.i],a=st.ans[st.i],o=qOpts(q),done=st.ans.filter(function(x){return x>=0}).length;
+    el.innerHTML='<div class="box">'+
+     '<div class="qmeta"><span class="count">'+T('Question','प्रश्न')+' '+(st.i+1)+' / '+list.length+'</span><span>'+T('Time left','शेष समय')+' <span class="timer'+(st.left<=60?' low':'')+'" id="tm">'+fmt(st.left)+'</span></span></div>'+
+     '<p class="qtext">'+qHTML(q)+'</p>'+qFig(q)+
+     '<div class="opts">'+o.map(function(x,k){return '<button type="button" class="opt'+(a===k?' sel':'')+'" data-k="'+k+'" aria-pressed="'+(a===k)+'"><span class="bub">'+LET[k]+'</span>'+(oFig(q,k)||'<span>'+esc(x)+'</span>')+'</button>'}).join('')+'</div>'+
+     '<div class="qnav"><button type="button" class="btn ghost" data-act="prev"'+(st.i===0?' disabled':'')+'>'+T('Previous','पिछला')+'</button>'+
+     (st.i<list.length-1?'<button type="button" class="btn" data-act="next">'+T('Next','अगला')+'</button>':'<button type="button" class="btn" data-act="sub">'+T('Submit test','टेस्ट जमा करें')+'</button>')+'</div>'+
+     '<div class="palette" aria-label="'+T('Question palette','प्रश्न सूची')+'">'+list.map(function(_,k){return '<button type="button" data-g="'+k+'" class="'+(st.ans[k]>=0?'done':'')+(k===st.i?' cur':'')+'">'+(k+1)+'</button>'}).join('')+'</div>'+
+     '<p class="small muted" style="margin-top:12px">'+T(done+' of '+list.length+' answered.',list.length+' में से '+done+' उत्तर दिए।')+' <button type="button" class="btn ghost" data-act="sub" style="min-height:36px;padding:4px 12px;font-size:14px">'+T('Submit now','अभी जमा करें')+'</button></p></div>';
+    el.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){var k=+b.dataset.k;st.ans[st.i]=(st.ans[st.i]===k?-1:k);draw()}});
+    el.querySelectorAll('[data-g]').forEach(function(b){b.onclick=function(){st.i=+b.dataset.g;draw()}});
+    var p=el.querySelector('[data-act=prev]');p.onclick=function(){st.i--;draw()};
+    var n=el.querySelector('[data-act=next]');if(n)n.onclick=function(){st.i++;draw()};
+    el.querySelectorAll('[data-act=sub]').forEach(function(b){b.onclick=function(){
+      var un=list.length-st.ans.filter(function(x){return x>=0}).length;
+      if(un>0&&!confirm(T(un+' questions are unanswered. Submit the test?',un+' प्रश्नों के उत्तर नहीं दिए गए। क्या टेस्ट जमा करें?')))return;
+      submit();
+    }});
+  }
+  draw(); timer=setInterval(tick,1000);
+}
+function result(el,list,ans,secs,mode){
+  var c=0,w=0,u=0;
+  list.forEach(function(q,k){if(ans[k]<0)u++;else if(ans[k]===ansIdx(q))c++;else w++});
+  var pct=Math.round(c*100/list.length);
+  var isSet=RKEY&&RKEY.split('/').length===4;
+  if(RKEY&&RKEY.indexOf('daily')===0)markDaily(pct,RKEY.split('/')[1]);
+  if(isSet){var sc=load('setscore',{});if(sc[RKEY]==null||pct>sc[RKEY]){sc[RKEY]=pct;save('setscore',sc)}}
+  var nextHref='';
+  if(isSet){var kp=RKEY.split('/'),nn=+kp[3]+1;if(setsOf(qsFor(kp[0],kp[1])).length>=nn)nextHref='#/t/'+kp[0]+'/'+kp[1]+'/'+kp[2]+'/'+nn}
+  el.innerHTML='<div class="box"><h3>'+T('Your result','आपका परिणाम')+'</h3>'+
+   '<div class="score">'+c+' / '+list.length+'</div>'+
+   '<div class="stats"><span><b style="color:var(--ok)">'+c+'</b>'+T('Correct','सही')+'</span><span><b style="color:var(--rose)">'+w+'</b>'+T('Wrong','गलत')+'</span><span><b>'+u+'</b>'+T('Not answered','उत्तर नहीं दिया')+'</span><span><b>'+pct+'%</b>'+T('Score','स्कोर')+'</span>'+(secs!=null?'<span><b>'+fmt(secs)+'</b>'+T('Time taken','लगा समय')+'</span>':'')+'</div>'+
+   '<p>'+(pct>=80?T('Strong work. Try a mock test or move to the next topic.','बहुत अच्छा। मॉक टेस्ट दें या अगले टॉपिक पर जाएँ।'):pct>=50?T('Good base. Revise the questions you missed and try again.','अच्छी शुरुआत। छूटे हुए प्रश्न दोहराएँ और फिर से प्रयास करें।'):T('Read the notes once more, then practise again. Every attempt builds speed.','नोट्स एक बार फिर पढ़ें, फिर दोबारा अभ्यास करें। हर प्रयास से गति बढ़ती है।'))+'</p>'+
+   shareScore(c+' / '+list.length)+thought()+'<p class="small" style="margin:10px 0 0"><a href="#/feedback">⭐ '+T('Was this useful? Rate us and tell us what to improve','क्या यह उपयोगी था? हमें रेटिंग दें और बताएँ क्या सुधारें')+'</a> · '+shareLink()+'</p>'+'<div class="btns"><button type="button" class="btn'+(nextHref?' ghost':'')+'" id="again">'+T('Try again','फिर से प्रयास करें')+'</button>'+(nextHref?'<a class="btn" href="'+nextHref+'">'+T('Next set →','अगला सेट →')+'</a>':'')+'</div></div>'+
+   (mode==='mock'?'<div class="review"><h3>'+T('Answer review','उत्तर समीक्षा')+'</h3>'+list.map(function(q,k){return revCard(q,k,ans[k])}).join('')+'</div>':'');
+  document.getElementById('again').onclick=function(){
+    var l=mode==='practice'||mode==='pyq'?list:shuffle(list);
+    if(mode==='mock')mock(el,l);else runner(el,l,mode);
+    window.scrollTo(0,0);
+  };
+}
+function revCard(q,k,chosen){
+  var ci=ansIdx(q),o=qOpts(q),e=qExp(q);
+  var line='<div class="rev-a">'+T('Correct answer: ','सही उत्तर: ')+'<span class="c">'+LET[ci]+'. '+esc(o[ci])+'</span>'+(oFig(q,ci)?' <span class="rev-fig">'+q.options_figures[ci]+'</span>':'');
+  if(chosen!=null){line+=chosen<0?' <span class="muted">('+T('not answered','उत्तर नहीं दिया')+')</span>':(chosen===ci?'':'<br><span class="w">'+T('Your answer: ','आपका उत्तर: ')+LET[chosen]+'</span>')}
+  line+='</div>'+(FB_ON?'<a class="report" href="#/feedback/'+encodeURIComponent(q.id)+'">'+T('Report a mistake','गलती बताएँ')+'</a>':'');
+  return '<div class="box"><div class="qmeta"><span class="count">'+(k+1)+'.</span>'+chips(q)+bmBtn(q)+'</div><p class="qtext" style="font-size:17px;margin-bottom:6px">'+qHTML(q)+'</p>'+qFig(q)+line+(e?'<p class="small muted" style="margin:6px 0 0">'+esc(e)+'</p>':'')+'</div>';
+}
+function revision(el,list){
+  if(!list.length){el.innerHTML=noQuestions();return}
+  var m=load('mist',[]),mine=list.filter(function(q){return m.indexOf(q.id)>=0}),rest=list.filter(function(q){return m.indexOf(q.id)<0});
+  function card(q,k){
+    var ci=ansIdx(q),o=qOpts(q),e=qExp(q);
+    return '<div class="box"><div class="qmeta"><span class="count">'+(k+1)+'.</span>'+chips(q)+bmBtn(q)+'</div><p class="qtext" style="font-size:17px;margin-bottom:4px">'+qHTML(q)+'</p>'+qFig(q)+
+      '<details class="rv"><summary>'+T('Show answer','उत्तर देखें')+'</summary><div class="rev-a"><span class="c">'+LET[ci]+'. '+esc(o[ci])+'</span>'+(oFig(q,ci)?' <span class="rev-fig">'+q.options_figures[ci]+'</span>':'')+'</div>'+(e?'<p class="small muted" style="margin:6px 0 0">'+esc(e)+'</p>':'')+'</details></div>';
+  }
+  el.innerHTML=(mine.length?'<h3>'+T('Your mistakes','आपकी गलतियाँ')+' ('+mine.length+')</h3><p class="small muted">'+T('Questions you answered wrong last time. Answer them correctly in Practice and they leave this list.','जिन प्रश्नों का पिछली बार गलत उत्तर दिया। अभ्यास में सही उत्तर देने पर ये इस सूची से हट जाएँगे।')+'</p>'+mine.map(card).join('')+'<h3 style="margin-top:22px">'+T('All questions','सभी प्रश्न')+'</h3>':
+    '<p class="small muted">'+T('Try to answer in your head first, then open the answer.','पहले मन में उत्तर सोचें, फिर उत्तर खोलें।')+'</p>')+rest.map(card).join('');
+}
+
+/* ---------- exams ---------- */
+function examName(e){return T(e.name,e.name_hi||e.name)}
+var FAMILIES=[['ssc','SSC','SSC'],['railway','Railway','रेलवे'],['banking','Banking','बैंकिंग'],['police','Police','पुलिस'],['teaching','Teaching','शिक्षण'],['state','State & other exams','राज्य व अन्य परीक्षाएँ']];
+function examsPage(){
+  var row=function(e){return '<li><a class="item" href="#/exam/'+e.id+'"><span class="name">'+esc(examName(e))+'</span><span class="meta">›</span></a></li>'};
+  var html=FAMILIES.map(function(f){var l=EXAMS.filter(function(e){return (e.category||'state')===f[0]});return l.length?'<h2>'+T(f[1],f[2])+'</h2><ul class="list">'+l.map(row).join('')+'</ul>':''}).join('');
+  app.innerHTML='<h1>'+T('Exam-wise preparation','परीक्षा-वार तैयारी')+'</h1>'+
+   '<p class="muted">'+T('See how much of your exam Common Studies covers, and what you must add separately.','देखें कि कॉमन स्टडीज़ आपकी परीक्षा का कितना भाग कवर करती है, और आपको अलग से क्या जोड़ना है।')+'</p>'+html;
+}
+function examPage(id){
+  var e=EXAMS.filter(function(x){return x.id===id})[0]; if(!e)return notFound();
+  var site=e.officialSite?'<a href="'+esc(e.officialSite)+'" target="_blank" rel="noopener">'+T('Official website','आधिकारिक वेबसाइट')+' ↗</a>':T("Your state's official recruitment board website",'आपके राज्य के भर्ती बोर्ड की आधिकारिक वेबसाइट');
+  var link=(e.notificationLink?'<a href="'+esc(e.notificationLink)+'" target="_blank" rel="noopener">'+T('Official notification','आधिकारिक अधिसूचना')+' ↗</a><br>':'')+site+
+    '<br><span class="small muted">'+T('Each new recruitment has its own notification there. Always read the latest one before applying.','हर नई भर्ती की अपनी अधिसूचना वहीं आती है। आवेदन से पहले हमेशा नवीनतम अधिसूचना पढ़ें।')+'</span>';
+  app.innerHTML='<div class="crumbs"><a href="#/exams">'+T('Exam-wise','परीक्षा-वार')+'</a></div><h1>'+esc(examName(e))+'</h1>'+
+   '<div class="box"><dl class="facts">'+
+    '<dt>'+T('Exam name','परीक्षा का नाम')+'</dt><dd>'+esc(examName(e))+'</dd>'+
+    (e.year?'<dt>'+T('Recruitment / exam year','भर्ती / परीक्षा वर्ष')+'</dt><dd>'+esc(e.year)+'</dd>':'')+
+    '<dt>'+T('Official information','आधिकारिक जानकारी')+'</dt><dd>'+link+'</dd>'+
+    '<dt>'+T('Common Studies coverage','कॉमन स्टडीज़ कवरेज')+'</dt><dd>'+esc(T(e.coverage_en,e.coverage_hi))+'</dd>'+
+    '<dt>'+T('Additional topics','अतिरिक्त टॉपिक')+'</dt><dd>'+esc(T(e.additional_en,e.additional_hi))+'</dd>'+
+    '<dt>'+T('Additional selection stages','अतिरिक्त चयन चरण')+'</dt><dd>'+esc(T(e.stages_en,e.stages_hi))+'</dd>'+
+    (e.lastVerified?'<dt>'+T('Last verified','अंतिम सत्यापन')+'</dt><dd>'+esc(e.lastVerified)+'</dd>':'')+
+   '</dl></div>'+
+   '<div class="note">'+T('Completing Common Studies does not guarantee eligibility, selection or complete syllabus coverage. The exact pattern, weightage, stages and requirements can change with each notification.','कॉमन स्टडीज़ पूरी करने से पात्रता, चयन या पूरे पाठ्यक्रम की कवरेज की गारंटी नहीं होती। सटीक पैटर्न, अंक-भार, चरण और आवश्यकताएँ हर अधिसूचना के साथ बदल सकती हैं।')+'</div>'+
+   (function(){var ps=PAPERS.filter(function(x){return x.exam===e.id});return ps.map(function(mp){return '<a class="daily" href="#/paper/'+mp.id+'"><span class="daily-t">📝 '+(ps.length>1?T('Model paper: ','मॉडल पेपर: ')+esc(T(mp.name,mp.name_hi)):T('Model paper for this exam','इस परीक्षा का मॉडल पेपर'))+'</span><span class="daily-s">'+T('Full paper on the exam pattern, with timer and negative marking. New paper every time.','परीक्षा पैटर्न पर पूरा पेपर, टाइमर और नकारात्मक अंकन के साथ। हर बार नया पेपर।')+'</span></a>'}).join('')})()+
+   '<h2>'+T('Start with these subjects','इन विषयों से शुरुआत करें')+'</h2>'+subjectList((e.subjects||[]).map(subj).filter(Boolean));
+}
+
+/* ---------- current affairs ---------- */
+var MON_EN=['January','February','March','April','May','June','July','August','September','October','November','December'];
+var MON_HI=['जनवरी','फ़रवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर'];
+function monthName(m){var p=String(m).split('-'),i=+p[1]-1;if(!(i>=0&&i<12))return m;return (S.lang==='hi'?MON_HI:MON_EN)[i]+' '+p[0]}
+function caPage(month,cat){
+  var s=subj('ca'); if(!s)return notFound();
+  var withMonth=CAQ.filter(function(q){return q.month});
+  var months=[];withMonth.forEach(function(q){if(months.indexOf(q.month)<0)months.push(q.month)});months.sort().reverse();
+  if(!month){
+    app.innerHTML='<h1>'+T('Current Affairs','करेंट अफेयर्स')+'</h1><p class="muted">'+T('Organised month by month, then by category.','महीने के अनुसार, फिर श्रेणी के अनुसार व्यवस्थित।')+'</p>'+
+    (months.length?'<ul class="list">'+months.map(function(m){var n=withMonth.filter(function(q){return q.month===m}).length;return '<li><a class="item" href="#/ca/'+m+'"><span class="name">'+esc(monthName(m))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>':
+     emptyBox(T('Monthly current affairs are coming soon','मासिक करेंट अफेयर्स जल्द आ रहे हैं'),T('Questions will be added month by month. Meanwhile, practise the static GK topics.','प्रश्न महीने-दर-महीने जोड़े जाएँगे। तब तक स्थिर GK टॉपिक का अभ्यास करें।'),'#/s/gk',T('Practise static GK','स्थिर GK का अभ्यास करें')))+
+    '<h2>'+T('Categories','श्रेणियाँ')+'</h2><p class="group-note">'+T('All months together, by category.','सभी महीने एक साथ, श्रेणी के अनुसार।')+'</p>'+
+    '<ul class="list">'+s.topics.map(function(t){var n=qsFor('ca',t.id).length;return '<li><a class="item" href="#/t/ca/'+t.id+'/practice"><span class="name">'+esc(nm(t))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>';
+    return;
+  }
+  var mq=withMonth.filter(function(q){return q.month===month});
+  if(!cat){
+    app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a></div><h1>'+esc(monthName(month))+'</h1>'+
+     (mq.length?'<div class="btns" style="margin-bottom:18px"><a class="btn" href="#/ca/'+month+'/all">'+T('Quiz on the whole month','पूरे महीने पर क्विज़')+'</a></div>':'')+
+     '<ul class="list">'+s.topics.map(function(t){var n=mq.filter(function(q){return q.topic===t.id}).length;if(!n)return '';return '<li><a class="item" href="#/ca/'+month+'/'+t.id+'"><span class="name">'+esc(nm(t))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>';
+    if(!mq.length)app.innerHTML+=noQuestions();
+    return;
+  }
+  var t=cat==='all'?null:topic(s,cat);
+  app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a> / <a href="#/ca/'+month+'">'+esc(monthName(month))+'</a></div><h1>'+(t?esc(nm(t)):T('Whole month','पूरा महीना'))+'</h1><div id="pane"></div>';
+  var l=cat==='all'?shuffle(mq):mq.filter(function(q){return q.topic===cat});
+  runner(document.getElementById('pane'),l,cat==='all'?'quiz':'practice');
+}
+
+/* ---------- mixed test ---------- */
+function mixedPage(){
+  var chosen=load('mixsel',SUBJ.filter(function(s){return s.id!=='hindi'}).map(function(s){return s.id}));
+  app.innerHTML='<h1>'+T('Mock Test — all subjects mixed','मॉक टेस्ट — सभी विषय मिलाकर')+'</h1><p class="muted">'+T('After topic-wise and subject-wise practice, test yourself across subjects, like the real exam. Each chosen subject gets an equal share of questions.','टॉपिक-वार और विषय-वार अभ्यास के बाद, असली परीक्षा की तरह सभी विषयों पर स्वयं को परखें। हर चुने गए विषय से बराबर प्रश्न आएँगे।')+'</p>'+
+   '<div class="box" id="mixbox"><h3>'+T('Choose subjects','विषय चुनें')+'</h3>'+
+   SUBJ.map(function(s){var n=qsFor(s.id).length;return '<label class="ck"><input type="checkbox" value="'+s.id+'"'+(chosen.indexOf(s.id)>=0?' checked':'')+(n?'':' disabled')+'> '+esc(nm(s))+' <span class="muted small">('+n+')</span></label>'}).join('')+
+   '<h3 style="margin-top:14px"><label for="cnt">'+T('Number of questions','प्रश्नों की संख्या')+'</label></h3><select id="cnt"><option>10</option><option selected>25</option><option>50</option><option>100</option></select>'+
+   '<div class="btns" style="margin-top:18px"><button type="button" class="btn" id="mk">'+T('Create test','टेस्ट बनाएँ')+'</button></div></div><div id="pane"></div>';
+  document.getElementById('mk').onclick=function(){
+    var sel=[].slice.call(document.querySelectorAll('#mixbox input:checked')).map(function(i){return i.value});
+    save('mixsel',sel);
+    var pool=ALL.filter(function(q){return sel.indexOf(q.subject)>=0});
+    var n=Math.min(+document.getElementById('cnt').value,pool.length);
+    var subs=sel.filter(function(id){return pool.some(function(q){return q.subject===id})});
+    var picked=[],left=[];
+    subs.forEach(function(id,k){
+      var share=Math.floor(n/subs.length)+(k<n%subs.length?1:0);
+      var sp=shuffle(pool.filter(function(q){return q.subject===id}));
+      picked=picked.concat(sp.slice(0,share));left=left.concat(sp.slice(share));
+    });
+    if(picked.length<n)picked=picked.concat(shuffle(left).slice(0,n-picked.length));
+    pool=picked;
+    var pane=document.getElementById('pane');
+    if(!pool.length){pane.innerHTML='<div class="note" style="margin-top:14px">'+T('Select at least one subject that has questions.','कम से कम एक ऐसा विषय चुनें जिसमें प्रश्न हों।')+'</div>';return}
+    document.getElementById('mixbox').style.display='none';
+    mockStart(pane,shuffle(pool),T('Mock test','मॉक टेस्ट'));
+  };
+}
+
+/* ---------- model papers (exam pattern) ---------- */
+var PAPERS=window.PAPERS||[];
+function isStyle(q){return q.style==='pyq'}
+function paperById(id){for(var i=0;i<PAPERS.length;i++)if(PAPERS[i].id===id)return PAPERS[i];return null}
+function pName(p){return T(p.name,p.name_hi||p.name)}
+function pTotals(p){var q=0,m=0,t=0;p.blocks.forEach(function(b){t+=b.mins;b.sections.forEach(function(s){q+=s.q;m+=s.q*s.marks})});return {q:q,m:m,t:t}}
+function negTxt(n){if(!n)return T('None','कोई नहीं');if(Math.abs(n-1/3)<1e-6)return '1/3';return String(Math.round(n*100)/100)}
+var BANK_ONLY={'coded-inequality':1,'input-output':1,'number-series':1},NOT_BANK={'height-distance':1};
+function pickFor(sec,used,fam){
+  var keys=Object.keys(sec.from),out=[];
+  keys.forEach(function(sid,k){
+    var want=k===keys.length-1?sec.q-out.length:Math.round(sec.q*sec.from[sid]);
+    var pool=QS.filter(function(q){return q.subject===sid&&!used[q.id]&&(fam==='banking'?!NOT_BANK[q.topic]:!BANK_ONLY[q.topic])});
+    var st=shuffle(pool.filter(isStyle)),rest=shuffle(pool.filter(function(q){return !isStyle(q)}));
+    var half=Math.ceil(want/2),pick=st.slice(0,half);pick=pick.concat(rest.slice(0,want-pick.length));
+    if(pick.length<want)pick=pick.concat(st.slice(half,half+want-pick.length));
+    pick.forEach(function(q){used[q.id]=1});out=out.concat(pick);
+  });
+  return shuffle(out);
+}
+function buildPaper(p){var used={};return p.blocks.map(function(b){return {mins:b.mins,en:b.en,hi:b.hi,secs:b.sections.map(function(s){return {def:s,list:pickFor(s,used,p.family)}})}})}
+function papersPage(){
+  var best=load('paperbest',{});
+  var fam=FAMILIES.filter(function(f){return PAPERS.some(function(p){return p.family===f[0]})});
+  app.innerHTML='<h1>'+T('Model Papers','मॉडल पेपर')+'</h1>'+
+   '<p class="muted">'+T('Full papers on the pattern of real exams: same sections, number of questions, time, marks and negative marking. Every time you start, a new paper is made from our question bank, so you can practise again and again.','असली परीक्षा के पैटर्न पर पूरे पेपर: वही सेक्शन, प्रश्नों की संख्या, समय, अंक और नकारात्मक अंकन। हर बार शुरू करने पर हमारे प्रश्न-बैंक से नया पेपर बनता है, इसलिए आप बार-बार अभ्यास कर सकते हैं।')+'</p>'+
+   '<div class="note info">'+T('These are model papers, not real previous-year papers. The pattern is taken from the latest available information and can change; check the official notification. General Awareness here has static GK and science only, not current affairs.','ये मॉडल पेपर हैं, असली पिछले वर्ष के पेपर नहीं। पैटर्न नवीनतम उपलब्ध जानकारी से लिया गया है और बदल सकता है; आधिकारिक अधिसूचना देखें। यहाँ सामान्य जागरूकता में केवल स्थिर GK और विज्ञान है, करेंट अफेयर्स नहीं।')+'</div>'+
+   fam.map(function(f){return '<h2>'+T(f[1],f[2])+'</h2><ul class="list">'+PAPERS.filter(function(p){return p.family===f[0]}).map(function(p){
+     var t=pTotals(p),b=best[p.id];
+     return '<li class="trow"><div class="th"><a class="tname" href="#/paper/'+p.id+'">'+esc(pName(p))+'</a><span class="meta">'+t.q+' '+T('Q','प्रश्न')+' · '+t.t+' '+T('min','मिनट')+' · '+t.m+' '+T('marks','अंक')+'</span></div>'+
+       (b!=null?'<div class="small" style="margin-top:4px">'+T('Your best: ','आपका सर्वश्रेष्ठ: ')+'<b>'+b+'%</b></div>':'')+
+       '<div class="qb"><a class="p" href="#/paper/'+p.id+'">'+T('Start a new paper','नया पेपर शुरू करें')+'</a></div></li>'}).join('')+'</ul>'}).join('');
+}
+function paperPage(id){
+  var p=paperById(id);if(!p)return notFound();
+  var t=pTotals(p);
+  app.innerHTML='<div class="crumbs"><a href="#/papers">'+T('Model Papers','मॉडल पेपर')+'</a></div><h1>'+esc(pName(p))+'</h1>'+
+   '<p class="muted">'+T('Model paper on the exam pattern. A new paper is made every time.','परीक्षा पैटर्न पर मॉडल पेपर। हर बार नया पेपर बनता है।')+'</p>'+
+   '<div id="ppane"><div class="box"><div class="tbl-wrap" style="padding:0"><table><thead><tr><th>'+T('Section','सेक्शन')+'</th><th class="n">'+T('Questions','प्रश्न')+'</th><th class="n">'+T('Marks each','प्रति प्रश्न अंक')+'</th><th class="n">'+T('Minus for wrong','गलत पर कटौती')+'</th></tr></thead><tbody>'+
+   p.blocks.map(function(b){return (b.en?'<tr><th colspan="4">'+esc(T(b.en,b.hi))+' · '+b.mins+' '+T('min','मिनट')+'</th></tr>':'')+b.sections.map(function(s){return '<tr><td>'+esc(T(s.en,s.hi))+'</td><td class="n">'+s.q+'</td><td class="n">'+(Math.round(s.marks*100)/100)+'</td><td class="n">'+negTxt(s.neg)+'</td></tr>'}).join('')}).join('')+
+   '<tr><th>'+T('Total','कुल')+'</th><th class="n">'+t.q+'</th><th class="n" colspan="2">'+Math.round(t.m)+' '+T('marks','अंक')+' · '+t.t+' '+T('min','मिनट')+'</th></tr></tbody></table></div>'+
+   '<p style="margin-top:14px">⏱️ '+esc(T(p.note_en,p.note_hi))+'</p>'+
+   '<p class="small muted">'+T('Answers and explanations are shown after you submit. The paper submits itself when time runs out. Your progress is not saved if you leave this page.','उत्तर और व्याख्या जमा करने के बाद दिखेंगे। समय समाप्त होने पर पेपर अपने आप जमा हो जाएगा। यह पेज छोड़ने पर पेपर सहेजा नहीं जाता।')+'</p>'+
+   '<button type="button" class="btn" id="pgo">'+T('Start paper','पेपर शुरू करें')+'</button></div></div>';
+  document.getElementById('pgo').onclick=function(){runPaper(document.getElementById('ppane'),p,buildPaper(p));window.scrollTo(0,0)};
+}
+function runPaper(el,p,B){
+  B.forEach(function(b){b.secs.forEach(function(s){s.ans=s.list.map(function(){return -1})})});
+  var st={b:0,s:0,i:0,left:B[0].mins*60,t0:Date.now()};
+  function blockDone(){
+    if(st.b<B.length-1){st.b++;st.s=0;st.i=0;st.left=B[st.b].mins*60;draw();window.scrollTo(0,0)}else finish();
+  }
+  function finish(){if(timer){clearInterval(timer);timer=null}
+    B.forEach(function(b){b.secs.forEach(function(s){s.list.forEach(function(q,k){if(s.ans[k]>=0)record(q,s.ans[k])})})});
+    paperResult(el,p,B,Math.round((Date.now()-st.t0)/1000));window.scrollTo(0,0)}
+  function tick(){st.left--;var t=document.getElementById('tm');if(t){t.textContent=fmt(Math.max(st.left,0));if(st.left<=60)t.classList.add('low')}
+    if(st.left<=0){if(st.b<B.length-1)alert(T('Time is over for this part. Moving to the next part.','इस भाग का समय समाप्त। अगले भाग पर जा रहे हैं।'));blockDone()}}
+  function draw(){
+    var blk=B[st.b],sec=blk.secs[st.s],q=sec.list[st.i],a=sec.ans[st.i],o=qOpts(q),last=st.b===B.length-1;
+    var bname=blk.en?T(blk.en,blk.hi):(B.length>1?T('Part ','भाग ')+(st.b+1)+' / '+B.length:'');
+    var answered=0,total=0;blk.secs.forEach(function(s){total+=s.list.length;answered+=s.ans.filter(function(x){return x>=0}).length});
+    el.innerHTML='<div class="box">'+
+     '<div class="qmeta"><span class="count">'+(bname?esc(bname)+' · ':'')+esc(T(sec.def.en,sec.def.hi))+'</span><span>'+T('Time left','शेष समय')+' <span class="timer'+(st.left<=60?' low':'')+'" id="tm">'+fmt(st.left)+'</span></span></div>'+
+     (blk.secs.length>1?'<div class="setbtns sectabs">'+blk.secs.map(function(s,k){var d=s.ans.filter(function(x){return x>=0}).length;return '<button type="button" class="setbtn'+(k===st.s?' on':'')+'" data-sec="'+k+'" style="cursor:pointer;font:inherit;text-align:left"><b>'+esc(T(s.def.en,s.def.hi))+'</b>'+d+' / '+s.list.length+'</button>'}).join('')+'</div>':'')+
+     '<p class="small muted" style="margin:0 0 6px">'+T('Question','प्रश्न')+' '+(st.i+1)+' / '+sec.list.length+' · +'+(Math.round(sec.def.marks*100)/100)+(sec.def.neg?' / −'+negTxt(sec.def.neg):'')+'</p>'+
+     '<p class="qtext">'+qHTML(q)+'</p>'+qFig(q)+
+     '<div class="opts">'+o.map(function(x,k){return '<button type="button" class="opt'+(a===k?' sel':'')+'" data-k="'+k+'" aria-pressed="'+(a===k)+'"><span class="bub">'+LET[k]+'</span>'+(oFig(q,k)||'<span>'+esc(x)+'</span>')+'</button>'}).join('')+'</div>'+
+     '<div class="qnav"><button type="button" class="btn ghost" data-act="prev"'+(st.i===0?' disabled':'')+'>'+T('Previous','पिछला')+'</button>'+
+     (st.i<sec.list.length-1?'<button type="button" class="btn" data-act="next">'+T('Next','अगला')+'</button>':(st.s<blk.secs.length-1?'<button type="button" class="btn" data-act="nsec">'+T('Next section','अगला सेक्शन')+'</button>':'<button type="button" class="btn" data-act="sub">'+(last?T('Submit paper','पेपर जमा करें'):T('Submit this part','यह भाग जमा करें'))+'</button>'))+'</div>'+
+     '<div class="palette">'+sec.list.map(function(_,k){return '<button type="button" data-g="'+k+'" class="'+(sec.ans[k]>=0?'done':'')+(k===st.i?' cur':'')+'">'+(k+1)+'</button>'}).join('')+'</div>'+
+     '<p class="small muted" style="margin-top:12px">'+T(answered+' of '+total+' answered in this part.','इस भाग में '+total+' में से '+answered+' उत्तर दिए।')+' <button type="button" class="btn ghost" data-act="sub" style="min-height:36px;padding:4px 12px;font-size:14px">'+(last?T('Submit paper now','अभी पेपर जमा करें'):T('Submit this part now','यह भाग अभी जमा करें'))+'</button></p></div>';
+    el.querySelectorAll('.opt').forEach(function(b){b.onclick=function(){var k=+b.dataset.k;sec.ans[st.i]=(sec.ans[st.i]===k?-1:k);draw()}});
+    el.querySelectorAll('[data-g]').forEach(function(b){b.onclick=function(){st.i=+b.dataset.g;draw()}});
+    el.querySelectorAll('[data-sec]').forEach(function(b){b.onclick=function(){st.s=+b.dataset.sec;st.i=0;draw()}});
+    el.querySelector('[data-act=prev]').onclick=function(){st.i--;draw()};
+    var n=el.querySelector('[data-act=next]');if(n)n.onclick=function(){st.i++;draw()};
+    var ns=el.querySelector('[data-act=nsec]');if(ns)ns.onclick=function(){st.s++;st.i=0;draw()};
+    el.querySelectorAll('[data-act=sub]').forEach(function(b){b.onclick=function(){
+      var un=total-answered;
+      var msg=last?T(un+' questions are unanswered. Submit the paper?',un+' प्रश्नों के उत्तर नहीं दिए। क्या पेपर जमा करें?'):T(un+' questions are unanswered in this part. After submitting you cannot come back to it. Submit this part?','इस भाग में '+un+' प्रश्नों के उत्तर नहीं दिए। जमा करने के बाद आप इसमें वापस नहीं आ सकेंगे। क्या यह भाग जमा करें?');
+      if((un>0||!last)&&!confirm(msg))return;
+      blockDone();
+    }});
+  }
+  draw();timer=setInterval(tick,1000);
+}
+function r2(x){return Math.round(x*100)/100}
+function paperResult(el,p,B,secs){
+  var rows=[],tot={c:0,w:0,u:0,m:0,max:0};
+  B.forEach(function(b){b.secs.forEach(function(s){var c=0,w=0,u=0;s.list.forEach(function(q,k){if(s.ans[k]<0)u++;else if(s.ans[k]===ansIdx(q))c++;else w++});
+    var m=c*s.def.marks-w*s.def.neg,max=s.list.length*s.def.marks;rows.push({s:s,c:c,w:w,u:u,m:m,max:max});tot.c+=c;tot.w+=w;tot.u+=u;tot.m+=m;tot.max+=max})});
+  var pct=Math.max(0,Math.round(tot.m*100/tot.max)),best=load('paperbest',{});if(best[p.id]==null||pct>best[p.id]){best[p.id]=pct;save('paperbest',best)}
+  var weak=rows.slice().sort(function(a,b){return a.m/a.max-b.m/b.max})[0];
+  el.innerHTML='<div class="box"><h3>'+T('Your result','आपका परिणाम')+' — '+esc(pName(p))+'</h3>'+
+   '<div class="score">'+r2(tot.m)+' / '+Math.round(tot.max)+'</div>'+
+   '<div class="stats"><span><b style="color:var(--ok)">'+tot.c+'</b>'+T('Correct','सही')+'</span><span><b style="color:var(--rose)">'+tot.w+'</b>'+T('Wrong','गलत')+'</span><span><b>'+tot.u+'</b>'+T('Not answered','उत्तर नहीं दिया')+'</span><span><b>'+pct+'%</b>'+T('Marks','अंक')+'</span><span><b>'+fmt(secs)+'</b>'+T('Time taken','लगा समय')+'</span></div>'+
+   '<div class="tbl-wrap" style="padding:0"><table><thead><tr><th>'+T('Section','सेक्शन')+'</th><th class="n">'+T('Correct','सही')+'</th><th class="n">'+T('Wrong','गलत')+'</th><th class="n">'+T('Left','छोड़े')+'</th><th class="n">'+T('Marks','अंक')+'</th></tr></thead><tbody>'+
+   rows.map(function(r){return '<tr><td>'+esc(T(r.s.def.en,r.s.def.hi))+'</td><td class="n">'+r.c+'</td><td class="n">'+r.w+'</td><td class="n">'+r.u+'</td><td class="n">'+r2(r.m)+' / '+Math.round(r.max)+'</td></tr>'}).join('')+'</tbody></table></div>'+
+   (tot.w?'<p class="small muted" style="margin-top:10px">'+T('Marks lost to negative marking: ','नकारात्मक अंकन से कटे अंक: ')+'<b>'+r2(rows.reduce(function(a,r){return a+r.w*r.s.def.neg},0))+'</b>. '+T('Answer only when you are fairly sure.','उत्तर तभी दें जब काफ़ी भरोसा हो।')+'</p>':'')+
+   (weak?'<p>'+T('Work more on: ','इस पर और मेहनत करें: ')+'<b>'+esc(T(weak.s.def.en,weak.s.def.hi))+'</b></p>':'')+
+   shareScore(r2(tot.m)+' / '+Math.round(tot.max))+thought()+'<p class="small" style="margin:10px 0 0"><a href="#/feedback">⭐ '+T('Was this useful? Rate us and tell us what to improve','क्या यह उपयोगी था? हमें रेटिंग दें और बताएँ क्या सुधारें')+'</a> · '+shareLink()+'</p>'+'<div class="btns"><button type="button" class="btn" id="pnew">'+T('Start a new paper','नया पेपर शुरू करें')+'</button><a class="btn ghost" href="#/papers">'+T('All model papers','सभी मॉडल पेपर')+'</a></div></div>'+
+   '<div class="review"><h3>'+T('Answer review','उत्तर समीक्षा')+'</h3>'+rows.map(function(r){var n=0;return '<details class="bank"><summary>'+esc(T(r.s.def.en,r.s.def.hi))+'<span class="muted small">'+r.c+' / '+r.s.list.length+'</span></summary><div style="padding:0 12px 12px">'+r.s.list.map(function(q,k){return revCard(q,k,r.s.ans[k])}).join('')+'</div></details>'}).join('')+'</div>';
+  document.getElementById('pnew').onclick=function(){paperPage(p.id);window.scrollTo(0,0)};
+}
+
+/* ---------- question bank ---------- */
+function bankPage(){
+  var total=ALL.length,py=ALL.filter(isPYQ).length;
+  app.innerHTML='<h1>'+T('Question bank','प्रश्न बैंक')+'</h1>'+
+   '<p class="muted">'+T(total+' published questions, including '+py+' verified previous-year questions. Every topic has a ready slot, so new questions appear automatically when added.',total+' प्रकाशित प्रश्न, जिनमें '+py+' सत्यापित पिछले वर्ष के प्रश्न हैं। हर टॉपिक का स्थान तैयार है, इसलिए नए प्रश्न जोड़ते ही अपने आप दिखेंगे।')+'</p>'+
+   (BAD.length?'<div class="note"><strong>'+T('Some questions could not be shown','कुछ प्रश्न दिखाए नहीं जा सके')+'</strong><br>'+T('Check these IDs for a missing field, a wrong answer letter or a repeated ID: ','इन ID में कोई खाली भाग, गलत उत्तर अक्षर या दोहराई गई ID जाँचें: ')+esc(BAD.join(', '))+'</div>':'')+
+   SUBJ.map(function(s){
+     var all=qsFor(s.id);
+     return '<details class="bank"><summary><span>'+esc(nm(s))+'</span><span class="muted">'+all.length+'</span></summary><div class="tbl-wrap"><table><thead><tr><th>'+T('Topic','टॉपिक')+'</th><th class="n">'+T('Questions','प्रश्न')+'</th><th class="n">PYQ</th></tr></thead><tbody>'+
+     s.topics.map(function(t){var l=qsFor(s.id,t.id);return '<tr><td><a href="#/t/'+s.id+'/'+t.id+'/practice">'+esc(nm(t))+'</a></td><td class="n">'+l.length+'</td><td class="n">'+l.filter(isPYQ).length+'</td></tr>'}).join('')+
+     '</tbody></table></div></details>';
+   }).join('');
+}
+
+/* ---------- about ---------- */
+function aboutPage(){
+  if(IS_APP){app.innerHTML='<h1>'+T('About','परिचय')+'</h1>'+
+   '<p>'+T('PrepFlight is a practice quiz app for SSC, Railway and Banking exams. It is the quiz part of the Govexamprep website, made by Infinity Digital. Every question has an answer and a short explanation. Your progress is saved only on this device.','PrepFlight, SSC, रेलवे और बैंकिंग परीक्षाओं के लिए अभ्यास क्विज़ ऐप है। यह Govexamprep वेबसाइट का क्विज़ वाला भाग है, जिसे Infinity Digital ने बनाया है। हर प्रश्न का उत्तर और संक्षिप्त व्याख्या दी गई है। आपकी प्रगति केवल इसी डिवाइस पर सहेजी जाती है।')+'</p>'+webNote()+
+   '<h2>'+T('Disclaimer','अस्वीकरण')+'</h2><div class="note">'+esc(DISC())+'</div>'+
+   '<div class="note info">'+T('PrepFlight is an independent practice app by Infinity Digital. It is not affiliated with, endorsed by or connected to any government body, exam board or bank. All exam information in this app has been collected from the official government websites and notices. Always confirm the latest details in the official notification of your exam.','PrepFlight, Infinity Digital का एक स्वतंत्र अभ्यास ऐप है। यह किसी सरकारी संस्था, परीक्षा बोर्ड या बैंक से संबद्ध, मान्यता प्राप्त या जुड़ा हुआ नहीं है। इस ऐप की सारी परीक्षा-संबंधी जानकारी सरकारी आधिकारिक वेबसाइटों और सूचनाओं से जुटाकर यह सामग्री तैयार की गई है। नवीनतम विवरण हमेशा अपनी परीक्षा की आधिकारिक अधिसूचना में जाँचें।')+'</div>'+'<h2>'+T('Corrections','सुधार')+'</h2><p>'+T('Found a mistake? Use “Report a mistake” below any question, or write to ','कोई ग़लती दिखी? किसी भी प्रश्न के नीचे “गलती बताएँ” दबाएँ, या लिखें: ')+'<a href="mailto:infinitydigital39@gmail.com">infinitydigital39@gmail.com</a></p>'+
+   personalNote()+blessBox()+
+   '<p class="small muted"><a href="#/privacy">'+T('Privacy policy','गोपनीयता नीति')+' ›</a></p>';wireBless();return}
+  app.innerHTML='<div class="about-paper"><div class="about-hero"><span class="dd d1" aria-hidden="true">📚</span><span class="dd d2" aria-hidden="true">✏️</span><span class="dd d3" aria-hidden="true">⭐</span><span class="dd d4" aria-hidden="true">💡</span><span class="dd d5" aria-hidden="true">🎓</span><p class="kick">Govexamprep · Free for every student</p><h1>About us<span class="hi2">हमारे बारे में</span></h1><p class="tag">Learning should never depend on money. · पढ़ाई कभी पैसों पर निर्भर नहीं होनी चाहिए।</p></div>'+personalNote()+(SUP_ON?'<div id="support"></div>':'')+'</div>'+
+   '<h2>'+T('About Common Studies','कॉमन स्टडीज़ का परिचय')+'</h2>'+
+   '<p>'+T('Common Studies teaches the academic content that overlaps across many competitive exams, and clearly separates it from exam-specific requirements.','कॉमन स्टडीज़ उस शैक्षणिक सामग्री को पढ़ाती है जो अनेक प्रतियोगी परीक्षाओं में साझा है, और उसे परीक्षा-विशेष आवश्यकताओं से स्पष्ट रूप से अलग रखती है।')+'</p>'+
+   '<h2>'+T('What is included','क्या शामिल है')+'</h2><p>'+(HAS_CA?T('Common core: Mathematics, Reasoning, General Knowledge, General Science, Current Affairs and English. Common awareness: basic Computer and basic Banking & Financial Awareness.','मुख्य साझा विषय: गणित, तर्कशक्ति, सामान्य ज्ञान, सामान्य विज्ञान, करेंट अफेयर्स और अंग्रेज़ी। सामान्य जागरूकता: मूल कंप्यूटर और मूल बैंकिंग व वित्तीय जागरूकता।'):T('Common core: Mathematics, Reasoning, General Knowledge, General Science and English. Common awareness: basic Computer and basic Banking & Financial Awareness.','मुख्य साझा विषय: गणित, तर्कशक्ति, सामान्य ज्ञान, सामान्य विज्ञान और अंग्रेज़ी। सामान्य जागरूकता: मूल कंप्यूटर और मूल बैंकिंग व वित्तीय जागरूकता।'))+'</p>'+
+   '<h2>'+T('Scope of common awareness','सामान्य जागरूकता की सीमा')+'</h2><p>'+T('Basic Computer Awareness and Basic Banking & Financial Awareness are included only for general awareness and common objective-question practice. They do not replace the detailed Computer, Banking or Financial Awareness preparation required by exams that specifically test those areas.','मूल कंप्यूटर जागरूकता और मूल बैंकिंग व वित्तीय जागरूकता केवल सामान्य जागरूकता और साझा वस्तुनिष्ठ प्रश्नों के अभ्यास के लिए शामिल हैं। ये उन परीक्षाओं की विस्तृत कंप्यूटर, बैंकिंग या वित्तीय जागरूकता तैयारी का स्थान नहीं लेतीं जिनमें ये विषय विशेष रूप से पूछे जाते हैं।')+'</p>'+
+   '<h2>'+T('Previous-year questions','पिछले वर्ष के प्रश्न')+'</h2><p>'+T('A question is labelled as a previous-year question only when its exam, year and source have been verified.','किसी प्रश्न को पिछले वर्ष का प्रश्न तभी कहा जाता है जब उसकी परीक्षा, वर्ष और स्रोत सत्यापित हों।')+'</p>'+
+   '<h2>'+T('Gratitude: the heart of Govexamprep','आभार: Govexamprep का हृदय')+'</h2>'+
+   '<div class="gratitude"><p>'+T('No one reaches a competitive exam alone. Behind every student there are many blessings: the Universe that gave life and this chance to learn, parents who sacrificed quietly, and teachers who patiently showed the way.','कोई भी प्रतियोगी परीक्षा तक अकेले नहीं पहुँचता। हर विद्यार्थी के पीछे अनेक आशीर्वाद होते हैं: वह ब्रह्मांड जिसने जीवन और सीखने का यह अवसर दिया, वे माता-पिता जिन्होंने चुपचाप त्याग किया, और वे गुरुजन जिन्होंने धैर्य से राह दिखाई।')+'</p>'+
+   '<p>'+T('Being able to study is itself a sign that you are blessed. Many children and adults never get the chance to learn. If you are reading this and preparing for your future today, the Universe has given you a precious opportunity. Honour it with effort, and remember it with thanks.','पढ़ पाना ही इस बात का संकेत है कि आप सौभाग्यशाली हैं। बहुत से बच्चों और बड़ों को सीखने का अवसर ही नहीं मिलता। यदि आज आप यह पढ़ रहे हैं और अपने भविष्य की तैयारी कर रहे हैं, तो ब्रह्मांड ने आपको एक अनमोल अवसर दिया है। मेहनत से उसका सम्मान कीजिए और आभार से उसे याद रखिए।')+'</p>'+
+   '<p>'+T('Whatever you call it, God, the Universe, destiny or simply good fortune, remembering these gifts with gratitude keeps the mind calm and the heart strong. A thankful mind studies with peace instead of fear, and keeps going even on difficult days.','आप उसे ईश्वर कहें, ब्रह्मांड कहें, भाग्य कहें या सौभाग्य, इन उपहारों को आभार से याद करना मन को शांत और हृदय को मज़बूत रखता है। कृतज्ञ मन डर से नहीं, शांति से पढ़ता है, और कठिन दिनों में भी आगे बढ़ता रहता है।')+'</p>'+
+   '<p>'+T('Each day, before you study, pause for a moment and say thank you to the Universe, your parents and your teachers. The button below can be your small daily thank you.','हर दिन पढ़ाई शुरू करने से पहले एक पल रुकिए और ब्रह्मांड, अपने माता-पिता और गुरुजनों को धन्यवाद कहिए। नीचे दिया बटन आपका छोटा-सा दैनिक धन्यवाद बन सकता है।')+'</p>'+
+   '<p>'+T('Our prayer is simple: may every learner here grow in knowledge, in confidence and in life. Keep learning, keep practising and keep rising.','हमारी प्रार्थना सरल है: यहाँ पढ़ने वाला हर विद्यार्थी ज्ञान में, आत्मविश्वास में और जीवन में आगे बढ़े। सीखते रहिए, अभ्यास करते रहिए और आगे बढ़ते रहिए।')+'</p></div>'+
+   blessBox()+'<div class="btns" style="margin-top:14px">'+installBox()+'</div>'+appNote()+
+   '<h2>'+T('Disclaimer','अस्वीकरण')+'</h2><div class="note">'+esc(DISC())+'</div>'+
+   '<h2>'+T('Corrections and removal','सुधार और हटाने के अनुरोध')+'</h2><p>'+T('Found a mistake, or want your name, business or link corrected or removed? Write to ','कोई ग़लती दिखी, या अपना नाम, व्यवसाय या लिंक सुधरवाना या हटवाना चाहते हैं? लिखें: ')+'<a href="mailto:infinitydigital39@gmail.com">infinitydigital39@gmail.com</a></p>'+
+   '<p class="small muted">'+T('Your progress is saved only in this browser on this device.','आपकी प्रगति केवल इसी डिवाइस के इसी ब्राउज़र में सहेजी जाती है।')+' <a href="#/privacy">'+T('Privacy','गोपनीयता')+' ›</a></p>';
+  wireBless();wireInstall();drawSupport();
+}
+
+/* ---------- share my score (Web Share, WhatsApp fallback) ---------- */
+function shareUrl(){return IS_APP&&PLAY_URL?PLAY_URL:'https://govexamprep.org/'}
+function shareScore(sc){
+  var h=app.querySelector('h1'),nm=h?h.textContent.replace(/\s+/g,' ').trim():'';
+  var brand=IS_APP?'PrepFlight':'Govexamprep';
+  var t=T('I scored '+sc+' in "'+nm+'" on '+brand+'. Can you beat my score? Practise free (Hindi + English): ','मैंने '+brand+' पर "'+nm+'" में '+sc+' अंक पाए। क्या आप मुझसे ज़्यादा ला सकते हैं? मुफ़्त अभ्यास (हिंदी + English): ')+shareUrl();
+  return '<p style="margin:12px 0 0"><button type="button" class="btn ghost sharesc" data-t="'+esc(t)+'">📲 '+T('Share my score','मेरा स्कोर शेयर करें')+'</button></p>';
+}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.sharesc');if(!b)return;var t=b.getAttribute('data-t');
+  if(navigator.share){navigator.share({text:t}).catch(function(){})}else{window.open('https://wa.me/?text='+encodeURIComponent(t),'_blank','noopener')}});
+
+/* ---------- feedback (Google Form) ---------- */
+function shareLink(){
+  var u='https://govexamprep.org/';
+  var t=T('Free practice for SSC, Railway and Banking exams in Hindi and English – topic-wise questions, notes and full model papers: ','SSC, रेलवे और बैंकिंग परीक्षाओं की मुफ़्त तैयारी, हिंदी और अंग्रेज़ी में – टॉपिक-वार प्रश्न, नोट्स और पूरे मॉडल पेपर: ')+u;
+  return '<a href="https://wa.me/?text='+encodeURIComponent(t)+'" target="_blank" rel="noopener">📲 '+T('Share with friends on WhatsApp','दोस्तों को WhatsApp पर भेजें')+'</a>';
+}
+var FB_MAIL=(function(){var m=String((window.SETTINGS||{}).feedbackEmail||'').trim();return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)?m:'govexamprep37@gmail.com'})();
+function feedbackPage(qid){
+  var link=String((window.SETTINGS||{}).feedbackFormLink||'').trim(),hasForm=/^https:\/\//.test(link);
+  var ex=EXAMS.map(function(e){return '<option>'+esc(e.name)+'</option>'}).join('');
+  app.innerHTML='<h1>'+T('Feedback & rating','फीडबैक और रेटिंग')+'</h1>'+
+   '<p class="muted">'+T('Your opinion helps us make Govexamprep better for every student. Tell us what helped, what is missing or what is wrong. You can write in English, Hindi or Hinglish.','आपकी राय से हम Govexamprep को हर विद्यार्थी के लिए बेहतर बनाते हैं। बताइए क्या मदद मिली, क्या छूट रहा है या क्या गलत है। आप अंग्रेज़ी, हिंदी या हिंग्लिश में लिख सकते हैं।')+'</p>'+
+   '<form class="box fbform" id="fbf" novalidate>'+
+    (qid?'<div class="note info" style="margin-top:0">'+T('You are reporting a mistake in question: ','आप इस प्रश्न में गलती बता रहे हैं: ')+'<b style="word-break:break-all">'+esc(qid)+'</b></div>':'')+
+    '<fieldset class="stars"><legend class="fld">'+T('How useful is this website for you?','यह वेबसाइट आपके लिए कितनी उपयोगी है?')+'</legend>'+
+     [1,2,3,4,5].map(function(n){return '<label><input type="radio" name="star" value="'+n+'"><span aria-hidden="true">★</span><b class="sr">'+n+'</b></label>'}).join('')+
+     '<span class="startxt" id="startxt"></span></fieldset>'+
+    '<label class="fld" for="fbGood">'+T('What did you like?','आपको क्या अच्छा लगा?')+'</label><textarea class="inp" id="fbGood" maxlength="1000"></textarea>'+
+    '<label class="fld" for="fbBad">'+(qid?T('What is wrong in this question?','इस प्रश्न में क्या गलत है?'):T('What should we add or improve?','हमें क्या जोड़ना या सुधारना चाहिए?'))+'</label><textarea class="inp" id="fbBad" maxlength="1500"></textarea>'+
+    '<label class="fld" for="fbExam">'+T('Which exam are you preparing for? (optional)','आप किस परीक्षा की तैयारी कर रहे हैं? (वैकल्पिक)')+'</label><select id="fbExam" class="inp"><option value="">—</option>'+ex+'<option>'+T('Other','अन्य')+'</option></select>'+
+    '<label class="fld" for="fbName">'+T('Your name or city (optional)','आपका नाम या शहर (वैकल्पिक)')+'</label><input class="inp" id="fbName" maxlength="80">'+
+    '<label class="ck" style="margin-top:10px"><input type="checkbox" id="fbOk"> '+T('You may show my comment (without contact details) on the website.','मेरी टिप्पणी (संपर्क जानकारी के बिना) वेबसाइट पर दिखाई जा सकती है।')+'</label>'+
+    '<div class="btns" style="margin-top:16px"><button type="submit" class="btn">✉️ '+T('Send feedback','फीडबैक भेजें')+'</button>'+(hasForm?'<a class="btn ghost" href="'+esc(link)+'" target="_blank" rel="noopener">'+T('Or use the online form','या ऑनलाइन फ़ॉर्म भरें')+'</a>':'')+'</div>'+
+    '<p class="small muted" id="fbMsg" role="status" style="margin-top:10px">'+T('Pressing "Send feedback" opens your email app with everything filled in. Just press Send there. Your feedback goes to ','"फीडबैक भेजें" दबाने पर आपका ईमेल ऐप सब कुछ भरा हुआ खुलेगा। वहाँ बस Send दबाएँ। आपका फीडबैक जाएगा: ')+'<a href="mailto:'+FB_MAIL+'">'+FB_MAIL+'</a></p>'+
+   '</form>'+
+   '<div class="note">'+T('Never share passwords, OTP, Aadhaar or bank details in feedback.','फीडबैक में कभी भी पासवर्ड, OTP, आधार या बैंक जानकारी न लिखें।')+'</div>';
+  var lab=['',T('Not useful','उपयोगी नहीं'),T('A little useful','थोड़ा उपयोगी'),T('Useful','उपयोगी'),T('Very useful','बहुत उपयोगी'),T('Excellent!','बेहतरीन!')];
+  app.querySelectorAll('.stars input').forEach(function(r){r.onchange=function(){document.getElementById('startxt').textContent=lab[+r.value]}});
+  document.getElementById('fbf').onsubmit=function(e){
+    e.preventDefault();
+    var st=app.querySelector('.stars input:checked'),g=document.getElementById('fbGood').value.trim(),b=document.getElementById('fbBad').value.trim();
+    var m=document.getElementById('fbMsg');
+    if(!st&&!g&&!b){m.textContent=T('Please give a rating or write a few words first.','कृपया पहले रेटिंग दें या कुछ शब्द लिखें।');return}
+    var body=['Govexamprep feedback','Rating: '+(st?st.value+' / 5':'-'),(qid?'Question ID: '+qid:''),'Liked: '+(g||'-'),'Improve / mistake: '+(b||'-'),
+      'Exam: '+(document.getElementById('fbExam').value||'-'),'Name/city: '+(document.getElementById('fbName').value.trim()||'-'),
+      'May show comment on website: '+(document.getElementById('fbOk').checked?'Yes':'No'),'Language: '+S.lang].filter(Boolean).join('\n');
+    var subj='Govexamprep feedback'+(st?' ('+st.value+'★)':'')+(qid?' – question '+qid:'');
+    save('fbsent',todayKey());
+    location.href='mailto:'+FB_MAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(body);
+    m.innerHTML='🙏 '+T('Thank you! If your email app did not open, please write to ','धन्यवाद! अगर ईमेल ऐप नहीं खुला, तो कृपया लिखें: ')+'<a href="mailto:'+FB_MAIL+'">'+FB_MAIL+'</a>';
+  };
+}
+
+if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+/* ---------- bookmarks ---------- */
+function bmBtn(q){var on=load('bm',[]).indexOf(q.id)>=0;return '<button type="button" class="bm'+(on?' on':'')+'" data-bm="'+esc(q.id)+'" aria-pressed="'+on+'" title="'+T('Bookmark','बुकमार्क')+'">'+(on?'★':'☆')+'</button>'}
+document.addEventListener('click',function(e){
+  var b=e.target.closest&&e.target.closest('.bm'); if(!b)return;
+  var id=b.getAttribute('data-bm'),l=load('bm',[]),i=l.indexOf(id);
+  if(i>=0)l.splice(i,1);else l.push(id); save('bm',l);
+  var on=i<0;b.classList.toggle('on',on);b.textContent=on?'★':'☆';b.setAttribute('aria-pressed',on);
+});
+/* ---------- daily quiz + streak ---------- */
+function dayKey(d){d=d||new Date();return d.getFullYear()+'-'+(d.getMonth()+1)+'-'+d.getDate()}
+function seeded(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function dailyList(sid){
+  var key=dayKey()+'|'+(sid||'mix'),h=0;for(var i=0;i<key.length;i++)h=(h*31+key.charCodeAt(i))|0;
+  var rnd=seeded(h),subs=sid?[sid]:SUBJ.filter(function(s){return s.id!=='ca'&&s.id!=='hindi'}).map(function(s){return s.id}),n=sid?10:25,out=[],used={};
+  for(var k=0;out.length<n&&k<400;k++){
+    var id=subs[k%subs.length],pool=ALL.filter(function(q){return q.subject===id&&!used[q.id]});
+    if(!pool.length)continue;var q=pool[Math.floor(rnd()*pool.length)];used[q.id]=1;out.push(q);
+  }
+  return out;
+}
+function streakInfo(){var st=load('streak',{last:'',n:0}),y=new Date();y.setDate(y.getDate()-1);var alive=st.last===dayKey()||st.last===dayKey(y);return {n:alive?st.n:0,done:st.last===dayKey(),best:st.best||st.n||0}}
+function dailyDone(id){return load('dailydone',{})[dayKey()+'|'+(id||'mix')]!=null}
+function markDaily(pct,id){
+  var dd=load('dailydone',{}),k=dayKey()+'|'+(id||'mix');if(dd[k]==null||pct>dd[k]){dd[k]=pct;save('dailydone',dd)}
+  var st=load('streak',{last:'',n:0,best:0}),today=dayKey(),y=new Date();y.setDate(y.getDate()-1);
+  if(st.last!==today){st.n=(st.last===dayKey(y))?st.n+1:1;st.last=today;st.best=Math.max(st.best||0,st.n);save('streak',st)}
+  var h=load('dailyhist',{});h[today]=pct;save('dailyhist',h);
+}
+function dailyCard(){
+  var s=streakInfo();
+  return '<a class="daily" href="#/daily"><span class="daily-t">📅 '+T("Today's Daily Quiz","आज की दैनिक क्विज़")+'</span><span class="daily-s">'+
+    (s.done?T('✓ Done for today. Try a subject quiz too!','✓ आज की क्विज़ पूरी। विषय-वार क्विज़ भी आज़माइए!'):T('25 mixed questions, or 10 from any one subject','25 मिश्रित प्रश्न, या किसी एक विषय के 10 प्रश्न'))+'</span>'+
+    (s.n?'<span class="daily-f">🔥 '+T(s.n+'-day streak',s.n+' दिन लगातार')+'</span>':'')+'</a>';
+}
+function dailyPage(sid){
+  var start=sid==='start';if(start)sid=null;
+  var s=streakInfo(),sj=sid?subj(sid):null;
+  if(sid&&!sj)return notFound();
+  if(sid||start){
+    app.innerHTML='<div class="crumbs"><a href="#/daily">'+T('Daily Quiz','दैनिक क्विज़')+'</a></div><h1>'+(sj?T("Today's ",'आज की ')+esc(nm(sj))+T(' quiz',' क्विज़'):T("Today's mixed quiz",'आज की मिश्रित क्विज़'))+'</h1><div id="pane"></div>';
+    RKEY='daily'+(sid?'/'+sid:''); return runner(document.getElementById('pane'),dailyList(sid),'quiz');
+  }
+  var tick=function(id){return dailyDone(id)?' ✓':''};
+  app.innerHTML='<h1>'+T('Daily Quiz','दैनिक क्विज़')+'</h1><p class="muted">'+T('New questions every day, the same for everyone. Practise daily to build your streak.','हर दिन नए प्रश्न, सबके लिए एक जैसे। रोज़ अभ्यास करें और लगातार दिनों की गिनती बढ़ाएँ।')+'</p>'+
+    (s.n?'<p class="streak">🔥 '+T('Current streak: '+s.n+' day'+(s.n>1?'s':''),'लगातार: '+s.n+' दिन')+'</p>':'')+
+    '<a class="daily" href="#/daily/start"><span class="daily-t">📅 '+T("Today's mixed quiz",'आज की मिश्रित क्विज़')+tick()+'</span><span class="daily-s">'+T('25 questions from all subjects · about 25 minutes','सभी विषयों से 25 प्रश्न · लगभग 25 मिनट')+'</span></a>'+
+    '<h2>'+T('Subject-wise daily quiz','विषय-वार दैनिक क्विज़')+'</h2><p class="group-note">'+T('10 questions from one subject.','एक विषय के 10 प्रश्न।')+'</p>'+
+    '<ul class="list">'+SUBJ.filter(function(x){return x.id!=='ca'&&qsFor(x.id).length}).map(function(x){return '<li><a class="item" href="#/daily/'+x.id+'"><span class="name">'+esc(nm(x))+tick(x.id)+'</span><span class="meta">10 '+T('questions','प्रश्न')+' ›</span></a></li>'}).join('')+'</ul>';
+}
+/* ---------- my progress ---------- */
+function mePage(kind){
+  var m=load('mist',[]),bm=load('bm',[]);
+  if(kind==='mistakes'||kind==='bm'){
+    var ids=kind==='bm'?bm:m,l=ALL.filter(function(q){return ids.indexOf(q.id)>=0});
+    app.innerHTML='<div class="crumbs"><a href="#/me">'+T('My Progress','मेरी प्रगति')+'</a></div><h1>'+(kind==='bm'?T('My bookmarks','मेरे बुकमार्क'):T('My mistakes','मेरी गलतियाँ'))+'</h1><div id="pane"></div>';
+    if(!l.length){document.getElementById('pane').innerHTML=emptyBox(kind==='bm'?T('No bookmarks yet','अभी कोई बुकमार्क नहीं'):T('No mistakes saved','कोई गलती सेव नहीं'),kind==='bm'?T('Tap ☆ on any question to save it here.','किसी भी प्रश्न पर ☆ दबाकर उसे यहाँ सेव करें।'):T('Questions you answer wrongly appear here until you get them right.','जिन प्रश्नों का उत्तर गलत होता है, वे सही होने तक यहाँ दिखते हैं।'),'#/subjects',T('Start practising','अभ्यास शुरू करें'));return}
+    return runner(document.getElementById('pane'),shuffle(l).slice(0,50),'practice');
+  }
+  var st=stats(),s=streakInfo(),tot=0,cor=0;Object.keys(st).forEach(function(k){tot+=st[k].a;cor+=st[k].c});
+  var weak=Object.keys(st).filter(function(k){return st[k].a>=5&&st[k].c/st[k].a<0.6}).sort(function(a,b){return st[a].c/st[a].a-st[b].c/st[b].a}).slice(0,8);
+  var subRows=SUBJ.map(function(sj){var p=prog(sj.id);return p.a?'<tr><td>'+esc(nm(sj))+'</td><td class="n">'+p.a+'</td><td class="n">'+p.pct+'%</td></tr>':''}).join('');
+  app.innerHTML='<h1>'+T('My Progress','मेरी प्रगति')+'</h1>'+
+   '<p class="muted small">'+T('Saved only on this device. No login needed.','केवल इसी डिवाइस पर सेव। लॉगिन की ज़रूरत नहीं।')+'</p>'+
+   '<div class="mecards">'+
+    '<div class="mecard"><b>'+tot+'</b><span>'+T('Questions attempted','हल किए प्रश्न')+'</span></div>'+
+    '<div class="mecard"><b>'+(tot?Math.round(cor*100/tot):0)+'%</b><span>'+T('Accuracy','सटीकता')+'</span></div>'+
+    '<div class="mecard"><b>🔥 '+s.n+'</b><span>'+T('Day streak','लगातार दिन')+'</span></div>'+
+    '<div class="mecard"><b>'+s.best+'</b><span>'+T('Best streak','सर्वश्रेष्ठ')+'</span></div>'+
+   '</div>'+dailyCard()+
+   '<div class="btns" style="margin:16px 0"><a class="btn" href="#/me/mistakes">'+T('Practise my mistakes','मेरी गलतियाँ दोहराएँ')+' ('+m.length+')</a><a class="btn ghost" href="#/me/bm">☆ '+T('My bookmarks','मेरे बुकमार्क')+' ('+bm.length+')</a></div>'+
+   '<h2>'+T('Topics to strengthen','जिन टॉपिक पर ध्यान दें')+'</h2>'+
+   (weak.length?'<ul class="list">'+weak.map(function(k){var pp=k.split('/'),sj=subj(pp[0]),tp=topic(sj,pp[1]);if(!tp)return '';return '<li><a class="item" href="#/t/'+pp[0]+'/'+pp[1]+'/practice"><span class="name">'+esc(nm(tp))+'</span><span class="meta">'+Math.round(st[k].c*100/st[k].a)+'%</span></a></li>'}).join('')+'</ul>'
+     :'<p class="muted">'+T('Attempt at least 5 questions in a topic to see your weak areas here.','किसी टॉपिक में कम से कम 5 प्रश्न हल करें, तब कमज़ोर टॉपिक यहाँ दिखेंगे।')+'</p>')+
+   (subRows?'<h2>'+T('Subject-wise','विषय-वार')+'</h2><div class="box tbl-wrap" style="padding:8px 12px"><table><thead><tr><th>'+T('Subject','विषय')+'</th><th class="n">'+T('Attempted','हल किए')+'</th><th class="n">'+T('Accuracy','सटीकता')+'</th></tr></thead><tbody>'+subRows+'</tbody></table></div>':'');
+}
+/* ---------- resources ---------- */
+function resourcesPage(){
+  var B=window.BOOKS||[],anyLink=!IS_APP&&B.some(function(b){return /^https:\/\//.test(b.link||'')});
+  var groups={};B.forEach(function(b){(groups[b.subject]=groups[b.subject]||[]).push(b)});
+  var link=function(u,en,hi){return '<a class="reslink" href="'+u+'" target="_blank" rel="noopener">'+T(en,hi)+' ↗</a>'};
+  app.innerHTML='<h1>'+T('Resources','पढ़ाई के साधन')+'</h1>'+
+   '<h2>'+T('Free textbooks','निःशुल्क पाठ्यपुस्तकें')+'</h2><p>'+T('NCERT books (Class 6 to 12) are the best base for GK and Science. Read them free on the official website.','NCERT की पुस्तकें (कक्षा 6 से 12) GK और विज्ञान की सबसे अच्छी नींव हैं। इन्हें आधिकारिक वेबसाइट पर निःशुल्क पढ़ें।')+'</p>'+
+   '<div class="reslinks">'+link('https://ncert.nic.in/textbook.php','NCERT textbooks','NCERT पाठ्यपुस्तकें')+link('https://epathshala.nic.in','ePathshala','ई-पाठशाला')+'</div>'+
+   '<h2>'+T('Official exam and job updates','आधिकारिक परीक्षा व नौकरी सूचना')+'</h2>'+
+   '<div class="note">'+T('Apply only on official websites. Never pay anyone who promises a government job.','आवेदन केवल आधिकारिक वेबसाइट पर करें। सरकारी नौकरी का वादा करने वाले किसी को भी पैसे न दें।')+'</div>'+
+   '<div class="reslinks">'+link('https://www.employmentnews.gov.in','Employment News (Govt. of India)','रोज़गार समाचार (भारत सरकार)')+link('https://ssc.gov.in','SSC','SSC')+link('https://www.rrbapply.gov.in','Railway (RRB)','रेलवे (RRB)')+link('https://www.ibps.in','IBPS','IBPS')+link('https://sbi.co.in/web/careers','SBI Careers','SBI करियर')+link('https://ctet.nic.in','CTET','CTET')+'</div>'+
+   '<h2>'+T('Previous-year papers and answer keys','पिछले वर्षों के प्रश्नपत्र और उत्तर-कुंजी')+'</h2>'+'<p>'+T('SSC and the Railway Recruitment Boards publish the question paper and answer key on their official websites after each exam, usually for a limited time and with your registration login. IBPS does not publish its question papers.','SSC और रेलवे भर्ती बोर्ड हर परीक्षा के बाद अपनी आधिकारिक वेबसाइट पर प्रश्नपत्र और उत्तर-कुंजी डालते हैं, आमतौर पर सीमित समय के लिए और आपके पंजीकरण लॉगिन से। IBPS अपने प्रश्नपत्र प्रकाशित नहीं करता।')+'</p>'+'<div class="reslinks">'+link('https://ssc.gov.in','SSC answer keys','SSC उत्तर-कुंजी')+link('https://www.rrbapply.gov.in','RRB (Railway)','RRB (रेलवे)')+link('https://sathee.iitk.ac.in','SATHEE (Ministry of Education)','साथी (शिक्षा मंत्रालय)')+'</div>'+'<p class="small muted">'+T('SATHEE is a free preparation platform of the Ministry of Education with IIT Kanpur, with practice for SSC, Railway and Bank exams.','साथी (SATHEE) शिक्षा मंत्रालय और IIT कानपुर का निःशुल्क तैयारी मंच है, जिसमें SSC, रेलवे और बैंक परीक्षाओं का अभ्यास है।')+' <a href="#/papers">'+T('Try our Model Papers →','हमारे मॉडल पेपर आज़माएँ →')+'</a></p>'+
+   '<h2>'+T('Current affairs','करेंट अफेयर्स')+'</h2><p>'+T('Current affairs change every day. Read a good daily newspaper and the official Press Information Bureau website regularly.','करेंट अफेयर्स रोज़ बदलते हैं। रोज़ एक अच्छा अख़बार और पत्र सूचना कार्यालय (PIB) की आधिकारिक वेबसाइट नियमित रूप से पढ़ें।')+'</p>'+
+   '<div class="reslinks">'+link('https://pib.gov.in','PIB (Govt. of India)','PIB (भारत सरकार)')+'</div>'+
+   '<h2>'+T('Recommended books','सुझाई गई पुस्तकें')+'</h2><p class="muted small">'+T('Suggestions only. Any good book works; prefer the latest edition.','केवल सुझाव। कोई भी अच्छी पुस्तक चलेगी; नवीनतम संस्करण लें।')+'</p>'+
+   Object.keys(groups).map(function(g){return '<h3>'+esc(T(g,groups[g][0].subject_hi||g))+'</h3><ul class="list">'+groups[g].map(function(b){
+     return '<li class="trow"><div class="th"><span class="tname">'+esc(b.title)+'</span></div><div class="small muted">'+esc(b.by)+'</div><div class="small">'+esc(T(b.why_en||'',b.why_hi||b.why_en||''))+'</div>'+
+       (!IS_APP&&/^https:\/\//.test(b.link||'')?'<div class="qb"><a class="p" href="'+esc(b.link)+'" target="_blank" rel="sponsored noopener">'+T('View on Amazon','Amazon पर देखें')+'</a></div>':'')+'</li>'}).join('')+'</ul>'}).join('')+
+   (anyLink?'<p class="small muted" style="margin-top:14px">'+T('As an Amazon Associate, Govexamprep earns from qualifying purchases. This does not change the price for you.','Amazon एसोसिएट के रूप में Govexamprep को योग्य ख़रीद पर कमीशन मिलता है। इससे आपके लिए कीमत नहीं बदलती।')+'</p>':'');
+}
+window.addEventListener('hashchange',route);
+route();
+loadBank();
+drawAds();
+})();
+</script>
+</body>
+</html>
