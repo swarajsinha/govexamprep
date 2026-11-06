@@ -1,7 +1,7 @@
 /* Govexamprep offline helper.
    Always tries the internet first, so students get the newest questions.
    If there is no internet, it shows the last saved copy. */
-const CACHE = 'gep-v19';
+const CACHE = 'gep-v20';
 const CORE = ['./', 'index.html', 'manifest.json', 'data/settings.js', 'data/syllabus.js', 'data/exams.js', 'data/notes.js',
   'data/question-bank-1.js', 'data/question-bank-2.js', 'data/questions.js', 'data/papers.js', 'data/current-affairs.js', 'data/books.js', 'assets/logo-icon-192.png', 'assets/favicon-64.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });

@@ -973,6 +973,7 @@ function route(again){
   if(IS_APP&&APP_HIDE[f]){location.replace('#/');return}
   if(f==='')v=home();
   else if(f==='subjects')v=subjects();
+  else if(f==='s'&&p[1]==='ca')v=caPage();
   else if(f==='s')v=subjectPage(p[1]);
   else if(f==='t')v=topicPage(p[1],p[2],p[3]||'',p[4]);
   else if(f==='exams')v=examsPage();
@@ -1361,6 +1362,13 @@ function examPage(id){
 var MON_EN=['January','February','March','April','May','June','July','August','September','October','November','December'];
 var MON_HI=['जनवरी','फ़रवरी','मार्च','अप्रैल','मई','जून','जुलाई','अगस्त','सितंबर','अक्टूबर','नवंबर','दिसंबर'];
 function monthName(m){var p=String(m).split('-'),i=+p[1]-1;if(!(i>=0&&i<12))return m;return (S.lang==='hi'?MON_HI:MON_EN)[i]+' '+p[0]}
+var CA_MIN=5;
+function caGroups(s,list){var big=[],small=[];s.topics.forEach(function(t){var n=list.filter(function(q){return q.topic===t.id}).length;if(!n)return;(n>=CA_MIN?big:small).push({t:t,n:n})});return {big:big,small:small,sn:small.reduce(function(a,x){return a+x.n},0)}}
+function caRows(g,month){
+  var rows=g.big.map(function(x){return '<li><a class="item" href="#/ca/'+month+'/'+x.t.id+'"><span class="name">'+esc(nm(x.t))+'</span><span class="meta">'+x.n+' '+T('questions','प्रश्न')+'</span></a></li>'}).join('');
+  if(g.sn)rows+='<li><a class="item" href="#/ca/'+month+'/misc"><span class="name">'+T('Other categories','अन्य श्रेणियाँ')+'<span class="small muted" style="display:block;font-weight:400">'+esc(g.small.slice(0,3).map(function(x){return nm(x.t)}).join(', ')+(g.small.length>3?' '+T('and '+(g.small.length-3)+' more','और '+(g.small.length-3)+' अन्य'):''))+'</span></span><span class="meta">'+g.sn+' '+T(g.sn===1?'question':'questions','प्रश्न')+'</span></a></li>';
+  return '<ul class="list">'+rows+'</ul>';
+}
 function caPage(month,cat){
   var s=subj('ca'); if(!s)return notFound();
   var withMonth=CAQ.filter(function(q){return q.month});
@@ -1370,20 +1378,21 @@ function caPage(month,cat){
     (months.length?'<ul class="list">'+months.map(function(m){var n=withMonth.filter(function(q){return q.month===m}).length;return '<li><a class="item" href="#/ca/'+m+'"><span class="name">'+esc(monthName(m))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>':
      emptyBox(T('Monthly current affairs are coming soon','मासिक करेंट अफेयर्स जल्द आ रहे हैं'),T('Questions will be added month by month. Meanwhile, practise the static GK topics.','प्रश्न महीने-दर-महीने जोड़े जाएँगे। तब तक स्थिर GK टॉपिक का अभ्यास करें।'),'#/s/gk',T('Practise static GK','स्थिर GK का अभ्यास करें')))+
     '<h2>'+T('Categories','श्रेणियाँ')+'</h2><p class="group-note">'+T('All months together, by category.','सभी महीने एक साथ, श्रेणी के अनुसार।')+'</p>'+
-    '<ul class="list">'+s.topics.map(function(t){var n=qsFor('ca',t.id).length;return '<li><a class="item" href="#/t/ca/'+t.id+'/practice"><span class="name">'+esc(nm(t))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>';
+    caRows(caGroups(s,withMonth),'any');
     return;
   }
-  var mq=withMonth.filter(function(q){return q.month===month});
+  var mq=month==='any'?withMonth:withMonth.filter(function(q){return q.month===month});
   if(!cat){
-    app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a></div><h1>'+esc(monthName(month))+'</h1>'+
+    app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a></div><h1>'+(month==='any'?T('All months','सभी महीने'):esc(monthName(month)))+'</h1>'+
      (mq.length?'<div class="btns" style="margin-bottom:18px"><a class="btn" href="#/ca/'+month+'/all">'+T('Quiz on the whole month','पूरे महीने पर क्विज़')+'</a></div>':'')+
-     '<ul class="list">'+s.topics.map(function(t){var n=mq.filter(function(q){return q.topic===t.id}).length;if(!n)return '';return '<li><a class="item" href="#/ca/'+month+'/'+t.id+'"><span class="name">'+esc(nm(t))+'</span><span class="meta">'+n+' '+T(n===1?'question':'questions','प्रश्न')+'</span></a></li>'}).join('')+'</ul>';
+     caRows(caGroups(s,mq),month);
     if(!mq.length)app.innerHTML+=noQuestions();
     return;
   }
-  var t=cat==='all'?null:topic(s,cat);
-  app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a> / <a href="#/ca/'+month+'">'+esc(monthName(month))+'</a></div><h1>'+(t?esc(nm(t)):T('Whole month','पूरा महीना'))+'</h1><div id="pane"></div>';
-  var l=cat==='all'?shuffle(mq):mq.filter(function(q){return q.topic===cat});
+  var t=(cat==='all'||cat==='misc')?null:topic(s,cat),g=caGroups(s,mq),smallIds=g.small.map(function(x){return x.t.id});
+  var mlab=month==='any'?T('All months','सभी महीने'):esc(monthName(month));
+  app.innerHTML='<div class="crumbs"><a href="#/ca">'+T('Current Affairs','करेंट अफेयर्स')+'</a>'+(month==='any'?'':' / <a href="#/ca/'+month+'">'+mlab+'</a>')+'</div><h1>'+(t?esc(nm(t)):cat==='misc'?T('Other categories','अन्य श्रेणियाँ'):T('Whole month','पूरा महीना'))+(month==='any'?' <span class="small muted">('+mlab+')</span>':'')+'</h1><div id="pane"></div>';
+  var l=cat==='all'?shuffle(mq):cat==='misc'?mq.filter(function(q){return smallIds.indexOf(q.topic)>=0}):mq.filter(function(q){return q.topic===cat});
   runner(document.getElementById('pane'),l,cat==='all'?'quiz':'practice');
 }
 
@@ -1699,7 +1708,7 @@ function resourcesPage(){
   var link=function(u,en,hi){return '<a class="reslink" href="'+u+'" target="_blank" rel="noopener">'+T(en,hi)+' ↗</a>'};
   app.innerHTML='<h1>'+T('Resources','पढ़ाई के साधन')+'</h1>'+
    '<h2>'+T('Free textbooks','निःशुल्क पाठ्यपुस्तकें')+'</h2><p>'+T('NCERT books (Class 6 to 12) are the best base for GK and Science. Read them free on the official website.','NCERT की पुस्तकें (कक्षा 6 से 12) GK और विज्ञान की सबसे अच्छी नींव हैं। इन्हें आधिकारिक वेबसाइट पर निःशुल्क पढ़ें।')+'</p>'+
-   '<div class="reslinks">'+link('https://ncert.nic.in/textbook.php','NCERT textbooks','NCERT पाठ्यपुस्तकें')+link('https://epathshala.nic.in','ePathshala','ई-पाठशाला')+'</div>'+
+   '<div class="reslinks">'+link('https://ncert.nic.in/textbook.php','NCERT textbooks','NCERT पाठ्यपुस्तकें')+link('https://diksha.gov.in','DIKSHA (Govt. of India)','दीक्षा (भारत सरकार)')+'</div>'+
    '<h2>'+T('Official exam and job updates','आधिकारिक परीक्षा व नौकरी सूचना')+'</h2>'+
    '<div class="note">'+T('Apply only on official websites. Never pay anyone who promises a government job.','आवेदन केवल आधिकारिक वेबसाइट पर करें। सरकारी नौकरी का वादा करने वाले किसी को भी पैसे न दें।')+'</div>'+
    '<div class="reslinks">'+link('https://www.employmentnews.gov.in','Employment News (Govt. of India)','रोज़गार समाचार (भारत सरकार)')+link('https://ssc.gov.in','SSC','SSC')+link('https://www.rrbapply.gov.in','Railway (RRB)','रेलवे (RRB)')+link('https://www.ibps.in','IBPS','IBPS')+link('https://sbi.co.in/web/careers','SBI Careers','SBI करियर')+link('https://ctet.nic.in','CTET','CTET')+'</div>'+
