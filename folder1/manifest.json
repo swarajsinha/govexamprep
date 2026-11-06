@@ -1,0 +1,105 @@
+{
+  "name": "Govexamprep — Free SSC, Railway & Bank Exam Practice",
+  "short_name": "Govexamprep",
+  "description": "Free MCQ practice, notes and model papers in Hindi and English for SSC, Railway, Banking and other government exams. सरकारी परीक्षाओं की निःशुल्क तैयारी — हिंदी और अंग्रेज़ी में।",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F5F6F9",
+  "theme_color": "#1B3567",
+  "lang": "hi",
+  "icons": [
+    {
+      "src": "assets/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/app-icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "./",
+  "orientation": "any",
+  "dir": "auto",
+  "categories": [
+    "education"
+  ],
+  "screenshots": [
+    {
+      "src": "assets/screens/home-hi.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Home"
+    },
+    {
+      "src": "assets/screens/practice-hi.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Practice with explanations"
+    },
+    {
+      "src": "assets/screens/paper-hi.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Model papers"
+    },
+    {
+      "src": "assets/screens/home-wide.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Home on a computer"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Daily Quiz / दैनिक क्विज़",
+      "url": "./#/daily",
+      "icons": [
+        {
+          "src": "assets/app-icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Model Papers / मॉडल पेपर",
+      "url": "./#/papers",
+      "icons": [
+        {
+          "src": "assets/app-icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Mock Test / मॉक टेस्ट",
+      "url": "./#/mixed",
+      "icons": [
+        {
+          "src": "assets/app-icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
