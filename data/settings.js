@@ -64,6 +64,6 @@ window.SETTINGS = {
      उसमें से सिर्फ़ content="..." के अंदर वाला हिस्सा यहाँ डालें।
      Bing Webmaster Tools का कोड (msvalidate.01) भी इसी तरह bingVerification में।
      भरने के बाद मुझसे वेबसाइट दोबारा बनवाएँ। */
-  googleVerification: "",
+  googleVerification: "k6Sb8fqnuJbIiNFs1sD3_m7l9UUEFzs6U99fQalfEUY",
   bingVerification: ""
 };
